@@ -1,5 +1,15 @@
 # FatecAPI-02
 
+<h1 align="center">Enneagon
+
+<h2>Descrição</h2>
+
+ Projeto integrador - 2°Semestre ADS
+
+<h2>Objetivo do Projeto</h2>
+
+Nosso objetivo é criar dashboards para nosso cliente, para que ele possa acompanhar o andamento de todos os projetos de sua empresa de forma direta e clara.
+
 <h2>Nossa equipe :girl::boy:</h2>
            
  - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
