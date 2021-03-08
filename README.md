@@ -1,16 +1,16 @@
 # FatecAPI-02
 
-<h1 align="center">Enneagon
+<h1> Enneagon </h1>
 
 <h2>Descrição</h2>
 
- Projeto integrador - 2°Semestre ADS
+ O presente desafio trata-se de um Dashboard para análise de dados dos projetos e acompanhamento de performance dos desenvolvedores responsáveis. Com as informações expostas em um só lugar como, por exemplo, numa televisão dentro de uma sala de reunião, torna-se mais fácil as comparações diárias ou semanais dos resultados e o resumo do desempenho das atividades relacionadas à tomada de decisões. Sendo assim, as atividades ficam mais rápidas e conclusivas.
 
 <h2>Objetivo do Projeto</h2>
 
-Nosso objetivo é criar dashboards para nosso cliente, para que ele possa acompanhar o andamento de todos os projetos de sua empresa de forma direta e clara.
+Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
 
-<h2>Nossa equipe :girl::boy:</h2>
+<h2>Equipe Enneagon :girl::boy:</h2>
            
  - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
  
