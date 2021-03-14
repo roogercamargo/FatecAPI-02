@@ -1,6 +1,6 @@
 # FatecAPI-02
 
-<h1 align="center"> Enneagon </h1>
+<h1 align="center"> Pation <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/logo/logocor1.png" width="40"></h1>
 
 <h2>Descrição</h2>
 
@@ -63,5 +63,10 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
               </tbody>
        </table>
 </section>
+
+<h3><i>Cards das entregas</i></h3>
+<h4>Sprint 01 :clock12:</h4>
+<p align="justify">Tela de acesso a plataforma. A plataforma contará com níveis de acesso, onde, dependendo do nível de gerência o acesso as informações será diferente; o cliente terá uma visualização exemplo de como será a exibição dos dados</p>
+       <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card1.png" width=550px height=300px>
 
 
