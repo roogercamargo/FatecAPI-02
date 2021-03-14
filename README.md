@@ -1,6 +1,6 @@
 # FatecAPI-02
 
-<h1> Enneagon </h1>
+<h1 align="center"> Enneagon </h1>
 
 <h2>Descrição</h2>
 
@@ -29,4 +29,39 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
  - [Danielle Brito](https://www.linkedin.com/in/danielle-brito-81b4381b8/ "Linkedin") <i>(Development Team)</i>
  
  - [Gustavo Oliveira](https://www.linkedin.com/in/gustavo-oliveira-353647207/ "Linkedin") <i>(Development Team)</i>
+
+
+<section id="branches_entregas">
+       <h3><i>Branches</i> de cada entrega</h3>
+       <table>
+              <thead>
+                     <th width=100px>Entregas</th>
+                     <th>Descrições</th>
+                     <th width=215px>Datas</th>
+              </thead>
+              <tbody>
+                     <tr>
+                            <td>Sprint 1</td>
+                            <td>Acesso a plataforma. Normalização e exemplo de amostra dos dados de um só projeto da empresa</td>
+                            <td>08/03/2021 a 28/03/2021</td>
+                     </tr>
+                     <tr>
+                            <td>Sprint 2</td>
+                            <td>Outras telas de visualização dos dados com mais projetos organizados, e sua visualização no index</td>
+                            <td>29/09/2021 a 18/04/2021</td>
+                     </tr>
+                     <tr>
+                            <td>Sprint 3</td>
+                            <td>Todos os dados analisados e visíveis nos gráficos</td>
+                            <td>26/04/2021 a 17/05/2021</td>
+                     </tr>
+                      <tr>
+                            <td>Sprint 4</td>
+                            <td>Sistema de comentários e melhorias</td>
+                            <td>17/05/2021 a 05/06/2021</td>
+                     </tr>
+              </tbody>
+       </table>
+</section>
+
 
