@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
+  <link rel="sortcut icon" href="images/logo_stext.png"/>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <img src="images/logocor.png" width="150" height="60">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    <li class="nav-item">
+        <a class="nav-link" href="#">Início</a>
+      </li> 
+      
+    </ul>
+    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+  </div>
+</nav>
+
+
+
+
+<div class="wrapper">
+	
+ <nav id="sidebar">
+ 	
+ 	 <ul class="lisst-unstyled components">
+
+ 	 	
+ 	 	<li class="active">
+ 	 		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Projetos</a>
+ 	 	  <ul class="collapse list-unstyled" id="homeSubmenu">
+ 	 	  	<li>
+ 	 	  		<a href="#">Sinalizados</a>
+ 	 	  	</li>
+ 	 	  	<li>
+ 	 	  		<a href="#">Mais antigos</a>
+ 	 	  	</li>
+
+ 	 	  </ul>
+ 	 	</li>
+ 	 	<li>
+ 	 		<a href="#">Visão Geral</a>
+ 	 	</li>
+ 	 	<li>
+ 	 		<a href="#">Projeto por status</a>
+ 	 	</li>
+ 	
+
+ 	 </ul>
+ </nav>
+
+
+<div id="content">
+	
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	<div class="container-fluid">
+  		<button type="button" id="sidebarCollapse" class="btn  btn-info">
+  			<i class="fas fa-align-left"></i>
+  			<span></span>
+  			
+  		</button>
+  	</div>
+  	  </nav>
+
+<br><br>
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
+
+        <img class="rounded-circle"src="images/camera.jpeg" width="100" height="100" 
+          data-holder-rendered="true" align="left">
+           <h2 class="h2"><span>Nome do Projeto<span class='spacer'></span></h2>
+      </div>
+
+</div>
+<br>
+
+<div class="row">
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
+      <div class="image">
+        <img class="image"src="images/andamento.png" width="30" height="30" 
+          data-holder-rendered="true">
+           <h2 class="img2"><span>Em andamento<span class='spacer'></span></h2>
+      </div>
+      </div>
+</div>
+
+
+
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body text-center">
+    	<p><img src="images/people.png" width="100" height="100" align="left">
+      <p class="card-text">José Maria<br>
+      (Scrum Master)<br>
+  Contato: jose@hotmail.com</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+    	<p><img src="images/people.png" width="100" height="100" align="left">
+      <p class="card-text">Daniel Santos<br>
+      (Product Owner)<br>
+  Contato: Daniel@hotmail.com</p>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-body text-center">
+    	<p><img src="images/people.png" width="100" height="100" align="left">
+      <p class="card-text">Julia Faria<br>
+      (Development Team)<br>
+  Contato: julia@hotmail.com</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+    	<p><img src="images/people.png" width="100" height="100" align="left">
+      <p class="card-text">Lucas Siqueira<br>
+      (Development Team)<br>
+  Contato: Lucas@hotmail.com</p>
+    </div>
+  </div>
+</div>
+<hr style="height:1px;border:none;color:#333;background-color:#333;" />
+
+<div id = menu_options>
+  <label for = details class="options">
+  <div>
+    <img src="images/detalhes.png">
+    <b><i>Detalhes</i></b>
+  </div>
+  </label>
+
+  <label for = panel class="options">
+  <div>
+    <img src="images/painel.png">
+    <b><i>Painel</i></b>
+  </div>
+  </label>
+
+  <label for = users class="options">
+  <div>
+    <img src="images/usuarios.png">
+    <b><i>Usuários</i></b>
+  </div>
+  </label>
+
+  <label for = rank class="options">
+  <div>
+    <img src="images/comits.png">
+    <b><i>Ranking</i></b>
+  </div> 
+  </label>
+
+  <label for = graphics class="options"> 
+  <div>
+    <img src="images/grafico.png">
+    <b><i>Gráficos</i></b>
+  </div>
+  </label>
+
+  <label for = time class="options">
+  <div>
+    <img src="images/tempo.png">
+    <b><i>Tempo</i></b>
+  </div>
+ </label>
+ 
+</div>
+<br>
+<div id = navigation>
+
+  <input type="radio" id="details" name="group">
+  <div id="detalhes">
+    <class id = project>
+      <img src="images/Project.png">
+      <h1>O Projeto</h1></br></br>
+      <p>O objetivo desse projeto é criar um site E-Commerce de materiais didáticos, com foco em ajudar professores e alunos em seus estudos, disponibilizando o melhor conteúdo didático a um clique de distância.</p>
+    </class>
+
+    <class class = proposal>
+      <img src="images/Proposal.png">
+      <h1>Proposta</h1></br></br>
+      <p>Materiais do tipo texto, vídeo e jogo;</br>
+      Login/Cadastro de usuário;</br>
+      Área do Administrador;</br>
+      Carrinho de Compras;</br>
+      Saldo de Créditos;</br>
+      Relatório de Vendas.</br>
+      </p>
+    </class>
+
+    <class class = tasks>
+      <img src="images/tasks.png">
+      <h1>Tarefas Pendentes</h1><br><br>
+      <p>Desenvolvimento do banco de dados;<br>
+        Filtração dos dados;<br> 
+        Desenvolvimento da home page;<br> 
+        Exibição dos dados em tabela;<br>
+        Back-end do carrinho de compras;</br>
+        Relatório de vendas.<br>
+      </p>
+    </class>
+  </div>
+
+  <input type="radio" id="panel" name="group"><div id="painel">
+    Conteúdo 2
+  </div>
+
+  <input type="radio" id="users" name="group">
+  <div id="usuarios">Conteúdo 3</div>
+
+  <input type="radio" id="rank" name="group">
+  <div id="ranking">Conteúdo 4</div>
+
+  <input type="radio" id="graphics" name="group">
+  <div id="graficos">Conteúdo 5</div>
+
+  <input type="radio" id="time" name="group">
+  <div id="tempo">Conteúdo 6</div>
+
+</div>
+<br>
+<div id="voltarTopo">
+	<a href="#" id="subir"></a>
+</div>
+<script>$(document).ready(function() {
+	$('#subir').click(function(){
+		$('html, body').animate({scrollTop:0}, 'slow');
+		return false;
+	});
+});</script>
+  <div class="line"></div>
+</div>
+<div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+</script>
+
+
+</body>
+</html>
