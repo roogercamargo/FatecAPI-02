@@ -1,0 +1,112 @@
+.color_title{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#7B7C86;
+    padding-bottom: 10px;
+}
+.card{
+    background: #353535;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 28px 4px 57px 62px;
+} 
+.card_button {
+    border-style: none;
+    background-color: #004C6D;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-left: 75px;
+}
+.card_button:hover{
+    background-color: #0994cf;
+    border: 1px solid #ffffff;
+    
+}
+.space{
+    margin-left: 260px;
+    padding-top: 42px;
+    padding-left: 16px;
+    padding-right: 14px;
+    background-color: #f6f6f6;
+}
+.titulo_card{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: normal;
+}
+.fas.fa-user-circle{
+    color: #30b3ff;
+    font-size: 35px;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+.far.fa-clock{
+    color: chocolate;
+    padding-left: 7px;
+    font-size: 19px;
+}
+.fas.fa-check-circle{
+    color:#80AF79;
+    padding-left: 7px;
+    font-size: 18px;
+}
+.card_tit_descr{
+    background: #D1EFFF;;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+
+}
+.card_descrição{
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 5px 5px 5px 5px;
+    margin: 5px 6px 6px 10px;
+    padding: 7px 6px 0px 6px;
+    font-size: 13px;
+}
+.linha{
+    border-bottom: solid 1px #ccc;
+}
+.div_box{
+        border: 1px none;
+        margin: 6px 63px 10px 10px;
+        background-color: rgb(255, 255, 255);
+}
+.wrapper {
+    display: block;
+}
+.l-navbar{
+    position: fixed;
+    min-width:112px;
+    height: 100vh;
+    background-color: #DFE6EC;
+    color: black;
+    padding: 20px 60px 2px 31px;
+}
+.menu_item {
+    text-decoration: none;
+    color:#363636;
+    padding:6px;
+}
+.menu_item:hover{
+    background-color: #c5daec;
+    border-right: blue;
+    color:blue;
+    background-size: 100%;
+}
+.menu_item:active{
+    background-color: #c5daec;
+    border-right: blue;
+    color:blue;
+    background-size: 100%;
+}
+.pesq{
+    background: #DFE6EC;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 856px;
+}
+/* media query para responsividade*/
