@@ -1,6 +1,7 @@
 # FatecAPI-02
+<img src="https://img.shields.io/badge/Node-v16.14.0-blue"> <img src="https://img.shields.io/badge/pgAdmin%204-v5.0-sucess"> <img src="https://img.shields.io/badge/PostgreSQL-v13.2-yellow">
 
-<h1> Enneagon </h1>
+<h1 align="center"> Pation <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/logo/logocor1.png" width="40"></h1>
 
 <h2>Descrição</h2>
 
