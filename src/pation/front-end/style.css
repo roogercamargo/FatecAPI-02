@@ -294,12 +294,12 @@ i {
   /* navigation - posiçao*/
   #navigation div{
     position: relative;
-    padding: 10px;
-    padding-left: 45px;
+    /* padding: 10px;
+    padding-left: 10px; */
     width: 100%;
     height: 70%;
-    /* margin-left: 70px; */
-    background-color: #F6F6F6;
+    margin-left: 50px;
+    background-color: #C9D8E4;
     display: none;
     border-radius: 15px;
   }
@@ -406,3 +406,7 @@ input {
     color: rgb(54, 44, 44);
     transition: margin-top 250ms;
 }
+
+/* .divID{
+    text-align: center;
+} */

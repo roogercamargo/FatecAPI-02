@@ -226,7 +226,7 @@
         </div>
 
         <input type="radio" id="panel" name="group">
-      <div id="panel">
+      <div id="panel" >
         <div style="border: 1px solid black; width: 100px; display: inline-table;" id="IN_PROGRESS"></div>
         <div style="border: 1px solid black; width: 100px; display: inline-table;" id="QA_DEPLOYING"></div>
         <div style="border: 1px solid black; width: 100px; display: inline-table;" id="FOR_TEST"></div>
@@ -234,7 +234,6 @@
         <div style="border: 1px solid black; width: 100px; display: inline-table;" id="RELEASE_TO_PROD"></div>
         <div style="border: 1px solid black; width: 100px; display: inline-table;" id="PROD_DEPLOYING"></div>
         <div style="border: 1px solid black; width: 100px; display: inline-table;" id="DONE"></div>
-
       </div>
 
         <input type="radio" id="users" name="group">
@@ -289,7 +288,7 @@
             dataType: "json",
             success: function (data) {
               console.log(data)
-              var exibicao = "<hr>"
+              var exibicao = "" // adicionar o HR depois caso dê problema
               var IN_PROGRESS = [];
               var QA_DEPLOYING = [];
               var FOR_TEST = [];
