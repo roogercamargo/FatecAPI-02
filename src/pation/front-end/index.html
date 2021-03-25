@@ -226,9 +226,16 @@
         </div>
 
         <input type="radio" id="panel" name="group">
-        <div id="painel">
-          Conteúdo 2
-        </div>
+      <div id="panel">
+        <div style="border: 1px solid black; width: 100px; display: inline-table;" id="IN_PROGRESS"></div>
+        <div style="border: 1px solid black; width: 100px; display: inline-table;" id="QA_DEPLOYING"></div>
+        <div style="border: 1px solid black; width: 100px; display: inline-table;" id="FOR_TEST"></div>
+        <div style="border: 1px solid black; width: 100px; display: inline-table;" id="QA_TESTING"></div>
+        <div style="border: 1px solid black; width: 100px; display: inline-table;" id="RELEASE_TO_PROD"></div>
+        <div style="border: 1px solid black; width: 100px; display: inline-table;" id="PROD_DEPLOYING"></div>
+        <div style="border: 1px solid black; width: 100px; display: inline-table;" id="DONE"></div>
+
+      </div>
 
         <input type="radio" id="users" name="group">
         <div id="usuarios">Conteúdo 3</div>
@@ -263,7 +270,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!--pode dar conflito-->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <!--pode dar conflito-->
 
       <script>$(document).ready(function () {
           $('#subir').click(function () {
@@ -282,10 +290,81 @@
             success: function (data) {
               console.log(data)
               var exibicao = "<hr>"
-              data.rows.map(function(card){
-                exibicao+=`<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
-              })
-              document.getElementById("painel").innerHTML=exibicao
+              var IN_PROGRESS = [];
+              var QA_DEPLOYING = [];
+              var FOR_TEST = [];
+              var QA_TESTING = [];
+              var RELEASE_TO_PROD = [];
+              var PROD_DEPLOYING = [];
+              var DONE = [];
+
+
+              data.rows.forEach(card => {
+                if (card.status == "IN_PROGRESS") {
+                  IN_PROGRESS.push(card)
+                }
+                else if (card.status == "QA_DEPLOYING") {
+                  QA_DEPLOYING.push(card)
+                }
+                else if (card.status == "FOR_TEST") {
+                  FOR_TEST.push(card)
+                }
+                else if (card.status == "QA_TESTING") {
+                  QA_TESTING.push(card)
+                }
+                else if (card.status == "RELEASE_TO_PROD") {
+                  RELEASE_TO_PROD.push(card)
+                }
+                else if (card.status == "PROD_DEPLOYING") {
+                  PROD_DEPLOYING.push(card)
+                }
+                else {
+                  DONE.push(card)
+                }
+
+              });
+              IN_PROGRESS.forEach(card => {
+                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                document.getElementById("IN_PROGRESS").innerHTML = exibicao
+              });
+              exibicao=''
+              QA_DEPLOYING.forEach(card => {
+                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                document.getElementById("QA_DEPLOYING").innerHTML = exibicao
+              });
+              exibicao=''
+              FOR_TEST.forEach(card => {
+                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                document.getElementById("FOR_TEST").innerHTML = exibicao
+              });
+              exibicao=''
+              QA_TESTING.forEach(card => {
+                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                document.getElementById("QA_TESTING").innerHTML = exibicao
+              });
+              exibicao=''
+              RELEASE_TO_PROD.forEach(card => {
+                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                document.getElementById("RELEASE_TO_PROD").innerHTML = exibicao
+              });
+              exibicao=''
+              PROD_DEPLOYING.forEach(card => {
+                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                document.getElementById("PROD_DEPLOYING").innerHTML = exibicao
+              });
+              exibicao=''
+              DONE.forEach(card => {
+                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                document.getElementById("DONE").innerHTML = exibicao
+              });
+              exibicao=''
+              // data.rows.map(function(card){
+              //   exibicao+=`<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+              // })
+              // if(card.status=="IN_PROGRESS"){
+              //   document.getElementById("IN_PROGRESS").innerHTML=exibicao
+              // }
+
             }
           });
 
