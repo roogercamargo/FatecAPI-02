@@ -68,7 +68,19 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h3><i>Cards das entregas</i></h3>
 <h4>Sprint 01 :clock12:</h4>
-<p align="justify">Tela de acesso a plataforma. A plataforma contará com níveis de acesso, onde, dependendo do nível de gerência o acesso as informações será diferente; o cliente terá uma visualização exemplo de como será a exibição dos dados</p>
+<p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card1.png" width=550px height=300px>
-
+      
+<h4>Sprint 02 :clock230:</h4>
+<p align="justify"> O objetivo dessa entrega é adicionar os dados restantes dos outros projetos, proporcionando ao cliente a visualização geral no painel, acrescentando os detalhes e a página inicial do painel de visualização da plataforma. O cliente também vai poder acessar a aba de “colaboradores” para visualizar a equipe que está trabalhando em determinado projeto.</p>
+       <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card2.png" width=550px height=300px>
+ 
+<h4>Sprint 03 :clock4:</h4>
+<p align="justify">Aqui vamos entregar todos os dados dos projetos analisados, distribuídos em gráficos, para uma visualização rápida dos detalhes de cada projeto, separadamente e também de todos de forma unificada, unindo dados de forma visual para analises rápidas dos projetos. O cliente terá visualização das tarefas de cada projeto, separadas por status e também verá o responsável por cada uma no próprio card da tarefa.</p>
+       <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card3.png" width=550px height=300px>
+       
+<h4>Sprint 04 :clock7:</h4>
+<p align="justify">Faremos um refinamento da plataforma, corrigindo erros, e melhorando a fluidez. Também vamos adicionar uma função extra, um sistema de comentários, para que o gestor possa enviar comentários diretamente para um colaborador específico através da própria plataforma, tornando assim mais fluída a comunicação.</p>
+       <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card4.png" width=550px height=300px>
+       
 
