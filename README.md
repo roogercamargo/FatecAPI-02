@@ -7,11 +7,15 @@
 
  O presente desafio trata-se de um Dashboard para análise de dados dos projetos e acompanhamento de performance dos desenvolvedores responsáveis. Com as informações expostas em um só lugar como, por exemplo, numa televisão dentro de uma sala de reunião, torna-se mais fácil as comparações diárias ou semanais dos resultados e o resumo do desempenho das atividades relacionadas à tomada de decisões. Sendo assim, as atividades ficam mais rápidas e conclusivas.
 
+- [O que entregamos](#o-que-entregamos)
+- [Valor da entrega](#qual-o-valor)
+- [Backlog e User stories](#backlog-e-user-stories)
+- [Gráfico Burndown](#burndown-da-sprint)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
 
-<h2>O que entregamos :ballot_box_with_check:</h2>
+<h2>O que entregamos</h2>
 <p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card1.png" width=550px height=300px></h1>
        
@@ -20,3 +24,8 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h2>Backlog e User stories</h2> 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog%20entrega%201.png"></h1>
+
+<h2>Burndown da Sprint</h2> 
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Burndown/Burndown%201.PNG" width=550px height=300px></h1>
+
+
