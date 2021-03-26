@@ -20,8 +20,8 @@ app.get('/select_cards', function (req, res) {
 
     var client = new pg.Client(conString);
     client.connect();
-    const text = "select * from cards where user_primeiro_nome = $1";
-    const values = ['Antônio']
+    const text = "select * from cards where projeto = $1";
+    const values = ['[Melo, Melo and Santos e Associados] - Organized impactful instruction set']
      select(text, values).then(function (response) {
         console.log(response)
         res.send(response)
