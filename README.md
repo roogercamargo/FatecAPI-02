@@ -8,10 +8,11 @@
 
  O presente desafio trata-se de um Dashboard para análise de dados dos projetos e acompanhamento de performance dos desenvolvedores responsáveis. Com as informações expostas em um só lugar como, por exemplo, numa televisão dentro de uma sala de reunião, torna-se mais fácil as comparações diárias ou semanais dos resultados e o resumo do desempenho das atividades relacionadas à tomada de decisões. Sendo assim, as atividades ficam mais rápidas e conclusivas.
 
+[Objetivo do Projeto](#objetivo-do-projeto)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
-
+> Status do Projeto: Em desenvolvimento :warning:
 <h2>Equipe Enneagon :girl::boy:</h2>
            
  - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
@@ -83,4 +84,12 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <p align="justify">Faremos um refinamento da plataforma, corrigindo erros, e melhorando a fluidez. Também vamos adicionar uma função extra, um sistema de comentários, para que o gestor possa enviar comentários diretamente para um colaborador específico através da própria plataforma, tornando assim mais fluída a comunicação.</p>
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card4.png" width=550px height=300px>
        
-
+<h2>Wireframes do projeto</h2>
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Vis%C3%A3o%20geral.jpg" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/detalhes%20do%20projeto.jpg" width="400" /> 
+</p>
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.jpg" width="400" /> 
+</p>     
