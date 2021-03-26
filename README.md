@@ -52,7 +52,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
                             <td>Sprint 1</td>
                             <td>Acesso a plataforma. Normalização e exemplo de amostra dos dados de um só projeto da empresa</td>
                             <td>08/03/2021 a 28/03/2021</td>
-                            <td></td>
+                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01">Visualizar</a></p></td>
                      </tr>
                      <tr>
                             <td>Sprint 2</td>
