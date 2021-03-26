@@ -13,6 +13,7 @@
 - [Branches de cada entrega](#branches-de-cada-entrega)
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 - [Wireframes do projeto](#wireframes-do-projeto)
+- [Backlog do projeto](#backlog-do-projeto)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
@@ -98,6 +99,9 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <h4>Sprint 04 :clock7:</h4>
 <p align="justify">Faremos um refinamento da plataforma, corrigindo erros, e melhorando a fluidez. Também vamos adicionar uma função extra, um sistema de comentários, para que o gestor possa enviar comentários diretamente para um colaborador específico através da própria plataforma, tornando assim mais fluída a comunicação.</p>
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card4.png" width=550px height=300px>
+       
+<h2>Backlog do projeto</h2> 
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png"></h1>
        
 <h2>Wireframes do projeto</h2>
 
