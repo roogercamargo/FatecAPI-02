@@ -24,6 +24,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h2>Backlog e User stories</h2> 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog%20entrega%201.png"></h1>
+<p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png">Visualizar Backlog completo</a></p>
 
 <h2>Burndown da Sprint</h2> 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Burndown/Burndown%201.PNG" width=550px height=300px></h1>
