@@ -58,30 +58,29 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
                             <td>Sprint 2</td>
                             <td>Outras telas de visualização dos dados com mais projetos organizados, e sua visualização no index</td>
                             <td>29/09/2021 a 18/04/2021</td>
-                            <td></td>
+                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-02">Visualizar</a></p></td>
                      </tr>
                      <tr>
                             <td>Sprint 3</td>
                             <td>Todos os dados analisados e visíveis nos gráficos</td>
                             <td>26/04/2021 a 17/05/2021</td>
-                            <td></td>
+                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-03">Visualizar</a></p></td>
                      </tr>
                       <tr>
                             <td>Sprint 4</td>
                             <td>Sistema de comentários e melhorias</td>
                             <td>17/05/2021 a 05/06/2021</td>
-                            <td></td>
+                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-04">Visualizar</a></p></td>
                      </tr>
               </tbody>
        </table>
 </section>
 
-<h2>Ferramentas utilizadas</h2>
-<ul>
-<li>Organização: Clickup, Discord</li>
-<li>Desenvolvimento: Javascript, HTML, CSS, Node.js</li>
-<li>Banco de dados: PostgreSQL </li>
-<ul>
+## Ferramentas utilizadas
+
+ * **Organização** : Clickup, Discord
+ * **Desenvolvimento** : Javascript, HTML, CSS, Node.js
+ * **Banco de dados** : PostgreSQL
 
 <h3><i>Cards das entregas</i></h3>
 <h4>Sprint 01 :clock12:</h4>
@@ -101,6 +100,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card4.png" width=550px height=300px>
        
 <h2>Wireframes do projeto</h2>
+
 <p>Protótipos das telas do projeto:</p>
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Vis%C3%A3o%20geral.jpg" width="400" />
@@ -110,4 +110,3 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.jpg" width="400" /> 
 </p>     
-
