@@ -59,19 +59,19 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
                             <td>Sprint 2</td>
                             <td>Outras telas de visualização dos dados com mais projetos organizados, e sua visualização no index</td>
                             <td>29/09/2021 a 18/04/2021</td>
-                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-02">Visualizar</a></p></td>
+                            <td><p>Em andamento</p></td>
                      </tr>
                      <tr>
                             <td>Sprint 3</td>
                             <td>Todos os dados analisados e visíveis nos gráficos</td>
                             <td>26/04/2021 a 17/05/2021</td>
-                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-03">Visualizar</a></p></td>
+                            <td><p>Em andamento</p></td>
                      </tr>
                       <tr>
                             <td>Sprint 4</td>
                             <td>Sistema de comentários e melhorias</td>
                             <td>17/05/2021 a 05/06/2021</td>
-                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-04">Visualizar</a></p></td>
+                            <td><p>Em andamento</p></td>
                      </tr>
               </tbody>
        </table>
