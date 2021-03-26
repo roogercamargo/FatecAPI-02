@@ -10,7 +10,7 @@
 
 - [Objetivo do Projeto](#objetivo-do-projeto)
 - [Equipe Enneagon](#equipe-enneagon)
-- [Branches de cada entrega](#branches_de_cada_entrega)
+- [Branches de cada entrega](#branches-de-cada-entrega)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
@@ -37,7 +37,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
  - [Gustavo Oliveira](https://www.linkedin.com/in/gustavo-oliveira-353647207/ "Linkedin") <i>(Development Team)</i>
 
 
-<h3>Branches de cada entrega</h3>
+<h2>Branches de cada entrega</h2>
        <table>
               <thead>
                      <th width=100px>Entregas</th>
@@ -101,3 +101,4 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.jpg" width="400" /> 
 </p>     
+
