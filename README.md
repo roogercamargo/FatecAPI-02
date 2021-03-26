@@ -1,5 +1,5 @@
-# FatecAPI-02
-<img src="https://img.shields.io/badge/Node-v16.14.0-blue"> <img src="https://img.shields.io/badge/pgAdmin%204-v5.0-sucess"> <img src="https://img.shields.io/badge/PostgreSQL-v13.2-yellow">
+# Sprint 01
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"> <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white"> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
 
 <h1 align="center"> Pation <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/logo/logocor1.png" width="40"></h1>
 
@@ -11,23 +11,12 @@
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
 
-<h2>Equipe Enneagon :girl::boy:</h2>
-           
- - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
- 
- - [Rogério Camargo](https://www.linkedin.com/in/rogério-camargo-3a01191a5 "Linkedin") <i>(Product Owner)</i>
+<h2>O que entregamos :ballot_box_with_check:</h2>
+<p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card1.png" width=550px height=300px></h1>
+       
+<h2>Qual o valor?</h2>       
+<p align="justify">Essa entrega foi pensada de forma que o cliente já possa ter uma pré vizualização da plataforma, layout e como os dados serão apresentados.</p>
 
- - [Juliane Freitas](https://www.linkedin.com/in/juliane-freitas-9b6287163 "Linkedin") <i>(Development Team)</i>
-
- - [Leticia Amorim](https://www.linkedin.com/in/leticia-amorim-4761b1185/ "Linkedin") <i>(Development Team)</i>
-
- - [Pedro Ferreira](https://www.linkedin.com/in/pedro-ferreira-6a8417190/ "Linkedin") <i>(Development Team)</i>
- 
- - [Kevin Felipe](https://www.linkedin.com/in/kevin-pereira-3a7aa31b7/ "Linkedin") <i>(Development Team)</i>
-
- - [Lucas Nunes](https://www.linkedin.com/in/lucas-nunes-nascimento/ "Linkedin") <i>(Development Team)</i>
-
- - [Danielle Brito](https://www.linkedin.com/in/danielle-brito-81b4381b8/ "Linkedin") <i>(Development Team)</i>
- 
- - [Gustavo Oliveira](https://www.linkedin.com/in/gustavo-oliveira-353647207/ "Linkedin") <i>(Development Team)</i>
-
+<h2>Backlog e User stories</h2> 
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog%20entrega%201.png"></h1>
