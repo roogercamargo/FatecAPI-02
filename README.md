@@ -8,12 +8,15 @@
 
  O presente desafio trata-se de um Dashboard para análise de dados dos projetos e acompanhamento de performance dos desenvolvedores responsáveis. Com as informações expostas em um só lugar como, por exemplo, numa televisão dentro de uma sala de reunião, torna-se mais fácil as comparações diárias ou semanais dos resultados e o resumo do desempenho das atividades relacionadas à tomada de decisões. Sendo assim, as atividades ficam mais rápidas e conclusivas.
 
-[Objetivo do Projeto](#objetivo-do-projeto)
+- [Objetivo do Projeto](#objetivo-do-projeto)
+- [Equipe Enneagon](#equipe-enneagon)
+- [Branches de cada entrega](#branches_de_cada_entrega)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
 > Status do Projeto: Em desenvolvimento :warning:
-<h2>Equipe Enneagon :girl::boy:</h2>
+
+<h2>Equipe Enneagon</h2>
            
  - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
  
@@ -34,34 +37,38 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
  - [Gustavo Oliveira](https://www.linkedin.com/in/gustavo-oliveira-353647207/ "Linkedin") <i>(Development Team)</i>
 
 
-<section id="branches_entregas">
-       <h3><i>Branches</i> de cada entrega</h3>
+<h3>Branches de cada entrega</h3>
        <table>
               <thead>
                      <th width=100px>Entregas</th>
                      <th>Descrições</th>
                      <th width=215px>Datas</th>
+                     <th width=100px>Links</th>
               </thead>
               <tbody>
                      <tr>
                             <td>Sprint 1</td>
                             <td>Acesso a plataforma. Normalização e exemplo de amostra dos dados de um só projeto da empresa</td>
                             <td>08/03/2021 a 28/03/2021</td>
+                            <td></td>
                      </tr>
                      <tr>
                             <td>Sprint 2</td>
                             <td>Outras telas de visualização dos dados com mais projetos organizados, e sua visualização no index</td>
                             <td>29/09/2021 a 18/04/2021</td>
+                            <td></td>
                      </tr>
                      <tr>
                             <td>Sprint 3</td>
                             <td>Todos os dados analisados e visíveis nos gráficos</td>
                             <td>26/04/2021 a 17/05/2021</td>
+                            <td></td>
                      </tr>
                       <tr>
                             <td>Sprint 4</td>
                             <td>Sistema de comentários e melhorias</td>
                             <td>17/05/2021 a 05/06/2021</td>
+                            <td></td>
                      </tr>
               </tbody>
        </table>
@@ -85,6 +92,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card4.png" width=550px height=300px>
        
 <h2>Wireframes do projeto</h2>
+<p>Protótipos das telas do projeto:</p>
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Vis%C3%A3o%20geral.jpg" width="400" />
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/detalhes%20do%20projeto.jpg" width="400" /> 
