@@ -213,7 +213,7 @@ ul ul a{
 
 .h2 { 
    position: absolute; 
-   top: 27px; 
+   top: 5px; 
    left: 130px; 
    width: 100%; 
 }
@@ -497,9 +497,9 @@ input {
   width: 12%;
   margin-left: 1%;
   margin-right: 1%;
-  display: inline-table;
   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-image: linear-gradient(to left, #f39f86 0%, #f9d976 74%);
+  height: 400px;
 }
 
 #QA_DEPLOYING {

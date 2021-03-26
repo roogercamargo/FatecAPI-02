@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Pation</title>
+  <title>Pantion</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -28,7 +28,7 @@
       <ul class="navbar-nav mr-auto">
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Início</a>
+          <a class="nav-link" href="/index.html">Início</a>
         </li>
 
       </ul>
@@ -41,7 +41,7 @@
 
   <div class="wrapper">
 
-    <nav id="sidebar">
+    <!-- <nav id="sidebar">
 
       <ul class="lisst-unstyled components">
 
@@ -67,7 +67,7 @@
 
 
       </ul>
-    </nav>
+    </nav> -->
 
 
     <div id="content">
@@ -90,7 +90,7 @@
 
           <img class="rounded-circle" src="images/camera.jpeg" width="100" height="100" data-holder-rendered="true"
             align="left">
-          <h2 class="h2"><span>Nome do Projeto<span class='spacer'></span></h2>
+          <h2 class="h2" id="nomeProjeto"><span><span class='spacer'></span></h2>
         </div>
 
       </div>
@@ -108,7 +108,7 @@
 
 
 
-      <div class="card-deck">
+      <!-- <div class="card-deck">
         <div class="card">
           <div class="card-body text-center">
             <p><img src="images/people.png" width="100" height="100" align="left">
@@ -141,7 +141,7 @@
               Contato: Lucas@hotmail.com</p>
           </div>
         </div>
-      </div>
+      </div> -->
       <hr style="height:1px;border:none;color:#333;background-color:#333;" />
 
       <div id=menu_options>
@@ -227,14 +227,14 @@
         </div> -->
 
         <input type="radio" id="panel" name="group">
-      <div id="panel" >
-        <div style="border: 1px solid black; width: 12%; margin-left: 1%; margin-right: 1%; display: inline-table;" id="IN_PROGRESS"></div>
-        <div style="border: 1px solid black; width: 12%; margin-left: 1%; margin-right: 1%; display: inline-table;" id="QA_DEPLOYING"></div>
-        <div style="border: 1px solid black; width: 12%; margin-left: 1%; margin-right: 1%; display: inline-table;" id="FOR_TEST"></div>
-        <div style="border: 1px solid black; width: 12%; margin-left: 1%; margin-right: 1%; display: inline-table;" id="QA_TESTING"></div>
-        <div style="border: 1px solid black; width: 12%; margin-left: 1%; margin-right: 1%; display: inline-table;" id="RELEASE_TO_PROD"></div>
-        <div style="border: 1px solid black; width: 12%; margin-left: 1%; margin-right: 1%; display: inline-table;" id="PROD_DEPLOYING"></div>
-        <div style="border: 1px solid black; width: 12%; margin-left: 1%; margin-right: 1%; display: inline-table;" id="DONE"></div>
+      <div id="panel">
+        <div style="border: 1px solid black; width: 12%; margin-left: 0px; margin-right: 1px; display:inline-table;" id="IN_PROGRESS"></div>
+        <div style="border: 1px solid black; width: 12%; margin-left: 0px; margin-right: 1px; display:inline-table;" id="QA_DEPLOYING"></div>
+        <div style="border: 1px solid black; width: 12%; margin-left: 0px; margin-right: 1px; display:inline-table;" id="FOR_TEST"></div>
+        <div style="border: 1px solid black; width: 12%; margin-left: 0px; margin-right: 1px; display:inline-table;" id="QA_TESTING"></div>
+        <div style="border: 1px solid black; width: 12%; margin-left: 0px; margin-right: 1px; display:inline-table;" id="RELEASE_TO_PROD"></div>
+        <div style="border: 1px solid black; width: 12%; margin-left: 0px; margin-right: 1px; display:inline-table;" id="PROD_DEPLOYING"></div>
+        <div style="border: 1px solid black; width: 12%; margin-left: 0px; margin-right: 1px; display:inline-table;" id="DONE"></div>
       </div>
 
         <input type="radio" id="users" name="group">
@@ -297,8 +297,8 @@
               var RELEASE_TO_PROD = [];
               var PROD_DEPLOYING = [];
               var DONE = [];
-
-
+              document.getElementById("nomeProjeto").innerHTML=data.rows[0].projeto
+              console.log(data)
               data.rows.forEach(card => {
                 if (card.status == "IN_PROGRESS") {
                   IN_PROGRESS.push(card)
@@ -324,37 +324,37 @@
 
               });
               IN_PROGRESS.forEach(card => {
-                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email:</b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<hr> <br/>`
                 document.getElementById("IN_PROGRESS").innerHTML = exibicao
               });
               exibicao=''
               QA_DEPLOYING.forEach(card => {
-                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email:</b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<hr> <br/>`
                 document.getElementById("QA_DEPLOYING").innerHTML = exibicao
               });
               exibicao=''
               FOR_TEST.forEach(card => {
-                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email:</b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<hr> <br/>`
                 document.getElementById("FOR_TEST").innerHTML = exibicao
               });
               exibicao=''
               QA_TESTING.forEach(card => {
-                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email:</b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<hr> <br/>`
                 document.getElementById("QA_TESTING").innerHTML = exibicao
               });
               exibicao=''
               RELEASE_TO_PROD.forEach(card => {
-                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email:</b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<hr> <br/>`
                 document.getElementById("RELEASE_TO_PROD").innerHTML = exibicao
               });
               exibicao=''
               PROD_DEPLOYING.forEach(card => {
-                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email:</b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<hr> <br/>`
                 document.getElementById("PROD_DEPLOYING").innerHTML = exibicao
               });
               exibicao=''
               DONE.forEach(card => {
-                exibicao += `<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+                exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email:</b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<hr> <br/>`
                 document.getElementById("DONE").innerHTML = exibicao
               });
               exibicao=''
