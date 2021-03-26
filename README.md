@@ -11,6 +11,8 @@
 - [Objetivo do Projeto](#objetivo-do-projeto)
 - [Equipe Enneagon](#equipe-enneagon)
 - [Branches de cada entrega](#branches-de-cada-entrega)
+- [Ferramentas utilizadas](#ferramentas-utilizadas)
+- [Wireframes do projeto](#wireframes-do-projeto)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
@@ -73,6 +75,13 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
               </tbody>
        </table>
 </section>
+
+<h2>Ferramentas utilizadas</h2>
+<ul>
+<li>Organização: Clickup, Discord</li>
+<li>Desenvolvimento: Javascript, HTML, CSS, Node.js</li>
+<li>Banco de dados: PostgreSQL </li>
+<ul>
 
 <h3><i>Cards das entregas</i></h3>
 <h4>Sprint 01 :clock12:</h4>
