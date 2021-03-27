@@ -78,8 +78,9 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 </section>
 
 ## Ferramentas utilizadas
-
-L
+ * **Organização** : Clickup
+ * **Desenvolvimento** : Javascript, Node.js, HTML, CSS
+ * **Banco de dados** : PostgreeSQL
 <h3><i>Cards das entregas</i></h3>
 <h4>Sprint 01 :clock12:</h4>
 <p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
@@ -104,10 +105,10 @@ L
 
 <p>Protótipos das telas do projeto:</p>
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Vis%C3%A3o%20geral.jpg" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/detalhes%20do%20projeto.jpg" width="400" /> 
 </p>
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.jpg" width="400" /> 
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.jpg" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Vis%C3%A3o%20geral.jpg" width="400" /> 
 </p>     
