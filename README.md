@@ -23,8 +23,9 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card1.png" width=550px height=300px></h1>
  
-
- 
+<h2>Funcionamento da ferramenta</h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/gifs/entrega01.gif" width=460 height=280></h1>
+ <p>para mais detalhes, veja: <a href="https://youtu.be/SdLX55L7rto">Vídeo no YouTube</a></p>
 
 <h2>Qual o valor?</h2>       
 
