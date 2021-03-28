@@ -120,11 +120,5 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.jpg" width="400" />
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Vis%C3%A3o%20geral.jpg" width="400" /> 
-</p>     
-
-<h2>Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2> 
-
-- [Retornar ao menu de navegação](#descrição)
-
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/der-fatecapi-02.png"></h1>
+</p>
        
