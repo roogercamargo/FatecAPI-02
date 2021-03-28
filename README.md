@@ -12,7 +12,6 @@
 - [Branches de cada entrega](#branches-de-cada-entrega)
 - [Wireframes do projeto](#wireframes-do-projeto)
 - [Backlog do projeto](#backlog-do-projeto)
-- [Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 <h2>Objetivo do Projeto</h2>
 
 - [Retornar ao menu de navegação](#descrição)
