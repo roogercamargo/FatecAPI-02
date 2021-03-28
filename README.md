@@ -13,7 +13,7 @@
 - [Backlog e User Stories](#backlog-e-user-stories)
 - [Gráfico de Burndown](#burndown-da-sprint)
 - [Funcionamento da ferramenta](#funcionamento-da-ferramenta)
-- [Modelo Conceitual - Diagrama de Entidade e Relacionamento](#modelo-conceitual-diagramade-entidade-e-relacionamento)
+- [Modelo Conceitual - Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
