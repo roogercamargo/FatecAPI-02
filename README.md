@@ -1,4 +1,4 @@
-# Sprint 01
+# Primeira entrega - _Sprint 01_
 <p align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" width = "75px" height="28px"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" width = "75px" height="28px"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width = "85px" height="28px"> <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" width = "75px" height="28px"> <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" width = "75px" height="28px"> <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" width = "85px" height="28px"> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" width = "85px" height="28px"> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" width = "85px" height="28px"><br><br>
 <img src="https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-orange?style=for-the-badge&logo=appveyor"></p>
 
@@ -10,8 +10,8 @@
 
 - [O que entregamos](#o-que-entregamos)
 - [Valor da entrega](#qual-o-valor)
-- [Backlog e User stories](#backlog-e-user-stories)
-- [Gráfico Burndown](#burndown-da-sprint)
+- [Backlog e User Stories](#backlog-e-user-stories)
+- [Gráfico de Burndown](#burndown-da-sprint)
 - [Funcionamento da ferramenta](#funcionamento-da-ferramenta)
 <h2>Objetivo do Projeto</h2>
 
@@ -44,8 +44,6 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog%20entrega%201.png"></h1>
 <p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png">Visualizar Backlog completo</a></p>
 
-<h2>Modelo conceitual Banco de dados</h2>
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/der-fatecapi-02.png"></h1>
 <h2>Burndown da Sprint</h2> 
 
 - [Retornar ao menu de navegação](#descrição)
