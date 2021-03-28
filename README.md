@@ -13,6 +13,7 @@
 - [Backlog e User Stories](#backlog-e-user-stories)
 - [Gráfico de Burndown](#burndown-da-sprint)
 - [Funcionamento da ferramenta](#funcionamento-da-ferramenta)
+- [Modelo Conceitual - Diagrama de Entidade e Relacionamento](#modelo-conceitual-diagramade-entidade-e-relacionamento)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
@@ -43,6 +44,12 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog%20entrega%201.png"></h1>
 <p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png">Visualizar Backlog completo</a></p>
+
+<h2>Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2> 
+
+- [Retornar ao menu de navegação](#descrição)
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/der-fatecapi-02.png"></h1>
 
 <h2>Burndown da Sprint</h2> 
 
