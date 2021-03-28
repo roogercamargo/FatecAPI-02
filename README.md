@@ -10,15 +10,19 @@
 - [Objetivo do Projeto](#objetivo-do-projeto)
 - [Equipe Enneagon](#equipe-enneagon)
 - [Branches de cada entrega](#branches-de-cada-entrega)
-- [Ferramentas utilizadas](#ferramentas-utilizadas)
 - [Wireframes do projeto](#wireframes-do-projeto)
 - [Backlog do projeto](#backlog-do-projeto)
+- [Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 <h2>Objetivo do Projeto</h2>
+
+- [Retornar ao menu de navegação](#descrição)
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.<br><br>
 <img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-orange?style=for-the-badge&logo=appveyor">
 
 <h2>Equipe Enneagon</h2>
+
+[Retornar ao menu de navegação](#descrição)
            
  - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
  
@@ -40,6 +44,8 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 
 <h2>Branches de cada entrega</h2>
+
+- [Retornar ao menu de navegação](#descrição)
        <table>
               <thead>
                      <th width=100px>Entregas</th>
@@ -76,11 +82,10 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
        </table>
 </section>
 
-## Ferramentas utilizadas
- * **Organização** : Clickup
- * **Desenvolvimento** : Javascript, Node.js, HTML, CSS
- * **Banco de dados** : PostgreeSQL
 <h3><i>Cards das entregas</i></h3>
+
+- [Retornar ao menu de navegação](#descrição)
+
 <h4>Sprint 01 :clock12:</h4>
 <p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card1.png" width=550px height=300px>
@@ -98,9 +103,14 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card4.png" width=550px height=300px>
        
 <h2>Backlog do projeto</h2> 
+
+- [Retornar ao menu de navegação](#descrição)
+
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png"></h1>
        
 <h2>Wireframes do projeto</h2>
+
+- [Retornar ao menu de navegação](#descrição)
 
 <p>Protótipos das telas do projeto:</p>
 <p float="left">
@@ -111,3 +121,10 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.jpg" width="400" />
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Vis%C3%A3o%20geral.jpg" width="400" /> 
 </p>     
+
+<h2>Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2> 
+
+- [Retornar ao menu de navegação](#descrição)
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/der-fatecapi-02.png"></h1>
+       
