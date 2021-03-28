@@ -24,8 +24,8 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card1.png" width=550px height=300px></h1>
  
 <h2>Funcionamento da ferramenta</h2>
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/gifs/entrega01.gif" width=460 height=280></h1>
- <p>para mais detalhes, veja: <a href="https://youtu.be/SdLX55L7rto">Vídeo no YouTube</a></p>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/gifs/entrega01.gif" width=500 height=280></h1>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtu.be/SdLX55L7rto">YouTube!</a></p>
 
 <h2>Qual o valor?</h2>       
 
