@@ -12,6 +12,7 @@
 - [Valor da entrega](#qual-o-valor)
 - [Backlog e User stories](#backlog-e-user-stories)
 - [Gráfico Burndown](#burndown-da-sprint)
+- [Funcionamento da ferramenta](#funcionamento-da-ferramenta)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
@@ -24,7 +25,10 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card1.png" width=550px height=300px></h1>
  
 <h2>Funcionamento da ferramenta</h2>
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/gifs/entrega01.gif" width=550px height=300px></h1>
+
+- [Retornar ao menu de navegação](#descrição)
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/gifs/Projeto%20integrador%20-%20Sprint01_%20entrega%20de%20valor(1080P_60FPS)_1.gif"></h1>
  <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtu.be/SdLX55L7rto">YouTube!</a></p>
 
 <h2>Qual o valor?</h2>       
