@@ -12,7 +12,8 @@
 - [Valor da entrega](#qual-o-valor)
 - [Backlog e User Stories](#backlog-e-user-stories)
 - [Gráfico de Burndown](#burndown-da-sprint)
-- [Demonstração das telas](#demonstracao-das-telas)
+- [Demonstração das telas](#demonstração-das-telas)
+- [Fluxograma da entrega](#fluxograma-da-entrega)
 <h2>Objetivo do Projeto</h2>
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
@@ -23,13 +24,6 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <p align="justify">Nesta entrega adicionamos os dados restantes dos outros projetos, proporcionando ao cliente a visualização geral no painel, acrescentando os detalhes e a página inicial do painel de visualização da plataforma. O cliente também vai poder acessar a aba de “colaboradores” para visualizar a equipe que está trabalhando em determinado projeto.</p>
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card2.png" width=550px height=300px></h1>
- 
-<h2>Demonstração das telas</h2>
-
-- [Retornar ao menu de navegação](#descrição)
-
-<h1 align="center"><img src="gifs das telas desenvolvidas"></h1>
- <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="link das telas desenvolvidas">YouTube!</a></p>
 
 <h2>Qual o valor?</h2>       
 
@@ -50,4 +44,15 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h1 align="center"><img src="link da imagem do burndown" width=550px height=300px></h1>
 
+<h2>Demonstração das telas</h2>
+
+- [Retornar ao menu de navegação](#descrição)
+
+<h1 align="center"><img src="gifs das telas desenvolvidas"></h1>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="link das telas desenvolvidas">YouTube!</a></p>
+ 
+ <h2>Fluxograma da entrega</h2>
+ 
+- [Retornar ao menu de navegação](#descrição)
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/doc/fluxograma%20da%20entrega%202.png"></h1>
 
