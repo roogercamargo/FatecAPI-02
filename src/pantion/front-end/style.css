@@ -2,6 +2,7 @@
 body{
 	font-family: 'Manrope', sans-serif!important;
 	background: #F6F6F6;
+
 }
 p{
 	font-family: 'Manrope', sans-serif;
@@ -9,6 +10,7 @@ p{
 	font-weight: 300;
 	line-height: 1.7em;
 	color: #000000;
+  margin-left: 20px;
 }
 a,
 a:hover,
@@ -31,191 +33,85 @@ a:focus{
     font-size: 20px !important;
     line-height: 1.42857143 !important;  
     border-radius: 0;
-}
-
-/* style dos submenus superior */
-.nav-link {
-    display: block;
-    /*padding: ;*/
-    position: absolute;
-    top: 15px;
-    left: 295px;
-    width: 20px;
-    text-align: right;
-    font-family: Red Hat Text, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
     
 }
 
-/* cor da fonte do submenu*/
-.navbar-light .navbar-nav .nav-link {
-    color: #004C6D;
+.color_title{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#7B7C86;
+    padding-bottom: 10px;
 }
-/*
-.navbar li a, .navbar .navbar-brand {
-     color: #fff !important; 
-}
-*/
-/* cor quando passa o mouse por cima das opções */
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #3E6885 !important;
-    background-color: #fff !important;
-
-}
-
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-}
-
-.navbar-brand-centered {
-    position: absolute;
-    left: 50%;
-    display: block;
-    width: 160px;
-    text-align: center;
-    background-color: transparent;
-}
-.navbar>.container .navbar-brand-centered, 
-.navbar>.container-fluid .navbar-brand-centered {
-    margin-left: -80px;
-}
-
-.navbar>.container, .navbar>.container-fluid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background-color: #F6F6F6;
-}
-
-
 
 /* fim navbar superior*/
 
-/* Side Bar lateral*/
+/* The subnavigation menu */
+.subnav {
 
-
-#sidebar.active {
-    margin-left: -250px;
-}
-.wrapper{
-	display: flex;
-	text-decoration: none;
-	transition: all 0.3s;
+  float: right;
+  margin-left: 15px;
+  overflow: hidden;
 }
 
-#sidebar{
-	min-width: 250px;
-	max-width: 250px;
-	background: #DFE6EC;
-	color: #000000;
-	transition: all 0.3s;
-
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 19px;
+  border: none;
+  outline: none;
+  color: #7B7C86;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  
 }
 
-
-#sidebar ul.components{
-	padding: 20px 0;
-	
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  color: black;
 }
 
-#sidebar ul p{
-	color: #fff;
-	padding: 10px;
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-image: linear-gradient(to right, #fd5c63 0%, #4323d2 100%);
+  width: 100%;
+  z-index: 1;
+  padding: 10px ;
 }
 
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 16px;
-    display: block;
-    margin-left: 20px;
-    font-family: manrope, sans-serif;
-    font-style: normal;
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  margin-right: 15px;
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-#sidebar ul li a:hover{
-	color: #0F56B3;
-	background: #C9D8E4;
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  
+  color: black;
 }
 
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-	color: #000000;
-	background: #DFE6EC;
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
 }
-
-a[data-toggle="collapse"]{
-	position: relative;
-}
-
-
-/* Função submenu*/
-.dropdown-toggle::after{
-	display: block;
-	position: absolute;
-	top: 50%;
-	right: 20%;
-	transform: translateY(-50%);
-}
-
-/* quando passa o mouse por cima da opção projetos */
-#sidebar ul li a:hover {
-  color: #0F56B3;
-  background: #C9D8E4;
-}
-
-
-ul ul a{
-	font-size: 15px;
-	padding-left: 30px !important;
-	background: #DFE6EC;
-}
-
-
-/* Submenu*/
-
-#content{
-	width: 100%;
-	padding: 20px;
-	min-height: 100vh;
-	transition: all 0.3s;
-}
-
-
-/* fim Side Bar lateral*/
-
-/* botão sidebar */
-.bg-light {
-    background-color: #F6F6F6!important;
-}
-
-
-.btn-info {
-    color: #fff;
-    background-color: #3E6885;
-    border-color: #3E6885;
-}
-/* botão sidebar */
-
 
 
 /* nome do projeto */
 
-.h2 { 
+/*.h1 { 
    position: absolute; 
    top: 5px; 
    left: 130px; 
    width: 100%; 
+   margin-left: 50px;
 }
 
 .h2 span { 
@@ -231,7 +127,7 @@ ul ul a{
 .img2 { 
    position: absolute; 
    top: -45px; 
-   left: 115px; 
+   left: 75px; 
    width: 100%; 
 }
 
@@ -245,30 +141,11 @@ ul ul a{
 
  position: relative; 
    top: -30px; 
-   left: 70px; 
+   left: 30px; 
    
 }
 
-/* fim status do projeto */
 
-/* sidebar responsiva */
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-
-}
-
-/* Borda dos cards people
-.card{
-    border-radius: 15px;
-}*/
 /* menu_options - Posição*/
 .options {display:inline-block;
     position: relative;
@@ -334,6 +211,8 @@ i {
 
 /* estilo barra de pesquisa */
   input[type=text] {
+    position: relative;
+    left: 67%;
     width: 160px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -351,7 +230,8 @@ i {
 
 /* area que o search expande */
 input[type=text]:focus {
-  width: 20%;
+  width: 10%;
+
 }
 
 /* botão pesquisar */
@@ -389,7 +269,8 @@ input {
     border-image: initial;
 }
 
-#subir{display: flex;
+#subir{
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -416,14 +297,9 @@ input {
 
 
 
-.color_title{
-    padding-top: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    color:#7B7C86;
-    padding-bottom: 10px;
-}
+
 .card{
+    max-width: 20%;
     background: #fff;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -443,8 +319,7 @@ input {
     
 }
 .space{
-    margin-left: 260px;
-    
+    margin-left: 100px;
     padding-left: 16px;
     padding-right: 14px;
     background-color: #f6f6f6;
@@ -552,3 +427,6 @@ input {
   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-image: linear-gradient(to left, #3bb78f 0%, #0bab64 74%);
 }
+
+
+
