@@ -41,7 +41,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 - [Retornar ao menu de navegação](#descrição)
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/doc/Backlog%20entrega%202.png"></h1>
-<p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/doc/Backlog%20completo.png">Visualizar Backlog completo</a></p>
+<p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20entrega%202.png">Visualizar Backlog completo</a></p>
 
 <h2>Demonstração das telas</h2>
 
