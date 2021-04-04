@@ -54,5 +54,5 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
  <h2>Fluxograma da entrega</h2>
  
 - [Retornar ao menu de navegação](#descrição)
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/doc/fluxograma%20da%20entrega%202.png"></h1>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/fluxograma%20da%20entrega%202.png"></h1>
 
