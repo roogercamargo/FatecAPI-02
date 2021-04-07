@@ -35,10 +35,6 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
  
  - [Kevin Felipe](https://www.linkedin.com/in/kevin-pereira-3a7aa31b7/ "Linkedin") <i>(Development Team)</i>
 
- - [Lucas Nunes](https://www.linkedin.com/in/lucas-nunes-nascimento/ "Linkedin") <i>(Development Team)</i>
-
- - [Danielle Brito](https://www.linkedin.com/in/danielle-brito-81b4381b8/ "Linkedin") <i>(Development Team)</i>
- 
  - [Gustavo Oliveira](https://www.linkedin.com/in/gustavo-oliveira-353647207/ "Linkedin") <i>(Development Team)</i>
 
 
