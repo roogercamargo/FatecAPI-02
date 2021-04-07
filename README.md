@@ -57,4 +57,4 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <h1 align="center"><img src="link da imagem do burndown" width=550px height=300px></h1>
 
 
- <p>Visualize a entrega 1 <a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01">aqui!</a></p>
+ - [Visualize a entrega 1] <a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01">aqui!</a>
