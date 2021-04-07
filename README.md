@@ -27,7 +27,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h2>Qual o valor?</h2>       
 
-[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo="></p>](#descrição)
+- [Retornar ao menu de navegação](#descrição)
 
 <p align="justify">O valor dessa entrega é ter a visualização da aba colaboradores, conter mais projetos organizados e sua visualização na página inicial.</p>
  
