@@ -16,7 +16,7 @@
 - [Gráfico de Burndown](#burndown-da-sprint)
 <h2>Objetivo do Projeto</h2>
 
-<p style="font-size: 12px">Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.</p>
+<p style="font-size: 40px">Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.</p>
 
 <h2>O que entregamos</h2>
 
