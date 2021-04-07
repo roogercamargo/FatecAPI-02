@@ -27,32 +27,33 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h2>Qual o valor?</h2>       
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=">](#descrição)
 
 <p align="justify">O valor dessa entrega é ter a visualização da aba colaboradores, conter mais projetos organizados e sua visualização na página inicial.</p>
  
  <h2>Fluxograma da entrega</h2>
  
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=">](#descrição)
+
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/fluxograma%20da%20entrega%202.png" width="700"></h2>
 
 <h2>Backlog e User stories</h2>
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=">](#descrição)
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20entrega%202.png"></h2>
 <p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20completo.png">Visualizar Backlog completo</a></p>
 
 <h2>Demonstração das telas</h2>
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=">](#descrição)
 
 <h1 align="center"><img src="gifs das telas desenvolvidas"></h2>
  <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="link das telas desenvolvidas">YouTube!</a></p>
 
 <h2>Burndown da Sprint</h2> 
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=">](#descrição)
 
 <h1 align="center"><img src="link da imagem do burndown" width=550px height=300px></h2>
 
