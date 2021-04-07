@@ -50,7 +50,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 [<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
 <h1 align="center"><img src="gifs das telas desenvolvidas"></h2>
- <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="link das telas desenvolvidas">YouTube!</a></p>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtube.com">YouTube!</a></p>
 
 <h2>Burndown da Sprint</h2> 
 
