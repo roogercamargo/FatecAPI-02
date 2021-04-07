@@ -20,7 +20,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h2>O que entregamos</h2>
 
-[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-lightgrey?style=for-the-badge&logo="></p>](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo="></p>](#descrição)
 
 <p align="justify">Nesta entrega adicionamos os dados restantes dos outros projetos, proporcionando ao cliente a visualização geral no painel, acrescentando os detalhes e a página inicial do painel de visualização da plataforma. O cliente também vai poder acessar a aba de “colaboradores” para visualizar a equipe que está trabalhando em determinado projeto.</p>
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card2.png" width="700"></h1>
