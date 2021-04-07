@@ -23,7 +23,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 - [Retornar ao menu de navegação](#descrição)
 
 <p align="justify">Nesta entrega adicionamos os dados restantes dos outros projetos, proporcionando ao cliente a visualização geral no painel, acrescentando os detalhes e a página inicial do painel de visualização da plataforma. O cliente também vai poder acessar a aba de “colaboradores” para visualizar a equipe que está trabalhando em determinado projeto.</p>
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card2.png" width=550px height=300px></h1>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card2.png" width="700"></h1>
 
 <h2>Qual o valor?</h2>       
 
@@ -34,7 +34,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
  <h2>Fluxograma da entrega</h2>
  
 - [Retornar ao menu de navegação](#descrição)
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/fluxograma%20da%20entrega%202.png" width="100%"></h1>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/fluxograma%20da%20entrega%202.png" width="700"></h1>
 
 <h2>Backlog e User stories</h2>
 
