@@ -26,12 +26,13 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card2.png" width="700"></h2>
 
 
-<h2>Qual o valor?</h2>       
+<h2>Qual o valor?</h2>
+
 [<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
 <p align="justify">O valor dessa entrega é ter a visualização da aba colaboradores, conter mais projetos organizados e sua visualização na página inicial.</p>
  
- <h2>Fluxograma da entrega</h2>
+<h2>Fluxograma da entrega</h2>
  
 [<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
