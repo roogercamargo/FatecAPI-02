@@ -4,7 +4,7 @@
 
 <h1 align="center"> Pantion <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/logo/logocor1.png" width="40"></h1>
 
-<h2>**Descrição**</h2>
+<h2>Descrição</h2>
 
  O presente desafio trata-se de um Dashboard para análise de dados dos projetos e acompanhamento de performance dos desenvolvedores responsáveis. Com as informações expostas em um só lugar como, por exemplo, numa televisão dentro de uma sala de reunião, torna-se mais fácil as comparações diárias ou semanais dos resultados e o resumo do desempenho das atividades relacionadas à tomada de decisões. Sendo assim, as atividades ficam mais rápidas e conclusivas.
 
