@@ -429,4 +429,11 @@ input {
 }
 
 
+.container {
+  position: relative;
+  margin: auto;
+  height: 400px;
+  width: 800px;
+}
+
 

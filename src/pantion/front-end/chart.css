@@ -1,0 +1,17 @@
+body {
+    background: whitesmoke;
+    padding: 15px;
+}
+
+canvas {
+    border: 1px solid gainsboro;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 800px;
+}
