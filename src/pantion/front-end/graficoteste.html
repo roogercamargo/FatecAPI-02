@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Teste</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script>
+
+        var quantidades = [];
+
+        function puxarDado() {
+
+        var IN_PROGRESS = 0;
+        var QA_DEPLOYING = 0;
+        var FOR_TEST = 0;
+        var QA_TESTING = 0;
+        var RELEASE_TO_PROD = 0;
+        var PROD_DEPLOYING = 0;
+        var DONE = 0;
+
+            $.ajax({
+                url: "http://localhost:3000/grafico",
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    data.rows.forEach(card => {
+                        if (card.status == "IN_PROGRESS") {
+                            IN_PROGRESS++;
+                        }
+                        else if (card.status == "QA_DEPLOYING") {
+                            QA_DEPLOYING++;
+                        }
+                        else if (card.status == "FOR_TEST") {
+                            FOR_TEST++;
+                        }
+                        else if (card.status == "QA_TESTING") {
+                            QA_TESTING++;
+                        }
+                        else if (card.status == "RELEASE_TO_PROD") {
+                            RELEASE_TO_PROD++;
+                        }
+                        else if (card.status == "PROD_DEPLOYING") {
+                            PROD_DEPLOYING++;
+                        }
+                        else {
+                            DONE++;
+                        }
+                    })
+                    quantidades.push(IN_PROGRESS);
+                    quantidades.push(QA_DEPLOYING);
+                    quantidades.push(FOR_TEST);
+                    quantidades.push(QA_TESTING);
+                    quantidades.push(RELEASE_TO_PROD);
+                    quantidades.push(PROD_DEPLOYING);
+
+                }
+            });
+
+        }
+
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(statusChart);
+
+        function statusChart() {
+            puxarDado();
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Status');
+            data.addColumn('number', 'Quantidade');
+            data.addRows([
+                ['IN PROGRESS', quantidades[0]],
+                ['QA DEPLOYING', quantidades[1]],
+                ['FOR TEST', quantidades[2]],
+                ['QA TESTING', quantidades[3]],
+                ['RELEASE TO PROD', quantidades[4]],
+                ['PROD DEPLOYING', quantidades[5]],
+                ['DONE', quantidades[6]]
+            ]);
+
+            var options = {
+                'title': 'Idade em relação ao nome',
+                'is3D': true,
+                'width': 1000,
+                'height': 500,
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('texte'));
+            chart.draw(data, options);
+        }
+    </script>
+    <!-- identifica onde o gráfico vai ser exibido -->
+    <div id="myPieChart" style="height: 100%; width: 100%;"></div><br><br>
+    <div id="texte"></div>
+</body>
+    <script></script>
+</html>

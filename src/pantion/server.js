@@ -10,6 +10,33 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/front-end/style.css');
 });
 
+app.get('/grafico', function (req, res){
+
+    var pg = require('pg');
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
+
+    var client = new pg.Client(conString);
+    client.connect();
+    const text = "select * from cards where projeto = $1";
+    const values = ['[Melo, Melo and Santos e Associados] - Organized impactful instruction set']
+     select(text, values).then(function (response) {
+        console.log(response)
+        res.send(response)
+    })
+
+    async function select(text, values) {
+        try {
+            const res = await client.query(text, values)
+            console.log(res.rows[0])
+            return res
+        }
+        catch (err) {
+            console.log(err.stack)
+        }
+    }
+
+});
+
 app.listen(3000);
 //script em node para subir um server web com express~
 
