@@ -49,13 +49,13 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
-<h1 align="center"><img src="gifs das telas desenvolvidas"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/em%20desenvolvimento.png" width="700"></h2>
  <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtube.com">YouTube!</a></p>
 
 <h2>Burndown da Sprint</h2> 
 
 [<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
-<h1 align="center"><img src="link da imagem do burndown" width=550px height=300px></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/em%20desenvolvimento.png" width="700"></h2>
 
 <h6 align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01">Visualizar entrega 1</a></h6>
