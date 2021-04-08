@@ -104,6 +104,12 @@ a:focus{
 }
 
 
+
+#myInp {
+    position: absolute;
+    left: 87%;
+}
+
 /* nome do projeto */
 
 /*.h1 { 
@@ -149,10 +155,10 @@ a:focus{
 /* menu_options - Posição*/
 .options {display:inline-block;
     position: relative;
-    width: 18%;
+    width: 20%;
     height: 50px;
     text-align: center;
-    left: 4%;
+    left: 9%;
     border-radius: 10px;   
   }
   
@@ -297,65 +303,6 @@ input {
 
 
 
-
-.card{
-    max-width: 20%;
-    background: #fff;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    margin: 28px 4px 57px 62px;
-    border-radius: 15px;
-} 
-.card_button {
-    border-style: none;
-    background-color: #004C6D;
-    border-radius: 5px;
-    color: #FFFFFF;
-    margin-left: 42%;
-}
-.card_button:hover{
-    background-color: #0994cf;
-    border: 1px solid #ffffff;
-    
-}
-.space{
-    margin-left: 100px;
-    padding-left: 16px;
-    padding-right: 14px;
-    background-color: #f6f6f6;
-}
-.titulo_card{
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.54);
-    font-weight: normal;
-}
-
-.card_tit_descr{
-    background: #D1EFFF;;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 13px;
-
-}
-.card_descrição{
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    border: 5px 5px 5px 5px;
-    margin: 5px 6px 6px 10px;
-    padding: 7px 6px 0px 6px;
-    font-size: 13px;
-}
-.linha{
-    border-bottom: solid 1px #ccc;
-}
-.div_box{
-        border: 1px none;
-        margin: 6px 63px 10px 10px;
-        background-color: rgb(255, 255, 255);
-}
-
-
 #FOR_TEST {
   border: 1px solid black;
   width: 12%;
@@ -429,11 +376,6 @@ input {
 }
 
 
-.container {
-  position: relative;
-  margin: auto;
-  height: 400px;
-  width: 800px;
-}
+
 
 

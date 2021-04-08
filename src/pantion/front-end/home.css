@@ -36,9 +36,9 @@ a:focus{
     
 }
 
-#myInp{
-    position: relative;
-    left: 50%;
+#myInp {
+    position: absolute;
+    left: 87%;
 }
 .color_title{
     padding-top: 10px;
