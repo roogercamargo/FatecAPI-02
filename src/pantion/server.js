@@ -1,16 +1,56 @@
+const bodyParser = require('body-parser');
 const express = require('express');
+// const session = require('express-session')
 const app = new express();
+// const path = require('path');
+// const boryParser = require();
 
 
 app.use(express.static('front-end'))// pega todos os arquivos de css e imagens da pasta front-end
+
+//conteudo do login
+
+// var email = "admin@admin.com";
+// var senha = "123";
+
+
+// app.use(session({ secret: '123' })); //segredo da session
+// app.use(bodyParser.urlencoded({ extended: true }));
+
+// app.engine('html', require('ejs').renderFile);
+// app.set('view engine', 'html');
+// app.use('/public', express.static(path.join(__dirname, 'public')));
+// app.set('views', path.join(__dirname, ''));
+
+// app.post('/', (req, res) => {
+//     if (req.body.email == email && req.body.senha == senha) {
+//         //parte que ele diz que o login foi efetuado com sucesso (tempo de vídeo 10:00)
+//         req.session.email = email;
+//         res.render('index.html')
+//     }else{
+//     res.render('login')
+//     }
+// })
+
+
+// app.get('user/', (req, res) => {  //pagina 'inicial'
+//     if (req.session.login) {
+//         res.render('index.html')
+//     } else {
+//         res.render('login');
+//     }
+// })
+
+///--------------///
+
 
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/front-end/index.html');
 });
 
-app.get ('/projeto/:id', function(req, res){
-    res.sendFile(__dirname +'/front-end/projeto.html');
+app.get('/projeto/:id', function (req, res) {
+    res.sendFile(__dirname + '/front-end/projeto.html');
 });
 
 app.get('/grafico', function (req, res) {
@@ -23,7 +63,6 @@ app.get('/grafico', function (req, res) {
     const text = "select * from cards where projeto = $1";
     const values = ['[Melo, Melo and Santos e Associados] - Organized impactful instruction set']
     select(text, values).then(function (response) {
-        console.log(response)
         res.send(response)
     })
 
@@ -31,7 +70,6 @@ app.get('/grafico', function (req, res) {
     async function select(text, values) {
         try {
             const res = await client.query(text, values)
-            console.log(res.rows[0])
             return res
         }
         catch (err) {
@@ -57,7 +95,6 @@ app.get('/select_projects', function (req, res) {
     async function select(text) {
         try {
             const res = await client.query(text)
-            console.log(res.rows[0]);
             return res;
         }
         catch (err) {
@@ -75,7 +112,10 @@ app.listen(3000);
 
 app.get('/select_cards/:id', function (req, res) {
 
-    const id = req.params.id;
+    res.set({ 'content-type': 'application/json; charset=utf-8' });
+    var id = req.params.id;
+    id = id.replace("%20", " ");
+    id = id.replace(":id=", "");
 
     var pg = require('pg');
     var conString = "postgres://postgres:admin@localhost:5432/integration";
@@ -83,7 +123,7 @@ app.get('/select_cards/:id', function (req, res) {
     var client = new pg.Client(conString);
     client.connect();
     const text = "select * from cards where projeto = $1";
-    const values = ['"'+ id +'"']
+    const values = [id]
     select(text, values).then(function (response) {
         res.send(response)
     })
@@ -91,8 +131,7 @@ app.get('/select_cards/:id', function (req, res) {
     async function select(text, values) {
         try {
             const res = await client.query(text, values)
-            console.log(res.rows[0])
-            return res
+            return res;
         }
         catch (err) {
             console.log(err.stack)
