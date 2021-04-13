@@ -1,53 +1,47 @@
 const bodyParser = require('body-parser');
 const express = require('express');
-// const session = require('express-session')
+const session = require('express-session')
 const app = new express();
-// const path = require('path');
-// const boryParser = require();
+const path = require('path');
 
+// conteudo do login
 
+var email = "admin@admin.com";
+var senha = "123";
+
+app.use(session({ secret: '123' })); //segredo da session
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+app.set('views', path.join(__dirname, 'front-end')); //views é parametro de configuração
 app.use(express.static('front-end'))// pega todos os arquivos de css e imagens da pasta front-end
 
-//conteudo do login
-
-// var email = "admin@admin.com";
-// var senha = "123";
-
-
-// app.use(session({ secret: '123' })); //segredo da session
-// app.use(bodyParser.urlencoded({ extended: true }));
-
-// app.engine('html', require('ejs').renderFile);
-// app.set('view engine', 'html');
-// app.use('/public', express.static(path.join(__dirname, 'public')));
-// app.set('views', path.join(__dirname, ''));
-
-// app.post('/', (req, res) => {
-//     if (req.body.email == email && req.body.senha == senha) {
-//         //parte que ele diz que o login foi efetuado com sucesso (tempo de vídeo 10:00)
-//         req.session.email = email;
-//         res.render('index.html')
-//     }else{
-//     res.render('login')
-//     }
-// })
-
-
-// app.get('user/', (req, res) => {  //pagina 'inicial'
-//     if (req.session.login) {
-//         res.render('index.html')
-//     } else {
-//         res.render('login');
-//     }
-// })
-
-///--------------///
-
-
-
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/front-end/index.html');
+    if (req.session.email) {
+        res.render('menu')
+    }else{
+        res.render('login')
+    }
 });
+
+app.post('/', (req, res) => {
+    if (req.body.email == email && req.body.senha == senha) {
+        req.session.email = email;
+        res.render('menu')
+    }else{
+        res.render('login')
+    }
+})
+
+app.get('/logout',(req,res) => {
+    req.session.destroy((err) => {
+        if(err) {
+            return console.log(err);
+        }
+        res.redirect('/');
+    });
+})
 
 app.get('/projeto/:id', function (req, res) {
     res.sendFile(__dirname + '/front-end/projeto.html');
