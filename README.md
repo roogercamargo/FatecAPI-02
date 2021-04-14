@@ -1,9 +1,9 @@
-# FatecAPI-02
-<h1 align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" width = "75px" height="28px"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" width = "75px" height="28px"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width = "85px" height="28px"> <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" width = "75px" height="28px"> <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" width = "75px" height="28px"> <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" width = "85px" height="28px"> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" width = "85px" height="28px"> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" width = "85px" height="28px"></h1>
+<p align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" width = "85px" height="25px"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" width = "75px" height="25px"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width = "95px" height="25px"> <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" width = "75px" height="25px"> <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" width = "75px" height="25px"> <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" width = "95px" height="25px"> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" width = "95px" height="25px"> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" width = "95px" height="25px"><br><br>
 
 <h1 align="center"> Pantion <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/logo/logocor1.png" width="40"></h1>
+<h2 align="center"><img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-orange?style=for-the-badge&logo=appveyor"></h2>
 
-<h2>Descrição</h2>
+<h2>📝Descrição</h2>
 
  O presente desafio trata-se de um Dashboard para análise de dados dos projetos e acompanhamento de performance dos desenvolvedores responsáveis. Com as informações expostas em um só lugar como, por exemplo, numa televisão dentro de uma sala de reunião, torna-se mais fácil as comparações diárias ou semanais dos resultados e o resumo do desempenho das atividades relacionadas à tomada de decisões. Sendo assim, as atividades ficam mais rápidas e conclusivas.
 
@@ -13,14 +13,20 @@
 - [Branches de cada entrega](#branches-de-cada-entrega)
 - [Wireframes do projeto](#wireframes-do-projeto)
 - [Backlog do projeto](#backlog-do-projeto)
-<h2>Objetivo do Projeto</h2>
+<h2>🎯Objetivo do Projeto</h2>
 
 - [Retornar ao menu de navegação](#descrição)
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.<br><br>
-<img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-orange?style=for-the-badge&logo=appveyor">
 
-<h2>Equipe Enneagon</h2>
+
+<h2>🔧Ferramentas utilizadas</h2>
+
+- [Retornar ao menu de navegação](#descrição)
+
+<i>Um desafio mais complexo precisa de ferramentas mais capacitadas capazes de relacionar entre si e executar um bom resultado. Para começar os laços é preciso que o comando possa ajudar a interagir com a plataforma online, como navegadores e servidores. Logo quem fará esse caminho é o *Node Package Manage*, o <b>NPM</b>. Sistema capaz de gerenciar dependências necessárias para executar um projeto. Seu funcionamento e aplicações funcionam muito bem acompanhadas pelo <b>Node.js</b>, que possibilita aplicações multidirecionais com comunicação e troca de dados em tempo real e que auxilia a execução do <b>Javascript</b>, linguagem padrão para a manipulação de páginas em <b>HTML5</b> sendo a linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web, juntamente com o <b>CSS3</b> na qual permite definir as “aparências” da tela de apresentação conforme o estilo que se deseja ter para o usuário final. Para tal resultado, muito se utiliza o <b>Bootstrap</b>, que é um framework, facilitador na elaboração do design de sites e outras tecnologias. Dispõe de uma grande variedade de temas, sua interface é moderna e integra com qualquer tipo de linguagem de programação. Outra aplicação utilizada para a apresentação e interação da tela para o usuário é o <b>Express.Js</b> que proporciona ao desenvolvedor uma otimização melhor de aplicações na web. Para que tudo funcione e haja a interação de sistemas e demonstração de informações, é preciso ter um banco de dados e dispor de um sistema como o <b>PostgreSQL</b>, que permite o gerenciamento desses dados através de suas funcionalidades.<i>
+
+<h2>👥Equipe Enneagon</h2>
 
 [Retornar ao menu de navegação](#descrição)
            
@@ -38,20 +44,9 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
  - [Gustavo Oliveira](https://www.linkedin.com/in/gustavo-oliveira-353647207/ "Linkedin") <i>(Development Team)</i>
 
-## Ferramentas utilizadas
->*Um desafio mais complexo precisa de ferramentas mais capacitadas capazes de relacionar entre si e executar um bom resultado.*
- * **NPM**: para começar os laços é preciso que o comando possa ajudar a interagir com a plataforma online, como navegadores e servidores.
- * **Node.js**: que possibilita aplicações multidirecionais com comunicação e troca de dados em tempo real e que auxilia a execução do Javascript
- * **Javascript**: linguagem padrão para a manipulação de páginas em HTML5.
- * **HTML5**: linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.
- * **CSS**: permite definir as “aparências” da tela de apresentação conforme o estilo que se deseja ter para o usuário final. 
- * **Bootstrap**: é um framework, facilitador na elaboração do design de sites e outras tecnologias. Dispõe de uma grande variedade de temas, sua interface é moderna e integra com qualquer tipo de linguagem de programação.
- * **Express.js**: proporciona ao desenvolvedor uma otimização melhor de aplicações na web. 
- * **PostgreeSQL**: sistema que demonstra informações, responsável pelo banco de dados permitindo o gerenciamento destes através de suas funcionalidades.
 
 
-
-<h2>Branches de cada entrega</h2>
+<h2>📑Branches de cada entrega</h2>
 
 - [Retornar ao menu de navegação](#descrição)
        <table>
@@ -90,6 +85,8 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
        </table>
 </section>
 
+
+
 <h3><i>Cards das entregas</i></h3>
 
 - [Retornar ao menu de navegação](#descrição)
@@ -110,13 +107,13 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <p align="justify">Faremos um refinamento da plataforma, corrigindo erros, e melhorando a fluidez. Também vamos adicionar uma função extra, um sistema de comentários, para que o gestor possa enviar comentários diretamente para um colaborador específico através da própria plataforma, tornando assim mais fluída a comunicação.</p>
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card4.png" width=550px height=300px>
        
-<h2>Backlog do projeto</h2> 
+<h2>📜Backlog do projeto</h2> 
 
 - [Retornar ao menu de navegação](#descrição)
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png"></h1>
        
-<h2>Wireframes do projeto</h2>
+<h2>🖥️Wireframes do projeto</h2>
 
 - [Retornar ao menu de navegação](#descrição)
 
@@ -126,7 +123,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/detalhes%20do%20projeto.jpg" width="400" /> 
 </p>
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.jpg" width="400" />
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Vis%C3%A3o%20geral.jpg" width="400" /> 
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Visão%20geral.jpg" width="400" /> 
 </p>
        
