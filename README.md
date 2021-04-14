@@ -43,7 +43,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
  * **NPM**: para começar os laços é preciso que o comando possa ajudar a interagir com a plataforma online, como navegadores e servidores.
  * **Node.js**: que possibilita aplicações multidirecionais com comunicação e troca de dados em tempo real e que auxilia a execução do Javascript
  * **Javascript**: linguagem padrão para a manipulação de páginas em HTML5.
- * **HTML5**: linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web
+ * **HTML5**: linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.
  * **CSS**: permite definir as “aparências” da tela de apresentação conforme o estilo que se deseja ter para o usuário final. 
  * **Bootstrap**: é um framework, facilitador na elaboração do design de sites e outras tecnologias. Dispõe de uma grande variedade de temas, sua interface é moderna e integra com qualquer tipo de linguagem de programação.
  * **Express.js**: proporciona ao desenvolvedor uma otimização melhor de aplicações na web. 
