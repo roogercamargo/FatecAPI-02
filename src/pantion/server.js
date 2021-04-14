@@ -98,6 +98,44 @@ app.get('/select_projects', function (req, res) {
 
 });
 
+app.get('/usuarios/:id', function(req, res) {
+    res.sendFile(__dirname + '/front-end/usuarios.html');
+});
+
+app.get('/pegar_usuarios/:id', function(req, res){
+
+    res.set({ 'content-type': 'application/json; charset=utf-8' });
+    var id = req.params.id;
+    id = id.replace("%20", " ");
+    id = id.replace(":id=", "");
+
+    console.log(id);
+
+    var pg = require('pg');
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
+
+    var client = new pg.Client(conString);
+    client.connect();
+    const text = "select distinct user_email, user_primeiro_nome, user_ultimo_nome, user_avatar, projeto from cards where projeto = $1;";
+    const values = [id];
+    select(text, values).then(function (response) {
+        console.log(response);
+        res.send(response);
+    })
+
+
+    async function select(text) {
+        try {
+            const res = await client.query(text, values)
+            return res;
+        }
+        catch (err) {
+            console.log(err.stack);
+        }
+    }
+
+});
+
 
 
 

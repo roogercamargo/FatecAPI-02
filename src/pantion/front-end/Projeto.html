@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
   <link rel="sortcut icon" href="/images/favicon.png" />
+
+  <script>
+    var full_url = document.URL;
+    var url_array = full_url.split('/');
+    var last_segment = url_array[url_array.length-1];
+  </script>
+
 </head>
 
 <body>
@@ -123,7 +130,7 @@
     </label>
 
     <label for=users class="options">
-      <a href="/usuarios.html">
+      <a href="" id="visualizar_usuarios">
         <div>
           <img src="/images/usuarios.png">
           <b><i>Usuários</i></b>
@@ -257,9 +264,9 @@
 
     <script>
 
-    var full_url = document.URL; // Get current url
-    var url_array = full_url.split('/') // Split the string into an array with / as separator
-    var last_segment = url_array[url_array.length-1];  // Get the last part of the array (-1)
+    var scrt_var = last_segment;
+    var strLink = "/usuarios/" + scrt_var;
+    document.getElementById("visualizar_usuarios").setAttribute("href",strLink);
     
     $(document).ready(function () {
         $('#subir').click(function () {
