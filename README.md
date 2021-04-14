@@ -9,6 +9,7 @@
 
 - [Objetivo do Projeto](#objetivo-do-projeto)
 - [Equipe Enneagon](#equipe-enneagon)
+- [Ferramentas utilizadas](#ferramentas-utilizadas)
 - [Branches de cada entrega](#branches-de-cada-entrega)
 - [Wireframes do projeto](#wireframes-do-projeto)
 - [Backlog do projeto](#backlog-do-projeto)
@@ -36,6 +37,18 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
  - [Kevin Felipe](https://www.linkedin.com/in/kevin-pereira-3a7aa31b7/ "Linkedin") <i>(Development Team)</i>
 
  - [Gustavo Oliveira](https://www.linkedin.com/in/gustavo-oliveira-353647207/ "Linkedin") <i>(Development Team)</i>
+
+## Ferramentas utilizadas
+>*Um desafio mais complexo precisa de ferramentas mais capacitadas capazes de relacionar entre si e executar um bom resultado.*
+ * **NPM**: para começar os laços é preciso que o comando possa ajudar a interagir com a plataforma online, como navegadores e servidores.
+ * **Node.js**: que possibilita aplicações multidirecionais com comunicação e troca de dados em tempo real e que auxilia a execução do Javascript
+ * **Javascript**: linguagem padrão para a manipulação de páginas em HTML5.
+ * **HTML5**: linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web
+ * **CSS**: permite definir as “aparências” da tela de apresentação conforme o estilo que se deseja ter para o usuário final. 
+ * **Bootstrap**: é um framework, facilitador na elaboração do design de sites e outras tecnologias. Dispõe de uma grande variedade de temas, sua interface é moderna e integra com qualquer tipo de linguagem de programação.
+ * **Express.js**: proporciona ao desenvolvedor uma otimização melhor de aplicações na web. 
+ * **PostgreeSQL**: sistema que demonstra informações, responsável pelo banco de dados permitindo o gerenciamento destes através de suas funcionalidades.
+
 
 
 <h2>Branches de cada entrega</h2>
