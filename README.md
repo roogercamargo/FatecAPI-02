@@ -58,4 +58,4 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/em%20desenvolvimento.png" width="700"></h2>
 
-<h6 align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01">Visualizar entrega 1</a></h6>
+<h6 align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01"><img src="https://img.shields.io/badge/Visualizar entrega 1-informational?style=for-the-badge" width="18%"></a></h6>
