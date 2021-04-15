@@ -15,14 +15,14 @@
 - [Backlog do projeto](#backlog-do-projeto)
 <h2>🎯Objetivo do Projeto</h2>
 
-[<img src="https://svgshare.com/i/WF_.svg" width = "32%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.<br><br>
 
 
 <h2>🔧Ferramentas utilizadas</h2>
 
-[<img src="https://svgshare.com/i/WF_.svg" width = "32%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
 >Um desafio mais complexo precisa de ferramentas mais capacitadas capazes de relacionar entre si e executar um bom resultado.
 
@@ -39,7 +39,7 @@ Tecnologias | Usamos para
 
 <h2>👥Equipe Enneagon</h2>
 
-[<img src="https://svgshare.com/i/WF_.svg" width = "32%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
            
  - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
  
@@ -59,7 +59,7 @@ Tecnologias | Usamos para
 
 <h2>📑Branches de cada entrega</h2>
 
-[<img src="https://svgshare.com/i/WF_.svg" width = "32%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
        <table>
               <thead>
                      <th width=100px>Entregas</th>
@@ -100,7 +100,7 @@ Tecnologias | Usamos para
 
 <h3><i>Cards das entregas</i></h3>
 
-[<img src="https://svgshare.com/i/WF_.svg" width = "32%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
 <h4>Sprint 01 :clock12:</h4>
 <p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
@@ -120,13 +120,13 @@ Tecnologias | Usamos para
        
 <h2>📜Backlog do projeto</h2> 
 
-[<img src="https://svgshare.com/i/WF_.svg" width = "32%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png"></h1>
        
 <h2>🖥️Wireframes do projeto</h2>
 
-[<img src="https://svgshare.com/i/WF_.svg" width = "32%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
 <p>Protótipos das telas do projeto:</p>
 <p float="left">
