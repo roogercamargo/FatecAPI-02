@@ -35,7 +35,7 @@ Tecnologias | Usamos para
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" width = "75px" height="25px"> | Permite definir as “aparências” da tela de apresentação conforme o estilo que se deseja ter para o usuário final.
 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" width = "95px" height="25px"> | É um framework, facilitador na elaboração do design de sites e outras tecnologias. Dispõe de uma grande variedade de temas, sua interface é moderna e integra com qualquer tipo de linguagem de programação. 
 <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" width = "95px" height="25px">  | Proporciona ao desenvolvedor uma otimização melhor de aplicações na web.
-<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" width = "125px" height="25px"> | Sistema que demonstra informações, responsável pelo banco de dados permitindo o gerenciamento destes através de suas funcionalidades. 
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" width = "200px" height="25px"> | Sistema que demonstra informações, responsável pelo banco de dados permitindo o gerenciamento destes através de suas funcionalidades. 
 
 <h2>👥Equipe Enneagon</h2>
 
