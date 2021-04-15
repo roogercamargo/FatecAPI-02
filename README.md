@@ -1,7 +1,7 @@
 <p align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" width = "85px" height="25px"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" width = "75px" height="25px"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width = "95px" height="25px"> <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" width = "75px" height="25px"> <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" width = "75px" height="25px"> <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" width = "95px" height="25px"> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" width = "95px" height="25px"> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" width = "95px" height="25px"><br><br>
+ <h2 align="center"><img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-orange?style=for-the-badge&logo=appveyor"></h2>
 
 <h1 align="center"> Pantion <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/logo/logocor1.png" width="40"></h1>
-<h2 align="center"><img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-orange?style=for-the-badge&logo=appveyor"></h2>
 
 <h2>📝Descrição</h2>
 
@@ -15,20 +15,20 @@
 - [Backlog do projeto](#backlog-do-projeto)
 <h2>🎯Objetivo do Projeto</h2>
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.<br><br>
 
 
 <h2>🔧Ferramentas utilizadas</h2>
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
 <i>Um desafio mais complexo precisa de ferramentas mais capacitadas capazes de relacionar entre si e executar um bom resultado. Para começar os laços é preciso que o comando possa ajudar a interagir com a plataforma online, como navegadores e servidores. Logo quem fará esse caminho é o *Node Package Manage*, o <b>NPM</b>. Sistema capaz de gerenciar dependências necessárias para executar um projeto. Seu funcionamento e aplicações funcionam muito bem acompanhadas pelo <b>Node.js</b>, que possibilita aplicações multidirecionais com comunicação e troca de dados em tempo real e que auxilia a execução do <b>Javascript</b>, linguagem padrão para a manipulação de páginas em <b>HTML5</b> sendo a linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web, juntamente com o <b>CSS3</b> na qual permite definir as “aparências” da tela de apresentação conforme o estilo que se deseja ter para o usuário final. Para tal resultado, muito se utiliza o <b>Bootstrap</b>, que é um framework, facilitador na elaboração do design de sites e outras tecnologias. Dispõe de uma grande variedade de temas, sua interface é moderna e integra com qualquer tipo de linguagem de programação. Outra aplicação utilizada para a apresentação e interação da tela para o usuário é o <b>Express.Js</b> que proporciona ao desenvolvedor uma otimização melhor de aplicações na web. Para que tudo funcione e haja a interação de sistemas e demonstração de informações, é preciso ter um banco de dados e dispor de um sistema como o <b>PostgreSQL</b>, que permite o gerenciamento desses dados através de suas funcionalidades.</i>
 
 <h2>👥Equipe Enneagon</h2>
 
-[Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
            
  - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
  
@@ -48,7 +48,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h2>📑Branches de cada entrega</h2>
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
        <table>
               <thead>
                      <th width=100px>Entregas</th>
@@ -89,7 +89,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h3><i>Cards das entregas</i></h3>
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
 <h4>Sprint 01 :clock12:</h4>
 <p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
@@ -109,13 +109,13 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
        
 <h2>📜Backlog do projeto</h2> 
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png"></h1>
        
 <h2>🖥️Wireframes do projeto</h2>
 
-- [Retornar ao menu de navegação](#descrição)
+[<img src="https://img.shields.io/badge/Retornar ao menu de navegação-9cf?style=for-the-badge&logo=" width = "250px" height="25px">](#descrição)
 
 <p>Protótipos das telas do projeto:</p>
 <p float="left">
