@@ -261,8 +261,7 @@ input {
 }
 .card_button:hover{
     background-color: #0994cf;
-    border: 1px solid #ffffff;
-    cursor: pointer;
+    
 }
 .space{
     position: relative;
