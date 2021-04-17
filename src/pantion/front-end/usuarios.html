@@ -176,7 +176,7 @@
             divColLeft.classList.add("card-col-left");
             let divAvatarMini = document.createElement("div");
             let avatar_user = document.createElement("img");
-            avatar_user.src = usuario.user_avatar; // <-
+            avatar_user.src = '/images/icon-colab.png'; // <-
             avatar_user.style = "height: 80px; width: 80px; border-radius: 50px; margin-right: 25px;";
             divAvatarMini.appendChild(avatar_user);
             divAvatarMini.classList.add("avatar-mini");
@@ -225,6 +225,11 @@
             // divColLeft.appendChild(divAvatarMini);
             var divConteudo = document.getElementById("users");
             divConteudo.appendChild(cardUser);
+
+            var hr = document.createElement("hr");
+            hr.classList.add("hr");
+            divConteudo.appendChild(hr);
+
 
 
 

@@ -6,8 +6,8 @@ const path = require('path');
 
 // conteudo do login
 
-var email = "admin@admin.com";
-var senha = "123";
+var email = "admin";
+var senha = "admin";
 
 app.use(session({ secret: '123' })); //segredo da session
 app.use(bodyParser.urlencoded({ extended: true }));
