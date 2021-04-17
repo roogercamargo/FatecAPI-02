@@ -78,7 +78,7 @@ Tecnologias | Usamos para
                             <td>Sprint 2</td>
                             <td>Outras telas de visualização dos dados com mais projetos organizados, e sua visualização no index</td>
                             <td>29/09/2021 a 18/04/2021</td>
-                            <td><p>Em andamento</p></td>
+                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-02"><img src="https://img.shields.io/badge/Visualizar-informational?style=for-the-badge"></a></p></td>
                      </tr>
                      <tr>
                             <td>Sprint 3</td>
