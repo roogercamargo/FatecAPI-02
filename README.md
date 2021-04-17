@@ -48,6 +48,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20entrega%202.png"></h2>
 <p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20completo.png">Visualizar Backlog completo</a></p>
+<h6><a href="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20completo.png"><img src="https://img.shields.io/badge/Visualizar Backlog completo-lightgrey?style=for-the-badge" width="25%"></a></h6>
 
 <h2>📺Demonstração das telas</h2>
 
