@@ -23,11 +23,11 @@
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
 
-<h2>📜O que entregamos</h2>
+<h2>📜O que entregamos?</h2>
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
-<p align="justify">Nesta entrega adicionamos os dados restantes dos outros projetos, proporcionando ao cliente a visualização geral no painel, acrescentando os detalhes e a página inicial do painel de visualização da plataforma. O cliente também vai poder acessar a aba de “colaboradores” para visualizar a equipe que está trabalhando em determinado projeto.</p>
+<p align="justify">Para esta entrega, finalizamos a organização de todas as informações disponibilizadas pela empresa parceira. Proporcionaremos ao usuário final a visualização integral de todas as informações, de um modo simples e fácil. Enriquecemos o fluxo da plataforma acrescentando uma tela de login (por enquanto, não possui nenhum vinculo com o banco de dados do projeto, mas por meio da programação, atribuímos alguns valores para simular a autenticação de um usuário comum), que fortalece a segurança e a identificação de cada usuário. Agora todos os projetos estão organizados. Cada projeto tem seus respectivos <b><i>"cards"</b></i> estruturados na aba <b><i>"detalhes"</b></i>. A partir deste momento, na opção de <b><i>"usuários"</b></i>, aparecerão todos os colaboradores do projeto que foi selecionado para visualização. Contendo os seguintes dados: nome, sobrenome e email empresarial.</p>
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card2.png" width="700"></h2>
 
 
@@ -52,18 +52,6 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h6><a href="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20completo.png"><img src="https://img.shields.io/badge/Visualizar Backlog completo-informational?style=flat-square" width="20%"></a></h6>
 
-<h2>📺Demonstração das telas</h2>
-
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
-
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/em%20desenvolvimento.png" width="700"></h2>
- <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtube.com">YouTube!</a></p>
-
-<h2>📆Burndown da Sprint</h2> 
-
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
-
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Burndown/BurnSprint2.PNG" width="700"></h2>
 
 <h2>📌Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2>
 
@@ -76,5 +64,19 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Diagrama%20de%20Entidade%20e%20Relacionamento/logico-der-fatecapi-02.png" width="700"></h1>
+
+
+<h2>📺Demonstração das telas</h2>
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/em%20desenvolvimento.png" width="700"></h2>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtube.com">YouTube!</a></p>
+
+<h2>📆Burndown da Sprint</h2> 
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Burndown/BurnSprint2.PNG" width="700"></h2>
 
 <h6 align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01"><img src="https://img.shields.io/badge/Visualizar entrega 1-informational?style=for-the-badge" width="18%"></a></h6>
