@@ -15,6 +15,7 @@
 - [Backlog e User Stories](#backlog-e-user-stories)
 - [Demonstração das telas](#demonstração-das-telas)
 - [Gráfico de Burndown](#burndown-da-sprint)
+- [Modelo Conceitual - Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 
 <h2>🎯Objetivo do Projeto</h2>
 
@@ -64,7 +65,10 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Burndown/BurnSprint2.PNG" width="700"></h2>
 
-<h2>Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2>
+<h2>🔖Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2>
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Diagrama%20de%20Entidade%20e%20Relacionamento/der-fatecapi-02.png" width="700"</h1>
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Diagrama%20de%20Entidade%20e%20Relacionamento/logico-der-fatecapi-02.png" width="700"> </h1>
