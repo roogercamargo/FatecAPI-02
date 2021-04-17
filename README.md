@@ -72,5 +72,5 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Burndown/BurnSprint2.PNG" width="700"></h2>
 
-<p align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01"><img src="https://img.shields.io/badge/Visualizar entrega 1-informational?style=for-the-badge" width="18%"></a> <a href="https://github.com/roogercamargo/FatecAPI-02/tree/main"><img src="https://img.shields.io/badge/Retornar%20a%20main-informational?style=for-the-badge" width="14.4%"></a></h6>
+<p align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01"><img src="https://img.shields.io/badge/Visualizar entrega 1-informational?style=for-the-badge" width="18%"></a> <a href="https://github.com/roogercamargo/FatecAPI-02/tree/main"><img src="https://img.shields.io/badge/Retornar%20a%20main-informational?style=for-the-badge" width="14.4%"></a></p>
 
