@@ -18,6 +18,8 @@
 
 <h2>🎯Objetivo do Projeto</h2>
 
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.
 
 <h2>📜O que entregamos</h2>
