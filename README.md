@@ -66,7 +66,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/em%20desenvolvimento.png" width="700"></h2>
  <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtube.com">YouTube!</a></p>
 
-<h2>📆Burndown da Sprint</h2> 
+<h2>📊Burndown da Sprint</h2> 
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
