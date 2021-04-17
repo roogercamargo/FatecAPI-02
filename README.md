@@ -11,11 +11,10 @@
 - [Objetivo do Projeto](#objetivo-do-projeto)
 - [O que entregamos](#o-que-entregamos)
 - [Valor da entrega](#qual-o-valor)
-- [Fluxograma da entrega](#fluxograma-da-entrega)
 - [Backlog e User Stories](#backlog-e-user-stories)
+- [Modelo Conceitual e Lógico - Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 - [Demonstração das telas](#demonstração-das-telas)
 - [Gráfico de Burndown](#burndown-da-sprint)
-- [Modelo Conceitual e Lógico - Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 
 <h2>🎯Objetivo do Projeto</h2>
 
@@ -37,12 +36,6 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 <p align="justify">O valor dessa entrega é ter a visualização da aba colaboradores, conter mais projetos organizados e sua visualização na página inicial.</p>
  
-<h2>📋Fluxograma da entrega</h2>
- 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
-
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/fluxograma%20da%20entrega%202.png" width="700"></h2>
-
 <h2>📍Backlog e User stories</h2>
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
