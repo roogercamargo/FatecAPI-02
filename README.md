@@ -34,7 +34,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
-<p align="justify">O valor dessa entrega é ter a visualização da aba colaboradores, conter mais projetos organizados e sua visualização na página inicial.</p>
+<p align="justify">O valor desta entrega encontra-se na funcionalidade implementada, na qual pode-se ter a perspectiva ampla sobre os projetos e outras informações que os complementam. Inserir uma aplicação como o <b><i>login</b></i> transmite ao usuário uma sensação de segurança ao acessar o website. Cada projeto contém em si seus <b><i>"cards"</b></i> de atividade. Que pode ser encontrado na opção <b><i>"detalhes"</b></i>. Ter uma aba de <b><i>detalhes</b></i> auxilia na gestão do projeto e possibilita ao dirigente a produzir estratégias futuras. O sistema integrado conta com a opção <b><i>"usuários"</b></i>, com ela é possível saber quais os colaboradores estão no projeto.</p>
  
 <h2>📍Backlog e User stories</h2>
 
