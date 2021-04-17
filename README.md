@@ -62,6 +62,11 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/em%20desenvolvimento.png" width="700"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Burndown/BurnSprint2.PNG" width="700"></h2>
+
+<h2>Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Diagrama%20de%20Entidade%20e%20Relacionamento/der-fatecapi-02.png" width="700"</h1>
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Diagrama%20de%20Entidade%20e%20Relacionamento/logico-der-fatecapi-02.png" width="700"> </h1>
 
 <h6 align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01"><img src="https://img.shields.io/badge/Visualizar entrega 1-informational?style=for-the-badge" width="18%"></a></h6>
