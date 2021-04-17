@@ -38,7 +38,7 @@ a:focus{
 
 #myInp {
     position: absolute;
-    left: 87%;
+    left: 78%;
 }
 .color_title{
     padding-top: 10px;
@@ -261,7 +261,6 @@ input {
 }
 .card_button:hover{
     background-color: #0994cf;
-    border: 1px solid #ffffff;
     
 }
 .space{
@@ -305,5 +304,20 @@ input {
         background-color: rgb(255, 255, 255);
 }
 
+.logoOff{
+  background-color: #004C6D ;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  left: 92%;
+  top: 32%;
+  color: white;
+  border: #ffffff;
+  width: 80px;
+  height: 27px;
+}
 
-
+.logoOff:hover{
+  cursor: pointer;
+  background-color:#0994cf;
+}

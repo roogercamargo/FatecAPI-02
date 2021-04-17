@@ -5,10 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="/chart.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
+    <link rel="sortcut icon" href="/images/favicon.png" />
     <title>Gráfico Teste</title>
+
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <img src="/images/logo_stext.png" width="60" height="60">
+    <span class="color_title">Pantion </span>
+
+
+    <div class="subnav">
+      <a href="/menu.html"><button class="subnavbtn">Todos os projetos </button></a>
+    </div>
+
+    <div class="subnav">
+      <button class="subnavbtn">Favoritados</button>
+    </div>
+    <div class="subnav">
+    <a href="/logout"><button class= "logoOff">Sair</button></a>
+    </div>
+    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+  </nav>
+    
+      <br><br>
+    
+    
+    
+    
+      <h1 id="nomeProjeto">
+        <p id="nome_projeto">Nome do Projeto</p>
+      </h1>
+      <br>
+      <div style="float: left;margin-left: 30px"><i class="fa fa-calendar"
+          style="color:#ff4d4d;font-size: 25px;padding-top: 8px;padding-left: 5px;"></i> 25-04-2020</div>
+      <div style="float: left; margin-left: 50px"><i class="far fa-clock"
+          style="color:chocolate;font-size: 25px;padding-top: 8px;padding-left: 5px;"></i> 2.2 Horas</div>
+      <div style="clear: both"></div>
+    
+    
+      <br><br><br><br>
+    
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <div class="image">
+            <img class="image" src="/images/andamento.png" width="30" height="30" data-holder-rendered="true">
+            <h2 class="img2"><span class='spacer'>Em andamento</span></h2>
+    
+    
+          </div>
+        </div>
+      </div>
+    
+      <hr style="height:1px;border:none;color:#a6a6a6;background-color:#a6a6a6;" />
+    
+      <div id=menu_options>
+        <!--   <label for=details class="options">
+              <div>
+                <img src="images/detalhes.png">
+                <b><i>Detalhes</i></b>
+              </div>
+            </label> -->
+    
+        <label for=panel class="options">
+          <a href="/Projeto.html">
+          <div>
+            <img src="/images/painel.png">
+              <b><i>Painel</i></b>
+          </div>
+        </label>
+    </a>
+    
+        <label for=users class="options">
+          <a href="/usuarios.html">
+          <div>
+            <img src="/images/usuarios.png">
+            
+            <b><i>Usuários</i></b>
+          </div>
+        </label>
+    </a>
+        <!--  <label for=rank class="options">
+              <div>
+                <img src="images/comits.png">
+                <b><i>Contribuição</i></b>
+              </div>
+            </label> -->
+    
+        <label for=graphics class="options">
+          <a href="/graficoteste.html">
+            <div>
+              <img src="/images/grafico.png">
+              <b><i>Gráficos</i></b>
+    
+            </div>
+        </label>
+        </a>
+    
+        <label for=time class="options">
+          <div>
+            <img src="/images/tempo.png">
+            <b><i>Tempo</i></b>
+          </div>
+        </label>
+    
+      </div>
+      <br>
+    
+    
+    
+      <div class="card-users" id="users"></div>
+    
+      </div>
+      </div>
+    
+    
+      <br>
+      <div id="voltarTopo">
+        <a href="#" id="subir"></a>
+      </div>
+      <div class="line"></div>
+      </div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -17,7 +146,8 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://www.google.com/jsapi"></script>
     <script>
-
+ google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(puxarDado);
         var quantidades = [];
 
         function puxarDado() {
@@ -31,10 +161,12 @@
         var DONE = 0;
 
             $.ajax({
-                url: "http://localhost:3000/grafico",
+                url: "http://localhost:3000/grafico/",
                 type: "GET",
                 dataType: "json",
                 success: function (data) {
+                    var nomeDoProjeto = document.getElementById('nome_projeto');
+                    nomeDoProjeto.textContent = data.rows[0].projeto;
                     data.rows.forEach(card => {
                         if (card.status == "IN_PROGRESS") {
                             IN_PROGRESS++;
@@ -64,44 +196,51 @@
                     quantidades.push(QA_TESTING);
                     quantidades.push(RELEASE_TO_PROD);
                     quantidades.push(PROD_DEPLOYING);
+                    quantidades.push(DONE);
 
-                }
-            });
+            var data = new google.visualization.arrayToDataTable([
+                ['Status', '', {role:'style'}],
+                ['IN PROGRESS', quantidades[0], 'orange'],
+                ['QA DEPLOYING', quantidades[1], '#20ded3'],
+                ['FOR TEST', quantidades[2], 'red'],
+                ['QA TESTING', quantidades[3], '#f79b73'],
+                ['RELEASE TO PROD', quantidades[4], 'blue'],
+                ['PROD DEPLOYING', quantidades[5], 'purple'],
+                ['DONE', quantidades[6], 'green']
+                ]);
+            // data.addColumn('string', 'Status');
+            // data.addColumn('number', 'Quantidade');
+            // data.addRows([
 
-        }
-
-        google.charts.load('current', { packages: ['corechart'] });
-        google.charts.setOnLoadCallback(statusChart);
-
-        function statusChart() {
-            puxarDado();
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Status');
-            data.addColumn('number', 'Quantidade');
-            data.addRows([
-                ['IN PROGRESS', quantidades[0]],
-                ['QA DEPLOYING', quantidades[1]],
-                ['FOR TEST', quantidades[2]],
-                ['QA TESTING', quantidades[3]],
-                ['RELEASE TO PROD', quantidades[4]],
-                ['PROD DEPLOYING', quantidades[5]],
-                ['DONE', quantidades[6]]
-            ]);
+            // ]);
 
             var options = {
-                'title': 'Idade em relação ao nome',
-                'is3D': true,
-                'width': 1000,
-                'height': 500,
+                'title': 'QUANTIDADE DE CARDS POR STATUS',
+                chartArea: {backgroundColor: '#ffffff', width: '60%'},
+                backgroundColor: '#f6f6f6',
+                'is3D':true,
+                'height': 400,
+                legend: {position:'none'},
+                hAxis: {
+                     title: 'Quantidade',
+                 },
+                vAxis: {
+                    title: 'Status dos cards'
+                }
             };
 
-            var chart = new google.visualization.ColumnChart(document.getElementById('texte'));
+            var chart = new google.visualization.BarChart(document.getElementById('statusCard'));
             chart.draw(data, options);
+                    
+                }
+            });
+  
+        
         }
+
     </script>
     <!-- identifica onde o gráfico vai ser exibido -->
-    <div id="myPieChart" style="height: 100%; width: 100%;"></div><br><br>
-    <div id="texte"></div>
+    <div id="statusCard"></div><br><br>
 </body>
     <script></script>
 </html>

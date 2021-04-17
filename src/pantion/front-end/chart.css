@@ -1,17 +1,322 @@
-body {
-    background: whitesmoke;
-    padding: 15px;
+/* corpo da pagina*/
+body{
+	font-family: 'Manrope', sans-serif!important;
+	background: #F6F6F6;
+
+}
+p{
+	font-family: 'Manrope', sans-serif;
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: #000000;
+  margin-left: 20px;
+}
+a,
+a:hover,
+a:focus{
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
 }
 
-canvas {
-    border: 1px solid gainsboro;
-    background: white;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+
+
+/* corpo da pagina*/
+
+/* navbar superior*/
+.navbar {
+    
+    background-color: #fff;
+    border: 5px;
+    border-color: black;
+    font-size: 20px !important;
+    line-height: 1.42857143 !important;  
+    border-radius: 0;
+    
 }
 
-.container {
+.color_title{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#7B7C86;
+    padding-bottom: 10px;
+}
+
+/* fim navbar superior*/
+
+/* The subnavigation menu */
+.subnav {
+
+  float: right;
+  margin-left: 15px;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 19px;
+  border: none;
+  outline: none;
+  color: #7B7C86;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  color: black;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-image: linear-gradient(to right, #fd5c63 0%, #4323d2 100%);
+  width: 100%;
+  z-index: 1;
+  padding: 10px ;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  margin-right: 15px;
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+
+#myInp {
+    position: absolute;
+    left: 78%;
+}
+
+/* nome do projeto */
+
+/*.h1 { 
+   position: absolute; 
+   top: 5px; 
+   left: 130px; 
+   width: 100%; 
+   margin-left: 50px;
+}
+
+.h2 span { 
+   color: #000000; 
+   font-family: 'Red Hat Text', sans-serif;
+   letter-spacing: -2px;  
+}
+
+/* fim nome do projeto */
+
+
+/* status do projeto */
+.img2 { 
+   position: absolute; 
+   top: -45px; 
+   left: 75px; 
+   width: 100%; 
+}
+
+.img2 span { 
+   color: #000000; 
+   font-family: 'Red Hat Text', sans-serif;
+   font-size: 20px;
+   } 
+
+.image { 
+
+ position: relative; 
+   top: -30px; 
+   left: 30px; 
+   
+}
+
+
+/* menu_options - Posição*/
+.options {display:inline-block;
     position: relative;
-    margin: auto;
-    height: 400px;
-    width: 800px;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    left: 9%;
+    border-radius: 10px;   
+  }
+  
+  /* menu_options - fonte*/
+i {
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+}
+
+  /* menu_options - Ao passar mouse*/
+  .options:hover{
+      text-decoration: none;
+      border-bottom:  2px solid black;
+     cursor: pointer;
+  }
+  /* navigation - posiçao*/
+  #navigation div{
+    position: flex;
+    /* padding: 10px;
+    padding-left: 10px; */
+    width: 100%;
+    height: 100%;
+    margin-left: 12px; 
+    margin-top: 10px;
+    background-color: #C9D8E4;
+    display: none;
+    
+    align-items: center;
+  }
+  
+  /* funcionalidade da exibição das telas navigation sem refresh*/
+  #navigation input[type ="radio"]{display: none;}
+  #navigation input[type ="radio"]:checked + div{
+    background-color: #F6F6F6;
+    display: block;
+    text-align: center;
+  }
+
+  /* tamanho da caixa de texto que descreve sobre o projeto*/
+  #detalhes #project p{
+      width: 450px;
+  }
+  /* imagem juntamente aos títulos na aba de projetos*/
+  #detalhes img, h1{
+      display: inline-block;
+  }
+/* proposta de projeto e tarefas pendentes alianhadas na horizontal*/
+  #detalhes .proposal, .tasks{
+      display: inline-table;
+  }
+/* posição exata das tarefas pendentes*/
+  #detalhes .tasks{
+      position: relative;
+      left: 30%;
+  }
+
+/* estilo barra de pesquisa */
+  input[type=text] {
+    position: relative;
+    left: 67%;
+    width: 160px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(images/searchicon.png);
+    background-size: 20px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+  }
+
+/* area que o search expande */
+input[type=text]:focus {
+  width: 10%;
+
+}
+
+/* botão pesquisar */
+button, input {
+    overflow: visible;
+}
+
+button, input, select, textarea, optgroup {
+    font: inherit;
+    margin: 0;
+}
+
+/* estilo barra de pesquisa */
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+#subir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    border-radius: 5px;
+    height: 50px;
+    background-color: #c9c9c9;
+    text-decoration: none;
+}
+
+#subir::after {
+    content: "↑";
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(54, 44, 44);
+    transition: margin-top 250ms;
+}
+
+#statusCard{
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.logoOff{
+  background-color: #004C6D ;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  left: 92%;
+  top: 32%;
+  color: white;
+  border: #ffffff;
+  width: 80px;
+  height: 27px;
+}
+
+.logoOff:hover{
+  cursor: pointer;
+  background-color:#0994cf;
 }
