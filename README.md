@@ -28,7 +28,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 Tecnologias | Usamos para
 ----------|---------
-<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" width = "75px" height="25px"> | Sistema capaz de gerenciar dependências necessárias para executar um projeto.
+<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" width = "75px" height="25px"> | NPM, _Node Package Manager_, é um gerenciador de pacotes que permite a utilização do JavaScript no back-end de uma aplicação.
 <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" width = "75px" height="25px"> | Que possibilita aplicações multidirecionais com comunicação e troca de dados em tempo real.
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width = "95px" height="25px"> | Linguagem padrão para a manipulação de páginas em HTML5.
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" width = "85px" height="25px"> | Sendo a linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.
