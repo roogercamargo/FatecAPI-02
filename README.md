@@ -71,6 +71,21 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/gifs/Entrega02.gif"></h1>
  <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtu.be/bvGjeuYjARM">YouTube!</a></p>
+ 
+ <h2>💻Wireframes do projeto</h2>
+ <h3><i><b>Segunda entrega - Sprint 02</i></b></h3>
+ 
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
+
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/detalhes%20do%20projeto.jpg" width="400" /> 
+</p>
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Visão%20geral.jpg" width="400" /> 
+</p>
+       
 
 <h2>📊Burndown da Sprint</h2> 
 
