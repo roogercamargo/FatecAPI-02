@@ -13,6 +13,7 @@
 - [Modelo Conceitual e Lógico - Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 - [Demonstração das telas](#demonstração-das-telas)
 - [Gráfico de Burndown](#burndown-da-sprint)
+- [Wireframes do Projeto](#wireframes-do-projeto)
 
 <h2>📝Descrição</h2>
 
