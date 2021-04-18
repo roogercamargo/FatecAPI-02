@@ -67,7 +67,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-A seguir será exibido um gif explicativo sobre às funcionalidades da plataforma, a plataforma para esta entrega foi desenvolvida de acordo com o que está detalhado em [o que entregamos](#o-que-entregamos) e [valor da entrega](#qual-o-valor).
+A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adicionados na plataforma. Cada conteúdo está detalhado em [o que entregamos?](#o-que-entregamos) e [qual é o valor?](#qual-o-valor).
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/gifs/Entrega02.gif"></h1>
  <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtu.be/bvGjeuYjARM">YouTube!</a></p>
