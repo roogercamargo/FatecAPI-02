@@ -132,9 +132,7 @@ Tecnologias | Usamos para
        
 <h2>💻Wireframes do projeto</h2>
 
-<p>Protótipos das telas do projeto:</p>
-
-<h3>Telas da Sprint 1</h3>
+ <h3><i><b>Primeira entrega - Sprint 01</i></b></h3>
 
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/todos%20projetos.jpg" width="400" />
@@ -145,9 +143,7 @@ Tecnologias | Usamos para
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/Visão%20geral.jpg" width="400" /> 
 </p>
        
-
-
-<h3>Telas atualizadas da Sprint 2</h3>
+ <h3><i><b>Segunda entrega - Sprint 02</i></b></h3>
 
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
