@@ -67,8 +67,10 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/em%20desenvolvimento.png" width="700"></h2>
- <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtube.com">YouTube!</a></p>
+A seguir será exibido um gif explicativo sobre às funcionalidades da plataforma, a plataforma para esta entrega foi desenvolvida de acordo com o que está detalhado em [o que entregamos](#o-que-entregamos) e [valor da entrega](#qual-o-valor).
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/gifs/Entrega02.gif"></h1>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtu.be/bvGjeuYjARM">YouTube!</a></p>
 
 <h2>📊Burndown da Sprint</h2> 
 
