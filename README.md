@@ -3,9 +3,7 @@
 
 <h1 align="center"> Pantion <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/logo/logocor1.png" width="40"></h1>
 
-<h2>📝Descrição</h2>
-
- O presente desafio trata-se de um Dashboard para análise de dados dos projetos e acompanhamento de performance dos desenvolvedores responsáveis. Com as informações expostas em um só lugar como, por exemplo, numa televisão dentro de uma sala de reunião, torna-se mais fácil as comparações diárias ou semanais dos resultados e o resumo do desempenho das atividades relacionadas à tomada de decisões. Sendo assim, as atividades ficam mais rápidas e conclusivas.
+<h2>📜Menu de Navegação</h2>
 
 - [Objetivo do Projeto](#objetivo-do-projeto)
 - [Equipe Enneagon](#equipe-enneagon)
@@ -13,16 +11,23 @@
 - [Branches de cada entrega](#branches-de-cada-entrega)
 - [Wireframes do projeto](#wireframes-do-projeto)
 - [Backlog do projeto](#backlog-do-projeto)
+
+<h2>📝Descrição</h2>
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
+
+ O presente desafio trata-se de um Dashboard para análise de dados dos projetos e acompanhamento de performance dos desenvolvedores responsáveis. Com as informações expostas em um só lugar como, por exemplo, numa televisão dentro de uma sala de reunião, torna-se mais fácil as comparações diárias ou semanais dos resultados e o resumo do desempenho das atividades relacionadas à tomada de decisões. Sendo assim, as atividades ficam mais rápidas e conclusivas.
+
 <h2>🎯Objetivo do Projeto</h2>
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.<br><br>
 
 
 <h2>🔧Ferramentas utilizadas</h2>
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
 >Um desafio mais complexo precisa de ferramentas mais capacitadas capazes de relacionar entre si e executar um bom resultado.
 
@@ -39,7 +44,7 @@ Tecnologias | Usamos para
 
 <h2>👥Equipe Enneagon</h2>
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
            
  - [Thomas Palma](https://www.linkedin.com/in/thomas-palma-0764b81b3/ "Linkedin") <i>(Scrum Master)</i>
  
@@ -59,7 +64,7 @@ Tecnologias | Usamos para
 
 <h2>📑Branches de cada entrega</h2>
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
        <table>
               <thead>
                      <th width=100px>Entregas</th>
@@ -100,7 +105,7 @@ Tecnologias | Usamos para
 
 <h3><i>Cards das entregas</i></h3>
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
 <h4>Sprint 01 :clock12:</h4>
 <p align="justify">Para essa primeira entrega, decidimos fazer levantamento dos dados de uma única empresa nos documentos em JSON fornecidos pela GSW. Criando a página de resumo dos projetos, a de detalhes e um painel de visualização com os dados levantados. Os painéis de visualização dessa empresa serão usadas de exemplo para que o cliente possa compreender como funcionara a plataforma.</p>
@@ -118,15 +123,15 @@ Tecnologias | Usamos para
 <p align="justify">Faremos um refinamento da plataforma, corrigindo erros, e melhorando a fluidez. Também vamos adicionar uma função extra, um sistema de comentários, para que o gestor possa enviar comentários diretamente para um colaborador específico através da própria plataforma, tornando assim mais fluída a comunicação.</p>
        <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card4.png" width=550px height=300px>
        
-<h2>📜Backlog do projeto</h2> 
+<h2>📄Backlog do projeto</h2> 
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png"></h1>
        
-<h2>🖥️Wireframes do projeto</h2>
+<h2>💻Wireframes do projeto</h2>
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#descrição)
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
 <p>Protótipos das telas do projeto:</p>
 <p float="left">
