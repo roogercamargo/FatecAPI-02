@@ -76,13 +76,13 @@ Tecnologias | Usamos para
               <tbody>
                      <tr>
                             <td>Sprint 1</td>
-                            <td>Normalização dos dados disponibilizados pela empresa, demonstração de um único projeto e as taks do mesmo,  separadas por status</td>
+                            <td>Organização dos dados disponibilizados pela empresa, demonstração de um único projeto e as atividades do mesmo,  separadas por status</td>
                             <td>08/03/2021 a 28/03/2021</td>
                             <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01"><img src="https://img.shields.io/badge/Visualizar-informational?style=for-the-badge"></a></p></td>
                      </tr>
                      <tr>
                             <td>Sprint 2</td>
-                            <td>Tela de login para fortalecer a segurança; Todos os projetos organizados e separados cada qual com seu card; Painel para visualização dos colaboradores dos projetos, com detalhes de cada um; Painel com a quantidade de tasks por status</td>
+                            <td>Tela de login para fortalecer a segurança; Todos os projetos organizados e separados cada qual com seu card; Painel para visualização dos colaboradores dos projetos, com detalhes de cada um; Painel com a quantidade de atividades por status</td>
                             <td>29/09/2021 a 18/04/2021</td>
                             <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-02"><img src="https://img.shields.io/badge/Visualizar-informational?style=for-the-badge"></a></p></td>
                      </tr>
