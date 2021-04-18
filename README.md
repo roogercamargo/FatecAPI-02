@@ -132,9 +132,23 @@ Tecnologias | Usamos para
        
 <h2>💻Wireframes do projeto</h2>
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
-
 <p>Protótipos das telas do projeto:</p>
+
+<h3>Telas da Sprint 1</h3>
+
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/todos%20projetos.jpg" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/detalhes%20do%20projeto.jpg" width="400" /> 
+</p>
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/usuarios.jpg" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/Visão%20geral.jpg" width="400" /> 
+</p>
+       
+
+
+<h3>Telas atualizadas da Sprint 2</h3>
+
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/detalhes%20do%20projeto.jpg" width="400" /> 
@@ -142,5 +156,6 @@ Tecnologias | Usamos para
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.png" width="400" />
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Visão%20geral.jpg" width="400" /> 
-</p>
-       
+</p>       
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
