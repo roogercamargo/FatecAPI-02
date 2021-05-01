@@ -297,84 +297,11 @@ input {
     transition: margin-top 250ms;
 }
 
-/* .divID{
-    text-align: center;
-} */
-
-
-
-#FOR_TEST {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to right, #fd5c63 0%, #FD1717 100%);
- 
+#statusCard{
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
 }
-
-#IN_PROGRESS {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to left, #f39f86 0%, #f9d976 74%);
-  height: 400px;
-}
-
-#QA_DEPLOYING {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to left, #f6fba2 0%, #20ded3 74%);
-}
-
-#QA_TESTING {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to right, #feeacf 0%, #f79b73 74%);
-}
-
-#RELEASE_TO_PROD {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #63a4ff;
-  background-image: linear-gradient(to left, #63a4ff 0%, #83eaf1 74%);
-}
-
-#PROD_DEPLOYING {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to left, #7f53ac 0%, #647dee 74%);
-}
-
-#DONE {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to left, #3bb78f 0%, #0bab64 74%);
-}
-
 
 .logoOff{
   background-color: #004C6D ;
@@ -393,5 +320,3 @@ input {
   cursor: pointer;
   background-color:#0994cf;
 }
-
-

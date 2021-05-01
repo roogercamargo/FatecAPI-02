@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pantion</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
+  <link rel="sortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <img src="images/logo_stext.png" width="60" height="60">
+    <span class="color_title">Pantion </span>
+
+
+    <div class="subnav">
+      <a href="/menu.html"><button class="subnavbtn">Todos os projetos </button></a>
+    </div>
+
+    <div class="subnav">
+      <button class="subnavbtn">Favoritados</button>
+    </div>
+    <div class="subnav">
+    <a href="/logout"><button class= "logoOff">Sair</button></a>
+    </div>
+    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+  </nav>
+
+  <br><br>
+  <br><br><br>
+
+
+
+  <class class='cards_total'>
+    <div class="space">
+      <div class="row" id="row">
+
+
+
+      </div>
+  </class>
+  <br><br><br>
+  <footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          url: "http://localhost:3000/select_projects",
+          type: "GET",
+          dataType: "json",
+          success: function (data) {
+            data.rows.forEach(project => {
+              console.log(project.projeto)
+
+
+              var wrapper = document.getElementById('row');
+
+              //criando a estrutura da div card
+              let cardDoProjeto = document.createElement("div"); //criando um html a partir do JS
+              cardDoProjeto.classList.add("col-lg-3");            // o card do projeto tem 4 classes
+              cardDoProjeto.classList.add("col-sm-10");
+              cardDoProjeto.classList.add("shadow");
+              cardDoProjeto.classList.add("card");
+
+              //nome do projeto
+              let divBoxNomeProjeto = document.createElement("div");
+              divBoxNomeProjeto.classList.add("div_box");
+              let spanNomeProjeto = document.createElement("span");
+              spanNomeProjeto.classList.add("titulo_card");
+              spanNomeProjeto.textContent = project.projeto //colcando o nome do projeto na tag span
+              divBoxNomeProjeto.appendChild(spanNomeProjeto)//colocando a tag span com texto dentro da div do nome
+
+              //div das horas totais de cada projeto
+              let divBoxTotalHoras = document.createElement("div");
+              let i1 = document.createElement("i");
+              i1.classList.add("far");
+              i1.classList.add("far-clock");
+              i1.style = "color: chocolate;padding-left: 7px;font-size: 22px;padding-top: 4px;"
+
+              let span1 = document.createElement("span");
+              span1.textContent = " Indefinido.";
+
+              let i2 = document.createElement("i");
+              i2.classList.add("fas");
+              i2.classList.add("fa-check-circle");
+              i2.style = "color:#80AF79;padding-left: 7px;font-size: 22px;padding-top: 4px;";
+
+              let span2 = document.createElement("span");
+              span2.textContent = " Indefinido";
+
+              divBoxTotalHoras.appendChild(i1);
+              divBoxTotalHoras.appendChild(span1);
+              divBoxTotalHoras.appendChild(i2);
+              divBoxTotalHoras.appendChild(span2);
+
+              //botão ver mais
+              let divBoxVerMais = document.createElement("div");
+              let linkProjeto = document.createElement("a");
+              linkProjeto.href = "projeto/" + project.projeto;
+              let botaoProjeto = document.createElement("button");
+              botaoProjeto.classList.add("card_button");
+              botaoProjeto.value = "";
+              botaoProjeto.textContent = "Ver mais";
+
+
+              linkProjeto.appendChild(botaoProjeto);
+              divBoxVerMais.appendChild(linkProjeto);
+
+
+              // adicionando cada divBox na div no card do projeto
+              cardDoProjeto.appendChild(divBoxNomeProjeto);
+              cardDoProjeto.appendChild(divBoxTotalHoras);
+              cardDoProjeto.appendChild(divBoxVerMais);
+
+              // adicionando a div do card prontinha no wrapper
+              wrapper.appendChild(cardDoProjeto);
+
+            });
+
+          }
+        });
+      });
+    </script>
+
+
+  </footer>
+
+
+</body>
+
+</html>

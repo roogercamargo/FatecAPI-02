@@ -2,7 +2,6 @@
 body{
 	font-family: 'Manrope', sans-serif!important;
 	background: #F6F6F6;
-
 }
 p{
 	font-family: 'Manrope', sans-serif;
@@ -26,7 +25,8 @@ a:focus{
 
 /* navbar superior*/
 .navbar {
-    
+    position: relative;
+    width: 100%;
     background-color: #fff;
     border: 5px;
     border-color: black;
@@ -36,6 +36,10 @@ a:focus{
     
 }
 
+#myInp {
+    position: absolute;
+    left: 78%;
+}
 .color_title{
     padding-top: 10px;
     font-size: 25px;
@@ -104,12 +108,6 @@ a:focus{
 }
 
 
-
-#myInp {
-    position: absolute;
-    left: 78%;
-}
-
 /* nome do projeto */
 
 /*.h1 { 
@@ -150,70 +148,6 @@ a:focus{
    left: 30px; 
    
 }
-
-
-/* menu_options - Posição*/
-.options {display:inline-block;
-    position: relative;
-    width: 20%;
-    height: 50px;
-    text-align: center;
-    left: 9%;
-    border-radius: 10px;   
-  }
-  
-  /* menu_options - fonte*/
-i {
-    font-family: 'Red Hat Text', sans-serif;
-    font-style: normal;
-}
-
-  /* menu_options - Ao passar mouse*/
-  .options:hover{
-      text-decoration: none;
-      border-bottom:  2px solid black;
-     cursor: pointer;
-  }
-  /* navigation - posiçao*/
-  #navigation div{
-    position: flex;
-    /* padding: 10px;
-    padding-left: 10px; */
-    width: 100%;
-    height: 100%;
-    margin-left: 12px; 
-    margin-top: 10px;
-    background-color: #C9D8E4;
-    display: none;
-    
-    align-items: center;
-  }
-  
-  /* funcionalidade da exibição das telas navigation sem refresh*/
-  #navigation input[type ="radio"]{display: none;}
-  #navigation input[type ="radio"]:checked + div{
-    background-color: #F6F6F6;
-    display: block;
-    text-align: center;
-  }
-
-  /* tamanho da caixa de texto que descreve sobre o projeto*/
-  #detalhes #project p{
-      width: 450px;
-  }
-  /* imagem juntamente aos títulos na aba de projetos*/
-  #detalhes img, h1{
-      display: inline-block;
-  }
-/* proposta de projeto e tarefas pendentes alianhadas na horizontal*/
-  #detalhes .proposal, .tasks{
-      display: inline-table;
-  }
-/* posição exata das tarefas pendentes*/
-  #detalhes .tasks{
-      position: relative;
-      left: 30%;
-  }
 
 /* estilo barra de pesquisa */
   input[type=text] {
@@ -301,80 +235,74 @@ input {
     text-align: center;
 } */
 
-
-
-#FOR_TEST {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to right, #fd5c63 0%, #FD1717 100%);
- 
+.cards_total{
+    position: relative;
 }
 
-#IN_PROGRESS {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to left, #f39f86 0%, #f9d976 74%);
-  height: 400px;
+.card{
+    max-width: 22.5%;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    border-radius: 15px;
+} 
+
+.card_button {
+  position: relative;
+  width: 50%;
+  left: 20%;
+    border-style: none;
+    background-color: #004C6D;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.card_button:hover{
+    background-color: #0994cf;
+    
+}
+.space{
+    position: relative;
+    width: 100%;
+    margin-left: 1%;
+    padding-left: 16px;
+    padding-right: 14px;
+    background-color: #f6f6f6;
+}
+.titulo_card{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: normal;
 }
 
-#QA_DEPLOYING {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to left, #f6fba2 0%, #20ded3 74%);
-}
+.card_tit_descr{
+    background: #D1EFFF;;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
 
-#QA_TESTING {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to right, #feeacf 0%, #f79b73 74%);
 }
-
-#RELEASE_TO_PROD {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #63a4ff;
-  background-image: linear-gradient(to left, #63a4ff 0%, #83eaf1 74%);
+.card_descrição{
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 5px 5px 5px 5px;
+    margin: 5px 6px 6px 10px;
+    padding: 7px 6px 0px 6px;
+    font-size: 13px;
 }
-
-#PROD_DEPLOYING {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to left, #7f53ac 0%, #647dee 74%);
+.linha{
+    border-bottom: solid 1px #ccc;
 }
-
-#DONE {
-  border: 1px solid black;
-  width: 12%;
-  margin-left: 1%;
-  margin-right: 1%;
-  display: inline-table;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to left, #3bb78f 0%, #0bab64 74%);
+.div_box{
+    position: relative;
+    width: 100%;
+        border: 1px none;
+        margin: 6px 63px 10px 10px;
+        background-color: rgb(255, 255, 255);
 }
-
 
 .logoOff{
   background-color: #004C6D ;
@@ -393,5 +321,3 @@ input {
   cursor: pointer;
   background-color:#0994cf;
 }
-
-
