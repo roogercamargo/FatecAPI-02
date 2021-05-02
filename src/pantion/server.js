@@ -171,3 +171,7 @@ app.get('/select_cards/:id', function (req, res) {
     }
 })
 
+const open = (process.platform == 'darwin'? 'open': 
+process.platform == 'win32'? 'start': 'xdg-open');
+
+require('child_process').exec(open + ' ' + 'http://localhost:3000/'); 
