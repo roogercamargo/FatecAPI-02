@@ -45,7 +45,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20(1).png"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog%20entrega%202.png"></h2>
 
 
 <h6><a href="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20completo.png"><img src="https://img.shields.io/badge/Visualizar Backlog completo-informational?style=flat-square" width="20%"></a></h6>
@@ -55,13 +55,13 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Diagrama%20de%20Entidade%20e%20Relacionamento/der-fatecapi-02.png" width="700"</h1>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Diagrama%20de%20Entidade%20e%20Relacionamento/der-fatecapi-02.png" width="700"</h1>
  
 <h2>📌Modelo Lógico - Diagrama de Entidade e Relacionamento</h2>
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Diagrama%20de%20Entidade%20e%20Relacionamento/logico-der-fatecapi-02.png" width="700"></h1>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Diagrama%20de%20Entidade%20e%20Relacionamento/logico-der-fatecapi-02.png" width="700"></h1>
 
 
 <h2>📺Demonstração das telas</h2>
@@ -92,7 +92,7 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Burndown/BurnSprint2.PNG" width="700"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Burndown/BurnSprint2.PNG" width="700"></h2>
 
 <p align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-01"><img src="https://img.shields.io/badge/Visualizar entrega 1-informational?style=for-the-badge" width="18%"></a> <a href="https://github.com/roogercamargo/FatecAPI-02/tree/main"><img src="https://img.shields.io/badge/Retornar%20a%20main-informational?style=for-the-badge" width="14.4%"></a></p>
 
