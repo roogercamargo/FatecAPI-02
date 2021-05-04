@@ -25,6 +25,12 @@
 
 Desenvolver para o nosso cliente, um painel de visualização, onde ele conseguirá analisar e entender tudo o que está acontecendo nos projetos abertos dentro da empresa, sem precisar interferir diretamente em seu desenvolvimento. O Propósito deste Dashboard é poder transmitir informações de forma rápida e com eficiência.<br><br>
 
+<h2>O que entregamos?</h2>
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
+
+<p align="justify">Nesta entrega o cliente terá uma visão panorâmica geral sobre a plataforma sendo exibido gráficos de acordo os dados concebidos, como você pode ver nos <a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-03#wireframes-do-projeto">Wireframes</a>; Quantidade de cards por status, horas trabalhadas de Janeiro a Dezembro... </p>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card3.png" width="700"></h2>
 
 <h2>🔧Ferramentas utilizadas</h2>
 
