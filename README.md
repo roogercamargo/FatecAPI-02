@@ -42,6 +42,9 @@ Tecnologias | Usamos para
 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" width = "95px" height="25px"> | É um framework, facilitador na elaboração do design de websites e outras tecnologias. Dispõe de uma grande variedade de temas, oferecendo padrões e templates baseados em HTML e CSS para várias funções e componentes de uma aplicação web.
 <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" width = "95px" height="25px">  | O Express.js é um Framework ágil e um dos mais utilizados em conjunto com o Node.js, contribuindo no desenvolvimento de aplicações back-end.
 <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" width = "200px" height="25px"> | PostgreSQL, é um sistema de gerenciamento de banco de dados do tipo relacional. Seu objetivo é permitir a realização da linguagem SQL em estruturas de programação. Sendo assim, garantindo um trabalho bem-organizado seguindo as diretrizes desse tipo de ordenação dos dados.
+<img src="https://img.shields.io/badge/Charts-316192?style=for-the-badge&logo=google&logoColor=white" width = "200px" height="25px"> | Google Charts é uma ferramenta da Google para representar graficamente os dados recebidos, se pode usar com diferentes formatos, Json, Javascript e plugins que se podem integrar com várias linguagens de programação. Com ela podemos desenhar os principais tipos de gráficos, pizza, barras, linhas, tabelas entre outros.
+
+
 
 <h2>👥Equipe Enneagon</h2>
 
