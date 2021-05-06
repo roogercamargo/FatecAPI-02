@@ -302,6 +302,11 @@ input {
     width: 70%;
     margin-left: 15%;
 }
+#fimCard{
+  position: relative;
+  width: 70%;
+  margin-left: 20%;
+}
 
 .logoOff{
   background-color: #004C6D ;

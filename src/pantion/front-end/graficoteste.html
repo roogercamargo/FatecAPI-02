@@ -146,10 +146,18 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://www.google.com/jsapi"></script>
     <script>
- google.charts.load('current', { packages: ['corechart'] });
+        google.charts.load('current', { packages: ['corechart']});
+        // puxando função status dos cards
         google.charts.setOnLoadCallback(puxarDado);
+        //Puxando cards finalizados e não finalizados
+        google.charts.setOnLoadCallback(finalizado);
+        //Puxando horas acumuladas
+        google.charts.setOnLoadCallback(horasAmount);
         var quantidades = [];
+        var fim = [];
+        var acumulaHoras = [];
 
+        //Função para puxar status e exibir no gráfico
         function puxarDado() {
 
         var IN_PROGRESS = 0;
@@ -161,7 +169,7 @@
         var DONE = 0;
 
             $.ajax({
-                url: "http://localhost:3000/grafico/",
+                url: "http://localhost:3000/grafico/", //OBS: Passar por ID
                 type: "GET",
                 dataType: "json",
                 success: function (data) {
@@ -190,6 +198,8 @@
                             DONE++;
                         }
                     })
+
+                    //Pegando lógica e dados da conexão
                     quantidades.push(IN_PROGRESS);
                     quantidades.push(QA_DEPLOYING);
                     quantidades.push(FOR_TEST);
@@ -197,7 +207,7 @@
                     quantidades.push(RELEASE_TO_PROD);
                     quantidades.push(PROD_DEPLOYING);
                     quantidades.push(DONE);
-
+                //Colocando a lógica dentro das tabelas para exibição
             var data = new google.visualization.arrayToDataTable([
                 ['Status', '', {role:'style'}],
                 ['IN PROGRESS', quantidades[0], 'orange'],
@@ -208,12 +218,7 @@
                 ['PROD DEPLOYING', quantidades[5], 'purple'],
                 ['DONE', quantidades[6], 'green']
                 ]);
-            // data.addColumn('string', 'Status');
-            // data.addColumn('number', 'Quantidade');
-            // data.addRows([
-
-            // ]);
-
+            //Front do gráfico
             var options = {
                 'title': 'QUANTIDADE DE CARDS POR STATUS',
                 chartArea: {backgroundColor: '#ffffff', width: '60%'},
@@ -228,7 +233,7 @@
                     title: 'Status dos cards'
                 }
             };
-
+            //Exibição do gráfico
             var chart = new google.visualization.BarChart(document.getElementById('statusCard'));
             chart.draw(data, options);
                     
@@ -238,9 +243,106 @@
         
         }
 
+        //Função para exibir cards finalizados e não finalizados
+        function finalizado() {
+
+        var final= 0;
+        var finalizar = 0;
+
+    $.ajax({
+        url: "http://localhost:3000/grafico/",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var nomeDoProjeto = document.getElementById('nome_projeto');
+            nomeDoProjeto.textContent = data.rows[0].projeto;
+            data.rows.forEach(card => {
+                if (card.terminado == true) {
+                    final++;
+                }
+                else {
+                    finalizar++;
+                }
+            })
+            fim.push(final);
+            fim.push(finalizar);
+
+    var data = new google.visualization.arrayToDataTable([
+        ['Status', '', {role:'style'}],
+        ['Finalizado', fim[0], 'orange'],
+        ['Não finalizado', fim[1], '#20ded3'],
+        ]);
+//OBS: Verificar title 
+    var options = {
+        'title': 'RELAÇÃO DE CARDS FINALIZADOS E NÃO FINALIZADOS',
+        chartArea: {backgroundColor: '#ffffff', width: '60%'},
+        backgroundColor: '#f6f6f6',
+        'is3D':true,
+        'height': 400,
+        legend: {position:'right'}
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('fimCard'));
+    chart.draw(data, options);
+            
+        }
+    });
+
+
+}
+//Função para horas acumuladas
+//OBS: Será exibido em tabela
+//Dificuldade para acumular às horas, realizar às somas totais
+function horasAmount() {
+var i;
+var newhours;
+
+    $.ajax({
+        url: "http://localhost:3000/grafico/",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var nomeDoProjeto = document.getElementById('nome_projeto');
+            nomeDoProjeto.textContent = data.rows[0].projeto;
+            data.rows.forEach(card => {
+              console.log(card.horas);
+            })
+    // var data = new google.visualization.arrayToDataTable([
+    //     ['Status', '', {role:'style'}],
+    //     ['Finalizado', newhours, 'orange'],
+    //     ]);
+    // // data.addColumn('string', 'Status');
+    // // data.addColumn('number', 'Quantidade');
+    // // data.addRows([
+
+    // // ]);
+
+    // var options = {
+    //     'title': 'RELAÇÃO DE CARDS FINALIZADOS E NÃO FINALIZADOS',
+    //     chartArea: {backgroundColor: '#ffffff', width: '60%'},
+    //     backgroundColor: '#f6f6f6',
+    //     'is3D':true,
+    //     'height': 400,
+    //     legend: {position:'right'}
+    // };
+
+    // var chart = new google.visualization.PieChart(document.getElementById('horas1'));
+    // chart.draw(data, options);
+            
+        }
+    });
+
+}
+
     </script>
     <!-- identifica onde o gráfico vai ser exibido -->
     <div id="statusCard"></div><br><br>
+    <div id="fimCard"></div><br><br>
+    <div id="horas1"></div><br><br>
+<div id= "res">
+</div>
 </body>
     <script></script>
 </html>
+
+
