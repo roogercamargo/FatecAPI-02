@@ -299,13 +299,13 @@ input {
 
 #statusCard{
     position: relative;
-    width: 70%;
-    margin-left: 15%;
+    width: 60%;
+
 }
 #fimCard{
   position: relative;
   width: 70%;
-  margin-left: 20%;
+  display: inline-block;
 }
 
 .logoOff{

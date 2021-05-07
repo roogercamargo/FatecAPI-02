@@ -210,18 +210,18 @@
                 //Colocando a lógica dentro das tabelas para exibição
             var data = new google.visualization.arrayToDataTable([
                 ['Status', '', {role:'style'}],
-                ['IN PROGRESS', quantidades[0], 'orange'],
-                ['QA DEPLOYING', quantidades[1], '#20ded3'],
-                ['FOR TEST', quantidades[2], 'red'],
-                ['QA TESTING', quantidades[3], '#f79b73'],
-                ['RELEASE TO PROD', quantidades[4], 'blue'],
-                ['PROD DEPLOYING', quantidades[5], 'purple'],
-                ['DONE', quantidades[6], 'green']
+                ['IN PROGRESS', quantidades[0], '#013a63'],
+                ['QA DEPLOYING', quantidades[1], '#01497c'],
+                ['FOR TEST', quantidades[2], '#014f86'],
+                ['QA TESTING', quantidades[3], '#2a6f97'],
+                ['RELEASE TO PROD', quantidades[4], '#2c7da0'],
+                ['PROD DEPLOYING', quantidades[5], '#468faf'],
+                ['DONE', quantidades[6], '#61a5c2']
                 ]);
             //Front do gráfico
             var options = {
-                'title': 'QUANTIDADE DE CARDS POR STATUS',
-                chartArea: {backgroundColor: '#ffffff', width: '60%'},
+                'title': 'Quantidade de atividades em andamento',
+                chartArea: {backgroundColor: '#F6F6F6', width: '60%'},
                 backgroundColor: '#f6f6f6',
                 'is3D':true,
                 'height': 400,
@@ -230,7 +230,7 @@
                      title: 'Quantidade',
                  },
                 vAxis: {
-                    title: 'Status dos cards'
+                    title: 'Status das atividades'
                 }
             };
             //Exibição do gráfico
