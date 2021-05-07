@@ -46,6 +46,9 @@ app.get('/logout',(req,res) => {
 app.get('/projeto/:id', function (req, res) {
     res.sendFile(__dirname + '/front-end/projeto.html');
 });
+app.get('/grafico/:id', function (req, res) {
+    res.sendFile(__dirname + '/front-end/graficoteste.html');
+});
 
 app.get('/grafico', function (req, res) {
 
@@ -93,6 +96,36 @@ app.get('/select_projects', function (req, res) {
         }
         catch (err) {
             console.log(err.stack);
+        }
+    }
+
+});
+
+app.get('/select_chart/:id', function (req, res) {
+
+    res.set({ 'content-type': 'application/json; charset=utf-8' });
+    var id = req.params.id;
+    id = id.replace("%20", " ");
+    id = id.replace(":id=", "");
+
+    var pg = require('pg');
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
+
+    var client = new pg.Client(conString);
+    client.connect();
+    const text = "select * from cards where projeto = $1";
+    const values = [id]
+    select(text, values).then(function (response) {
+        res.send(response)
+    })
+
+    async function select(text, values) {
+        try {
+            const res = await client.query(text, values)
+            return res;
+        }
+        catch (err) {
+            console.log(err.stack)
         }
     }
 
@@ -171,7 +204,7 @@ app.get('/select_cards/:id', function (req, res) {
     }
 })
 
-const open = (process.platform == 'darwin'? 'open': 
-process.platform == 'win32'? 'start': 'xdg-open');
+// const open = (process.platform == 'darwin'? 'open': 
+// process.platform == 'win32'? 'start': 'xdg-open');
 
-require('child_process').exec(open + ' ' + 'http://localhost:3000/'); 
+// require('child_process').exec(open + ' ' + 'http://localhost:3000/'); 

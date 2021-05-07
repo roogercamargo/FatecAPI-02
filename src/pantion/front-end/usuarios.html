@@ -14,6 +14,11 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
   <link rel="sortcut icon" href="/images/favicon.png" />
 </head>
+<script>
+  var full_url = document.URL;
+  var url_array = full_url.split('/');
+  var last_segment = url_array[url_array.length - 1];
+</script>
 
 <body>
 
@@ -25,14 +30,14 @@
 
 
     <div class="subnav">
-      <a href="/menu.html"><button class="subnavbtn">Todos os projetos </button></a>
+      <a href="/"><button class="subnavbtn">Todos os projetos </button></a>
     </div>
 
     <div class="subnav">
       <button class="subnavbtn">Favoritados</button>
     </div>
     <div class="subnav">
-    <a href="/logout"><button class= "logoOff">Sair</button></a>
+      <a href="/logout"><button class="logoOff">Sair</button></a>
     </div>
     <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
   </nav>
@@ -79,23 +84,23 @@
           </div>
         </label> -->
 
-    <label for=panel class="options">
-      <a href="/Projeto.html">
-      <div>
-        <img src="/images/painel.png">
-          <b><i>Painel</i></b>
-        </div>
-    </label>
-</a>
-
-    <label for=users class="options">
-      <a href="/usuarios.html">
-      <div>
-        <img src="/images/usuarios.png">        
-        <b><i>Usuários</i></b>
-      </div>
-    </label>
-</a>
+        <label for=panel class="options">
+          <a href="" id="visualizar_painel">
+          <div>
+            <img src="/images/painel.png">
+            <b><i>Painel</i></b>
+          </div>
+        </a>
+        </label>
+    
+        <label for=users class="options">
+          <a href="" id="visualizar_usuarios">
+            <div>
+              <img src="/images/usuarios.png">
+              <b><i>Usuários</i></b>
+            </div>
+        </label>
+        </a>
     <!--  <label for=rank class="options">
           <div>
             <img src="images/comits.png">
@@ -103,21 +108,21 @@
           </div>
         </label> -->
 
-    <label for=graphics class="options">
-      <a href="/graficoteste.html">
-        <div>
-          <img src="/images/grafico.png">
-          <b><i>Gráficos</i></b>
-        </div>
-    </label>
-    </a>
-
-    <label for=time class="options">
-      <div>
-        <img src="/images/tempo.png">
-        <b><i>Tempo</i></b>
-      </div>
-    </label>
+        <label for=graphics class="options">
+          <a href="" id="visualizar_graficos">
+            <div>
+              <img src="/images/grafico.png">
+              <b><i>Gráficos</i></b>
+            </div>
+        </label>
+        </a>
+    
+        <label for=time class="options">
+          <div>
+            <img src="/images/tempo.png">
+            <b><i>Tempo</i></b>
+          </div>
+        </label>
 
   </div>
   <br>
@@ -151,21 +156,26 @@
     <!--pode dar conflito-->
 
     <script>
+      var scrt_var = last_segment;
+      var strLink = "/usuarios/" + scrt_var;
+      document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
 
-    var full_url = document.URL; // Get current url
-    var url_array = full_url.split('/') // Split the string into an array with / as separator
-    var last_segment = url_array[url_array.length-1];  // Get the last part of the array (-1)
+      var strLinkGrafico = "/grafico/" + scrt_var;
+      document.getElementById("visualizar_graficos").setAttribute("href", strLinkGrafico);
 
-    $(document).ready(function () {
+      var strLinkPainel = "/projeto/" + scrt_var;
+      document.getElementById("visualizar_painel").setAttribute("href", strLinkPainel);
+
+
+      $(document).ready(function () {
         $('#subir').click(function () {
           $('html, body').animate({ scrollTop: 0 }, 'slow');
           return false;
         });
       })
-        $('#sidebarCollapse').on('click', function () {
-          $('#sidebar').toggleClass('active');
-        });
-        
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+      });
 
 
 
@@ -173,7 +183,8 @@
 
 
 
-    
+
+
       $.ajax({
         url: "http://localhost:3000/pegar_usuarios/:id=" + last_segment,
         type: "GET",
@@ -183,12 +194,12 @@
 
           var nomeDoProjeto = document.getElementById('nome_projeto');
           nomeDoProjeto.textContent = data.rows[0].projeto;
-          
+
           data.rows.forEach(usuario => {
 
 
             var userlist = document.getElementById('users');
-            
+
             // card col left
             let divColLeft = document.createElement("div");
             divColLeft.classList.add("card-col-left");
@@ -204,7 +215,7 @@
             let ccRight = document.createElement("div");
             ccRight.classList.add("card-col-right");
             // --------------------------------
-            
+
             // div user name
             let userName = document.createElement("div");
             userName.classList.add("user-name");
@@ -225,7 +236,7 @@
             i_Email.classList.add("fas");
             i_Email.classList.add("fa-envelope-open-text");
             let spanEmail = document.createElement("span");
-            spanEmail.textContent = " "+ usuario.user_email;
+            spanEmail.textContent = " " + usuario.user_email;
             divEmail.appendChild(i_Email);
             divEmail.appendChild(spanEmail);
             // --------------------------
@@ -255,7 +266,7 @@
         }
       });
 
-      
+
 
 
     </script>
