@@ -145,6 +145,7 @@
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://www.google.com/jsapi"></script>
+
     <script>
         google.charts.load('current', { packages: ['corechart']});
         // puxando função status dos cards
@@ -220,8 +221,8 @@
                 ]);
             //Front do gráfico
             var options = {
-                'title': 'Quantidade de atividades em andamento',
-                chartArea: {backgroundColor: '#F6F6F6', width: '60%'},
+                'title': 'QUANTIDADE DE ATIVIDADES EM ANDAMENTO',
+                chartArea: {backgroundColor: '#F6F6F6', width: '80%'},
                 backgroundColor: '#f6f6f6',
                 'is3D':true,
                 'height': 400,
@@ -275,7 +276,7 @@
 //OBS: Verificar title 
     var options = {
         'title': 'RELAÇÃO DE CARDS FINALIZADOS E NÃO FINALIZADOS',
-        chartArea: {backgroundColor: '#ffffff', width: '60%'},
+        chartArea: {backgroundColor: '#ffffff', width: '70%'},
         backgroundColor: '#f6f6f6',
         'is3D':true,
         'height': 400,
@@ -336,10 +337,11 @@ var newhours;
 
     </script>
     <!-- identifica onde o gráfico vai ser exibido -->
+<class id = "charts">
     <div id="statusCard"></div><br><br>
     <div id="fimCard"></div><br><br>
     <div id="horas1"></div><br><br>
-<div id= "res">
+</class>
 </div>
 </body>
     <script></script>
