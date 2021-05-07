@@ -37,7 +37,9 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<p align="justify">O valor desta entrega...</p>
+<p align="justify">A qualidade de um projeto se da de acordo com a proporção em que ele é visualizado de forma justa e coerente. A unificação dos dados de todo o projeto permite que essa ação ocorra, auxiliando o gerenciamento do plano de entrega e reavaliando os caminhos percorridos. A dinâmica melhora e se aproxima do ideal quando se tem a criação estatísticas que contribui com a gestão das propostas, para isso é necessário o desenvolvimento de gráficos que permitem a demonstração desses pensamentos. 
+Os gráficos utilizados permitem a criação de cenários futuros que facilita as alterações que podem vir ocorrer durante o processo de desenvolvimento e aplicação de cada projeto. 
+</p>
  
 <h2>📍Backlog e User stories</h2>
 
