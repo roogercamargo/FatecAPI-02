@@ -14,7 +14,7 @@
   <script>
     var full_url = document.URL;
     var url_array = full_url.split('/');
-    var last_segment = url_array[url_array.length - 1];
+    var last_segment = url_array[url_array.length-1];
   </script>
 
 </head>
@@ -29,14 +29,14 @@
 
 
     <div class="subnav">
-      <a href="/"><button class="subnavbtn">Todos os projetos </button></a>
+      <a href="/menu.html"><button class="subnavbtn">Todos os projetos </button></a>
     </div>
 
     <div class="subnav">
       <button class="subnavbtn">Favoritados</button>
     </div>
     <div class="subnav">
-      <a href="/logout"><button class="logoOff">Sair</button></a>
+    <a href="/logout"><button class= "logoOff">Sair</button></a>
     </div>
     <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
   </nav>
@@ -125,7 +125,7 @@
     </label>
 
     <label for=users class="options">
-      <a href="" id="visualizar_usuarios">
+      <a href="/usuarios.html" id="visualizar_usuarios">
         <div>
           <img src="/images/usuarios.png">
           <b><i>Usuários</i></b>
@@ -141,7 +141,7 @@
         </label> -->
 
     <label for=graphics class="options">
-      <a href="" id="visualizar_graficos">
+      <a href="/graficoteste.html">
         <div>
           <img src="/images/grafico.png">
           <b><i>Gráficos</i></b>
@@ -259,14 +259,11 @@
 
     <script>
 
-      var scrt_var = last_segment;
-      var strLink = "/usuarios/" + scrt_var;
-      document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
-
-      var strLinkGrafico = "/grafico/" + scrt_var;
-      document.getElementById("visualizar_graficos").setAttribute("href", strLinkGrafico);
-
-      $(document).ready(function () {
+    var scrt_var = last_segment;
+    var strLink = "/usuarios/" + scrt_var;
+    document.getElementById("visualizar_usuarios").setAttribute("href",strLink);
+    
+    $(document).ready(function () {
         $('#subir').click(function () {
           $('html, body').animate({ scrollTop: 0 }, 'slow');
           return false;
