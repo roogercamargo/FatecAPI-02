@@ -300,7 +300,23 @@ input {
 #statusCard{
     position: relative;
     width: 70%;
-    margin-left: 15%;
+    margin-left: 2%;
+}
+#fimCard{
+  position: relative;
+  width: 60%;
+}
+
+#charts{
+  display: flex;
+
+}
+
+.datatable{
+  position:relative;
+  margin-left: 5%;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .logoOff{
