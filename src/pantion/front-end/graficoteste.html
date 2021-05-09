@@ -162,7 +162,7 @@
     // //Puxando cards finalizados e não finalizados
     google.charts.setOnLoadCallback(finalizado);
     // //Puxando horas acumuladas
-    // google.charts.setOnLoadCallback(horasAmount);
+    google.charts.setOnLoadCallback(horasAmount);
     // var quantidades = [];
     // var fim = [];
     // var acumulaHoras = [];
@@ -231,14 +231,14 @@
           quantidades.push(DONE);
           //Colocando a lógica dentro das tabelas para exibição
           var data = new google.visualization.arrayToDataTable([
-            ['Status', '', { role: 'style' }],
-            ['IN PROGRESS', quantidades[0], '#013a63'],
-            ['QA DEPLOYING', quantidades[1], '#01497c'],
-            ['FOR TEST', quantidades[2], '#014f86'],
-            ['QA TESTING', quantidades[3], '#2a6f97'],
-            ['RELEASE TO PROD', quantidades[4], '#2c7da0'],
-            ['PROD DEPLOYING', quantidades[5], '#468faf'],
-            ['DONE', quantidades[6], '#61a5c2']
+            ['Status', '', { role: 'style' }, {role:'annotation'}],
+            ['IN PROGRESS', quantidades[0], '#013a63',quantidades[0]],
+            ['QA DEPLOYING', quantidades[1], '#01497c',quantidades[1]],
+            ['FOR TEST', quantidades[2], '#014f86',quantidades[2]],
+            ['QA TESTING', quantidades[3], '#2a6f97',quantidades[3]],
+            ['RELEASE TO PROD', quantidades[4], '#2c7da0', quantidades[4]],
+            ['PROD DEPLOYING', quantidades[5], '#468faf',quantidades[5]],
+            ['DONE', quantidades[6], '#61a5c2', quantidades[6]]
           ]);
           //Front do gráfico
           var options = {
@@ -318,49 +318,46 @@
     //Função para horas acumuladas
     //OBS: Será exibido em tabela
     //Dificuldade para acumular às horas, realizar às somas totais
-    // function horasAmount() {
-    //   var i;
-    //   var newhours;
+    function horasAmount() {
+          var numb = 0;
+          var no =0;
+          var soma;
 
-    //   $.ajax({
-    //     url: "http://localhost:3000/grafico/",
-    //     type: "GET",
-    //     dataType: "json",
-    //     success: function (data) {
-    //       var nomeDoProjeto = document.getElementById('nome_projeto');
-    //       nomeDoProjeto.textContent = data.rows[0].projeto;
-    //       data.rows.forEach(card => {
-    //         console.log(card.horas);
-    //       })
-    //       // var data = new google.visualization.arrayToDataTable([
-    //       //     ['Status', '', {role:'style'}],
-    //       //     ['Finalizado', newhours, 'orange'],
-    //       //     ]);
-    //       // // data.addColumn('string', 'Status');
-    //       // // data.addColumn('number', 'Quantidade');
-    //       // // data.addRows([
+      $.ajax({
+          url: "http://localhost:3000/select_chart/" + last_segment,
+          type: "GET",
+          dataType: "json",
+          success: function (data) {
+              var acumulaHoras = [];
+              var nomeDoProjeto = document.getElementById('nome_projeto');
+              nomeDoProjeto.textContent = data.rows[0].projeto;
+              data.rows.forEach(card => {
+                if (card.horas == null){
+                  no++;
+                }
+                else{
+                  numb++;}
+              })
 
-    //       // // ]);
+              acumulaHoras.push(numb);
+              acumulaHoras.push(no);
+              soma = acumulaHoras[0] + acumulaHoras[1];
+              var res = document.getElementById('res');
+              res.innerHTML += `${soma}`
+              
+          }
+      });
 
-    //       // var options = {
-    //       //     'title': 'RELAÇÃO DE CARDS FINALIZADOS E NÃO FINALIZADOS',
-    //       //     chartArea: {backgroundColor: '#ffffff', width: '60%'},
-    //       //     backgroundColor: '#f6f6f6',
-    //       //     'is3D':true,
-    //       //     'height': 400,
-    //       //     legend: {position:'right'}
-    //       // };
-
-    //       // var chart = new google.visualization.PieChart(document.getElementById('horas1'));
-    //       // chart.draw(data, options);
-
-    //     }
-    //   });
-
-    // }
+  }
 
   </script>
   <!-- identifica onde o gráfico vai ser exibido -->
+  <div class ="datatable" style="max-width: 18%;">
+    <div style="font-size: 20px; text-align: center;">Total de cards do projeto</div><hr>
+      <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
+        <div id ="res"></div><h1> </h1>
+      </h5>
+</div>
   <class id="charts">
     <div id="statusCard"></div><br><br>
     <div id="fimCard"></div><br><br>
