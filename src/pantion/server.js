@@ -57,8 +57,8 @@ app.get('/grafico', function (req, res) {
 
     var client = new pg.Client(conString);
     client.connect();
-    const text = "select * from cards where projeto = $1";
-    const values = ['[Costa Comércio Comércio] - Sharable non-volatile internet solution']
+    const text = "select * from cards";
+    const values = []
     select(text, values).then(function (response) {
         res.send(response)
     })
