@@ -287,6 +287,7 @@ input {
     height: 50px;
     background-color: #c9c9c9;
     text-decoration: none;
+    z-index:2;
 }
 
 #subir::after {
@@ -300,11 +301,17 @@ input {
 #statusCard{
     position: relative;
     width: 70%;
-    margin-left: 2%;
+    margin-left: 0.5%;
+  border: solid 2px;
+  box-shadow: 2.5px 2.5px 2.5px 1px black;
 }
 #fimCard{
   position: relative;
   width: 60%;
+  margin-left: 2%;
+  margin-right: 0.5%;
+  border: solid 2px;
+  box-shadow: 2.5px 2.5px 2.5px 1px black;
 }
 
 #charts{
