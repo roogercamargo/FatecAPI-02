@@ -45,7 +45,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog%20entrega%202.png"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/UserStorie2.jpg"></h1>
 
 
 <h6><a href="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-02/docs/Backlog%20completo.png"><img src="https://img.shields.io/badge/Visualizar Backlog completo-informational?style=flat-square" width="20%"></a></h6>
