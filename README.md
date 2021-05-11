@@ -131,7 +131,7 @@ Tecnologias | Usamos para
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png"></h1>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/BacklogTotal.jpg"></h1>
        
 <h2>💻Wireframes do projeto</h2>
 
