@@ -52,7 +52,7 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/UserStorie1.jpg"></h1>
-<p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/Backlog.png">Visualizar Backlog completo</a></p>
+<p><a href="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/BacklogTotal.jpg">Visualizar Backlog completo</a></p>
 
 <h2>Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2> 
 
