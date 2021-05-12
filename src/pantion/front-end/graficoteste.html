@@ -350,7 +350,6 @@ $(document).ready(function () {
                 else{
                   numb++;}
               })
-              console.log(horasTotais)
               acumulaHoras.push(numb);
               acumulaHoras.push(no);
               soma = acumulaHoras[0] + acumulaHoras[1];
@@ -365,10 +364,8 @@ $(document).ready(function () {
   }
 
   </script>
-  <class class="aoLado">
-
-  
   <!-- identifica onde o gráfico vai ser exibido -->
+  <class class="aoLado">
   <div class ="datatable">
     <div style="font-size: 20px; text-align: center;">Total de atividades do projeto</div><hr>
       <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
@@ -376,9 +373,10 @@ $(document).ready(function () {
       </h5>
 </div>
 <div class ="aHours">
-  <div style="font-size: 20px; text-align: center;">Total de horas do projeto por atividade concluída</div><hr>
+  <div style="font-size: 20px; text-align: center;">Total de horas das atividades concluídas</div><hr>
     <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
-      <div id ="hours"></div><h1> </h1>
+      <div id ="hours"></div><h1></h1>
+      <span style="font-size: 15px;">/Horas</span>
     </h5>
 </div>
 </class>
@@ -386,7 +384,6 @@ $(document).ready(function () {
   <class id="charts">
     <div id="statusCard"></div><br><br>
     <div id="fimCard"></div><br><br>
-    <div id="horas1"></div><br><br>
   </class>
   <br><br><br>
   </div>

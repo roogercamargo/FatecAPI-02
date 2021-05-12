@@ -301,7 +301,7 @@ input {
 #statusCard{
     position: relative;
     width: 50%;
-    margin-left: 0.5%;
+    margin-left: 2%;
     border: solid 2px;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -320,9 +320,8 @@ input {
 }
 
 .datatable{
-  width: 20%;
+  width: 20.5%;
   position:relative;
-  margin-left: 5%;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -330,10 +329,10 @@ input {
 }
 
 .aHours{
-  width: 20%;
+  width: 27.5%;
   position:relative;
-  margin-left: 1%;
   background-color: #ffffff;
+  margin-left: 0.5%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
@@ -359,4 +358,27 @@ input {
 
 .aoLado{
 display: flex;
+margin-left: 2%;
+}
+
+#horas1{
+  position: relative;
+  margin-left: 2%;
+  width: 47.76%;
+  height: 430px;
+  border: solid 2px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.datatableTotal{
+  width: 47.5%;
+  margin-left: 2%;
+  position:relative;
+  background-color: #ffffff;
+  border: solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.aoLadoTotal{
+ display: flex;
 }
