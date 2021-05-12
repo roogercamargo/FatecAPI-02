@@ -300,18 +300,18 @@ input {
 
 #statusCard{
     position: relative;
-    width: 70%;
+    width: 50%;
     margin-left: 0.5%;
-  border: solid 2px;
-  box-shadow: 2.5px 2.5px 2.5px 1px black;
+    border: solid 2px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #fimCard{
   position: relative;
-  width: 60%;
+  width: 50%;
   margin-left: 2%;
   margin-right: 0.5%;
   border: solid 2px;
-  box-shadow: 2.5px 2.5px 2.5px 1px black;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #charts{
@@ -320,10 +320,23 @@ input {
 }
 
 .datatable{
+  width: 20%;
   position:relative;
   margin-left: 5%;
   background-color: #ffffff;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.aHours{
+  width: 20%;
+  position:relative;
+  margin-left: 1%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .logoOff{
@@ -342,4 +355,8 @@ input {
 .logoOff:hover{
   cursor: pointer;
   background-color:#0994cf;
+}
+
+.aoLado{
+display: flex;
 }

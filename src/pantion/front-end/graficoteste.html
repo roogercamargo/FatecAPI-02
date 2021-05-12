@@ -152,6 +152,16 @@
 
   <script>
 
+$(document).ready(function () {
+        $('#subir').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 'slow');
+          return false;
+        });
+      })
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+      });
+
     // var scrt_var = last_segment;
     // var strLink = "/usuarios/" + scrt_var;
     // document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
@@ -292,7 +302,7 @@
 
           var data = new google.visualization.arrayToDataTable([
             ['Status', '', { role: 'style' }],
-            ['Finalizados', fim[0], 'orange'],
+            ['Finalizados', fim[0], 'black'],
             ['Não finalizados', fim[1], '#20ded3'],
           ]);
           //OBS: Verificar title 
@@ -329,16 +339,18 @@
           dataType: "json",
           success: function (data) {
               var acumulaHoras = [];
+              var horasTotais = 0;
               var nomeDoProjeto = document.getElementById('nome_projeto');
               nomeDoProjeto.textContent = data.rows[0].projeto;
               data.rows.forEach(card => {
+                horasTotais = horasTotais + card.horas;
                 if (card.horas == null){
                   no++;
                 }
                 else{
                   numb++;}
               })
-
+              console.log(horasTotais)
               acumulaHoras.push(numb);
               acumulaHoras.push(no);
               soma = acumulaHoras[0] + acumulaHoras[1];
@@ -351,13 +363,23 @@
   }
 
   </script>
+  <class class="aoLado">
+
+  
   <!-- identifica onde o gráfico vai ser exibido -->
-  <div class ="datatable" style="max-width: 18%;">
-    <div style="font-size: 20px; text-align: center;">Total de cards do projeto</div><hr>
+  <div class ="datatable">
+    <div style="font-size: 20px; text-align: center;">Total de atividades do projeto</div><hr>
       <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
         <div id ="res"></div><h1> </h1>
       </h5>
 </div>
+<div class ="aHours">
+  <div style="font-size: 20px; text-align: center;">Total de horas do projeto por atividade concluída</div><hr>
+    <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
+      <div id ="res"></div><h1> </h1>
+    </h5>
+</div>
+</class>
 <br>
   <class id="charts">
     <div id="statusCard"></div><br><br>
