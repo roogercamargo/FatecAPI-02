@@ -356,6 +356,8 @@ $(document).ready(function () {
               soma = acumulaHoras[0] + acumulaHoras[1];
               var res = document.getElementById('res');
               res.innerHTML += `${soma}`
+              var hours = document.getElementById('hours');
+              hours.innerHTML += (horasTotais).toFixed(2);
               
           }
       });
@@ -376,7 +378,7 @@ $(document).ready(function () {
 <div class ="aHours">
   <div style="font-size: 20px; text-align: center;">Total de horas do projeto por atividade concluída</div><hr>
     <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
-      <div id ="res"></div><h1> </h1>
+      <div id ="hours"></div><h1> </h1>
     </h5>
 </div>
 </class>
