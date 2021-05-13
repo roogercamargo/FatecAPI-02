@@ -19,5 +19,13 @@
     "google-charts": "^2.0.0",
     "nodemon": "^2.0.7",
     "pg": "^8.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roogercamargo/FatecAPI-02.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roogercamargo/FatecAPI-02/issues"
+  },
+  "homepage": "https://github.com/roogercamargo/FatecAPI-02#readme"
 }
