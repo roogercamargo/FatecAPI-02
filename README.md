@@ -10,6 +10,7 @@
 - [Objetivo do Projeto](#objetivo-do-projeto)
 - [O que entregamos](#o-que-entregamos)
 - [Valor da entrega](#qual-o-valor)
+- [Demonstração das telas](#demonstração-das-telas)
 - [Backlog e User Stories](#backlog-e-user-stories)
 - [Wireframes do projeto](#wireframes-do-projeto)
 
@@ -40,6 +41,16 @@ Desenvolver para o nosso cliente, um painel de visualização, onde ele consegui
 <p align="justify">A qualidade de um projeto se da de acordo com a proporção em que ele é visualizado de forma justa e coerente. A unificação dos dados de todo o projeto permite que essa ação ocorra, auxiliando o gerenciamento do plano de entrega e reavaliando os caminhos percorridos. A dinâmica melhora e se aproxima do ideal quando se tem a criação estatísticas que contribui com a gestão das propostas, para isso é necessário o desenvolvimento de gráficos que permitem a demonstração desses pensamentos. 
 Os gráficos utilizados permitem a criação de cenários futuros que facilita as alterações que podem vir ocorrer durante o processo de desenvolvimento e aplicação de cada projeto. 
 </p>
+
+<h2>📺Demonstração das telas</h2>
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
+
+A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adicionados na plataforma. Cada conteúdo está detalhado em ["O que entregamos?"](#o-que-entregamos) e ["Qual é o valor?"](#qual-o-valor).
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/em%20desenvolvimento.png"></h1>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="...">YouTube!</a></p>
+ 
  
 <h2>📍Backlog e User stories</h2>
 
