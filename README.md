@@ -56,11 +56,19 @@ Os gráficos utilizados permitem a criação de cenários futuros que facilita a
  <h3><i><b>Terceira entrega - Sprint 03</i></b></h3>
 
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/em%20desenvolvimento.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Login.png" width="400" />
+ <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Inicial.png" width="400"/>
 </p>
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/em%20desenvolvimento.png" width="400" />
-</p>       
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Painel.png" width="400" />
+ <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Usuários.png" width="400" />
+</p> 
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Gráficos.png" width="400" />
+ <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Informações%20complementares.png" width="400" />
+</p> 
+
+
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
