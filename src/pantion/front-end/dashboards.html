@@ -34,6 +34,9 @@
       <button class="subnavbtn">Favoritados</button>
     </div>
     <div class="subnav">
+        <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
+      </div>
+    <div class="subnav">
     <a href="/logout"><button class= "logoOff">Sair</button></a>
     </div>
     <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
@@ -199,9 +202,9 @@
 //OBS: Será exibido em tabela
 //Dificuldade para acumular às horas, realizar às somas totais
 function horasAmount() {
-var numb = 0;
-var no =0;
-var soma;
+    var numb = 0;
+    var no =0;
+    var soma;
 
     $.ajax({
         url: "http://localhost:3000/grafico/",
@@ -209,14 +212,15 @@ var soma;
         dataType: "json",
         success: function (data) {
             var acumulaHoras = [];
-                var horasTotais = 0;
+            var horasTotais = 0;
             data.rows.forEach(card => {
                 horasTotais = horasTotais + card.horas;
-              if (card.horas == null){
-                no++;
-              }
-              else{
-                numb++;}
+                if (card.horas == null){
+                    no++;
+                }
+                else{
+                    numb++;
+                }
             })
             acumulaHoras.push(numb);
             acumulaHoras.push(no);

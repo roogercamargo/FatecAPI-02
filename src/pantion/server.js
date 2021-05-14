@@ -34,6 +34,10 @@ app.post('/', (req, res) => {
     }
 })
 
+app.get('/total', (req, res) => {
+    res.render("dashboards");
+})
+
 app.get('/logout',(req,res) => {
     req.session.destroy((err) => {
         if(err) {
