@@ -81,7 +81,8 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
 
 
 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
+[![forthebadge Vizualizar-no-Figma](https://img.shields.io/badge/-Vizualizar%20no%20Figma-informational?style=flat-square)](https://www.figma.com/file/eqdd2oIv05IgtSdJmC3ESs/Pantion-API?node-id=0%3A1)
+
 
 
 <h2>📊Burndown da Sprint</h2> 
