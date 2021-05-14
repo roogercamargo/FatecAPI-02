@@ -1,0 +1,102 @@
+/*geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+input, label{
+    display: block;
+    width: 100%;
+}
+input:focus, label:focus{
+    outline: none;
+}
+a{
+    color:#08558b;
+}
+body{
+    padding-top: 5vh; /* view height -> 5% da tela*/
+    background-color: #f6f6f6;
+}
+/* form */
+#main-container{
+    width: 600px;
+    margin-left:  auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
+#main-container{
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    font-size: 18px; /*tamanho letra centralizada*/
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+.spacing{
+    margin-right: 2.5%;
+}
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+input{ 
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+input:focus {
+    border-color: #323232;
+  }
+  
+  input[type="submit"] {
+    background-color:#0d6efd;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  #agreement {
+    margin-right: 5px;
+  }
+  
+  #agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+  }
+  
+  .error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+  }
+  
+  .template {
+    display: none;
+  }
+
+img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
