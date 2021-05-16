@@ -61,6 +61,19 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
 
 <h6><a href="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/BacklogTotal.jpg"><img src="https://img.shields.io/badge/Visualizar Backlog completo-informational?style=flat-square" width="20%"></a></h6>
 
+
+<h2>📌Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2>
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Diagrama%20de%20Entidade%20e%20Relacionamento/der-fatecapi-02.png" width="700"</h1>
+ 
+<h2>📌Modelo Lógico - Diagrama de Entidade e Relacionamento</h2>
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
+
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Diagrama%20de%20Entidade%20e%20Relacionamento/logico-der-fatecapi-02.png" width="700"></h1>
+
     
 <h2>💻Wireframes do projeto</h2>
   
