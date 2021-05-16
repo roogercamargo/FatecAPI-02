@@ -12,7 +12,9 @@
 - [Valor da entrega](#qual-o-valor)
 - [Demonstração das telas](#demonstração-das-telas)
 - [Backlog e User Stories](#backlog-e-user-stories)
+- [Modelo Conceitual e Lógico - Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 - [Wireframes do projeto](#wireframes-do-projeto)
+- [Gráfico de Burndown](#burndown-da-sprint)
 
 <h2>📝Descrição</h2>
 
