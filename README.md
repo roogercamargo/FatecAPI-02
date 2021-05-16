@@ -93,7 +93,7 @@ Tecnologias | Usamos para
                             <td>Sprint 3</td>
                             <td><p align = "justify">Todos os dados analisados e visíveis nos gráficos, facilitando a análise do andamento de cada projeto</p></td>
                             <td>26/04/2021 a 17/05/2021</td>
-                            <td><p>Em andamento</p></td>
+                            <td><p><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-03"><img src="https://img.shields.io/badge/Visualizar-informational?style=for-the-badge"></a></p></td>
                      </tr>
                       <tr>
                             <td>Sprint 4</td>
