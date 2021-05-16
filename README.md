@@ -48,8 +48,8 @@ Os gráficos utilizados permitem a criação de cenários futuros que facilita a
 
 A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adicionados na plataforma. Cada conteúdo está detalhado em ["O que entregamos?"](#o-que-entregamos) e ["Qual é o valor?"](#qual-o-valor).
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/em%20desenvolvimento.png"></h1>
- <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="...">YouTube!</a></p>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/gifs/Projeto-integrador-Sprint03-entrega-de-valor.gif"></h1>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://www.youtube.com/watch?v=OORJ6nG86Dc">YouTube!</a></p>
  
  
 <h2>📍Backlog e User stories</h2>
