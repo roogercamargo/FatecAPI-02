@@ -5,12 +5,9 @@ body{
 
 }
 p{
-	font-family: 'Manrope', sans-serif;
-	font-size: 1.1em;
-	font-weight: 300;
-	line-height: 1.7em;
-	color: #000000;
-  margin-left: 20px;
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
 }
 a,
 a:hover,
