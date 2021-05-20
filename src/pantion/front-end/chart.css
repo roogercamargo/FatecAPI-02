@@ -155,10 +155,10 @@ a:focus{
 /* menu_options - Posição*/
 .options {display:inline-block;
     position: relative;
-    width: 20%;
-    height: 50px;
+    width: 25%;
+    height: 60px;
     text-align: center;
-    left: 20%;
+    left: 11%;
     border-radius: 10px;   
   }
   
@@ -166,6 +166,7 @@ a:focus{
 i {
     font-family: 'Red Hat Text', sans-serif;
     font-style: normal;
+    font-size: 20px;
 }
 
   /* menu_options - Ao passar mouse*/
@@ -185,9 +186,13 @@ i {
     margin-top: 10px;
     background-color: #C9D8E4;
     display: none;
-    
+   
     align-items: center;
   }
+
+img {
+    vertical-align: bottom!important;
+}  
   
   /* funcionalidade da exibição das telas navigation sem refresh*/
   #navigation input[type ="radio"]{display: none;}
@@ -381,4 +386,12 @@ margin-left: 2%;
 
 .aoLadoTotal{
  display: flex;
+}
+
+#res{
+  color: #00BFFF;
+}
+
+#hours{
+  color: #32CD32;
 }
