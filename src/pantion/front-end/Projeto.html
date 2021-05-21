@@ -3,12 +3,24 @@
 
 <head>
   <title>Pantion</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
+  <link rel="stylesheet" href="/kanban.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link
+    href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
   <link rel="sortcut icon" href="/images/favicon.png" />
 
   <script>
@@ -53,72 +65,14 @@
     <p>Nome do Projeto</p>
   </h1>
   <br>
- <!--  <div style="float: left;margin-left: 30px"><i class="fa fa-calendar"
-      style="color:#ff4d4d;font-size: 25px;padding-top: 8px;padding-left: 5px;"></i> 25-04-2020</div>
-  <div style="float: left; margin-left: 50px"><i class="far fa-clock"
-      style="color:chocolate;font-size: 25px;padding-top: 8px;padding-left: 5px;"></i> 2.2 Horas</div>
-  <div style="clear: both"></div> -->
 
 
   <br><br><br><br>
 
- <!--  <div class="row"> -->
-    <!--Grid column-->
-  <!--   <div class="col-md-6 mb-4">
-      <div class="image">
-        <img class="image" src="/images/andamento.png" width="30" height="30" data-holder-rendered="true">
-        <h2 class="img2"><span>Em andamento<span class='spacer'></span></h2>
 
-
-      </div>
-    </div>
-  </div> -->
-
-
-
-  <!-- <div class="card-deck">
-        <div class="card">
-          <div class="card-body text-center">
-            <p><img src="images/people.png" width="100" height="100" align="left">
-            <p class="card-text">José Maria<br>
-              (Scrum Master)<br>
-              Contato: jose@hotmail.com</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body text-center">
-            <p><img src="images/people.png" width="100" height="100" align="left">
-            <p class="card-text">Daniel Santos<br>
-              (Product Owner)<br>
-              Contato: Daniel@hotmail.com</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body text-center">
-            <p><img src="images/people.png" width="100" height="100" align="left">
-            <p class="card-text">Julia Faria<br>
-              (Development Team)<br>
-              Contato: julia@hotmail.com</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body text-center">
-            <p><img src="images/people.png" width="100" height="100" align="left">
-            <p class="card-text">Lucas Siqueira<br>
-              (Development Team)<br>
-              Contato: Lucas@hotmail.com</p>
-          </div>
-        </div>
-      </div> -->
   <hr style="height:1px;border:none;color:#a6a6a6;background-color:#a6a6a6;" />
 
   <div id=menu_options>
-    <!--   <label for=details class="options">
-          <div>
-            <img src="images/detalhes.png">
-            <b><i>Detalhes</i></b>
-          </div>
-        </label> -->
 
     <label for=panel class="options">
       <div>
@@ -136,13 +90,6 @@
     </label>
     </a>
 
-    <!--  <label for=rank class="options">
-          <div>
-            <img src="images/comits.png">
-            <b><i>Contribuição</i></b>
-          </div>
-        </label> -->
-
     <label for=graphics class="options">
       <a href="" id="visualizar_graficos">
         <div>
@@ -152,51 +99,9 @@
     </label>
     </a>
 
-    <!--   <label for=time class="options">
-      <div>
-        <img src="/images/tempo.png">
-        <b><i>Tempo</i></b>
-      </div>
-    </label> -->
-
   </div>
   <br>
   <div id=navigation>
-
-    <!-- <input type="radio" id="details" name="group">
-        <div id="detalhes">
-          <class id=project>
-            <img src="images/Project.png">
-            <h1>O Projeto</h1></br></br>
-            <p>O objetivo desse projeto é criar um site E-Commerce de materiais didáticos, com foco em ajudar
-              professores e alunos em seus estudos, disponibilizando o melhor conteúdo didático a um clique de
-              distância.</p>
-          </class>
-
-          <class class=proposal>
-            <img src="images/Proposal.png">
-            <h1>Proposta</h1></br></br>
-            <p>Materiais do tipo texto, vídeo e jogo;</br>
-              Login/Cadastro de usuário;</br>
-              Área do Administrador;</br>
-              Carrinho de Compras;</br>
-              Saldo de Créditos;</br>
-              Relatório de Vendas.</br>
-            </p>
-          </class>
-
-          <class class=tasks>
-            <img src="images/tasks.png">
-            <h1>Tarefas Pendentes</h1><br><br>
-            <p>Desenvolvimento do banco de dados;<br>
-              Filtração dos dados;<br>
-              Desenvolvimento da home page;<br>
-              Exibição dos dados em tabela;<br>
-              Back-end do carrinho de compras;</br>
-              Relatório de vendas.<br>
-            </p>
-          </class>
-        </div> -->
 
     <input type="radio" id="panel" name="group">
     <div id="panel">
@@ -215,31 +120,125 @@
       <div style="border: 1px solid black; width: 12%; margin-left: 0px; margin-right: 1px; display:inline-table;"
         id="DONE"></div>
     </div>
-
-    <!-- <input type="radio" id="users" name="group">
-        <div id="usuarios">Conteúdo 3</div>
-
-        <input type="radio" id="users" name="group">
-        <div id="usuarios">Conteúdo 3</div>
-
-        <input type="radio" id="rank" name="group">
-        <div id="ranking">Conteúdo 4</div>
-
-        <input type="radio" id="graphics" name="group">
-        
-        <div class="container" id="graficos">
-            <canvas id="chart" width="400" height="400"></canvas> -->
+    <!-- kanban teste  -->
 
 
-    <!--  </div>
-          <script src="../node_modules/chart.js/dist/chart.js"></script>
-          <script src="../front-end/js/index.js"></script>
+    <div class="content">
+      <div class="c-fluxopesquisa-board">
+        <div class="c-fluxopesquisa-columns">
 
 
-        <input type="radio" id="time" name="group">
-        <div id="tempo">Conteúdo 6</div> -->
+          <!-- COLUNA -->
+          <div class="c-fluxopesquisa-column" id="IN_PROGRESS" style="background-color: #FFDCA7">
+            <div class="c-fluxopesquisa-column__header" style="background-color: #FFC48D">
+              <h4 class="c-fluxopesquisa-column__header-title">
+                <span>IN PROGRESS</span>
+              </h4>
+            </div>
+            <div class="c-fluxopesquisa-column__cards">
+
+            </div>
+          </div>
+
+
+
+
+
+
+          <!--  COLUNA -->
+          <div class="c-fluxopesquisa-column" id="QA_DEPLOYING" style="background-color: #C9EFFF">
+            <div class="c-fluxopesquisa-column__header" style="background-color: #8DD6FF">
+              <h4 class="c-fluxopesquisa-column__header-title">
+                <span>QA_DEPLOYING</span>
+              </h4>
+            </div>
+            <div class="c-fluxopesquisa-column__cards">
+            </div>
+          </div>
+
+
+
+          <!--  COLUNA -->
+          <div class="c-fluxopesquisa-column" id="FOR_TEST" style="background-color: #FFB6B6">
+            <div class="c-fluxopesquisa-column__header" style="background-color: #FF7373">
+              <h4 class="c-fluxopesquisa-column__header-title">
+                <span>FOR_TEST</span>
+              </h4>
+            </div>
+            <div class="c-fluxopesquisa-column__cards">
+            </div>
+          </div>
+
+
+
+
+          <!--  COLUNA -->
+          <div class="c-fluxopesquisa-column" id="QA_TESTING" style="background-color: #FFF2C6">
+            <div class="c-fluxopesquisa-column__header" style="background-color: #FFE588">
+              <h4 class="c-fluxopesquisa-column__header-title">
+                <span>QA_TESTING</span>
+              </h4>
+            </div>
+            <div class="c-fluxopesquisa-column__cards">
+            </div>
+          </div>
+
+
+
+          <!--  COLUNA -->
+          <div class="c-fluxopesquisa-column" id="RELEASE_TO_PROD" style="background-color: #B7BEFF">
+            <div class="c-fluxopesquisa-column__header" style="background-color: #739AFF">
+              <h4 class="c-fluxopesquisa-column__header-title">
+                <span>RELEASE_TO_PROD</span>
+              </h4>
+            </div>
+            <div class="c-fluxopesquisa-column__cards">
+            </div>
+          </div>
+
+
+
+
+          <!--  COLUNA -->
+          <div class="c-fluxopesquisa-column" id="PROD_DEPLOYING" style="background-color: #D0ABFF">
+            <div class="c-fluxopesquisa-column__header" style="background-color: #CA73FF">
+              <h4 class="c-fluxopesquisa-column__header-title">
+                <span>PROD_DEPLOYING</span>
+
+              </h4>
+            </div>
+            <div class="c-fluxopesquisa-column__cards">
+            </div>
+          </div>
+
+          <!--   CARD -->
+
+
+          <!--  COLUNA -->
+          <div class="c-fluxopesquisa-column" id="DONE" style="background-color: #BEE8AA">
+            <div class="c-fluxopesquisa-column__header" style="background-color: #6FCB60">
+              <h4 class="c-fluxopesquisa-column__header-title">
+                <span>DONE</span>
+
+              </h4>
+            </div>
+            <div class="c-fluxopesquisa-column__cards">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   </div>
+
+  </div>
+  </div>
+
+
+  <!-- partial -->
+
   <br>
   <div id="voltarTopo">
     <a href="#" id="subir"></a>
@@ -260,16 +259,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!--pode dar conflito-->
 
-    <script>
-
-      var scrt_var = last_segment;
-      var strLink = "/usuarios/" + scrt_var;
-      document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
-
-      var strLinkGrafico = "/grafico/" + scrt_var;
-      document.getElementById("visualizar_graficos").setAttribute("href", strLinkGrafico);
-
-      $(document).ready(function () {
+    <script>$(document).ready(function () {
         $('#subir').click(function () {
           $('html, body').animate({ scrollTop: 0 }, 'slow');
           return false;
@@ -281,10 +271,10 @@
 
         $.ajax({
           url: "http://localhost:3000/select_cards/:id=" + last_segment,
-          contentType: "charset=utf-8",
           type: "GET",
           dataType: "json",
           success: function (data) {
+            console.log(data)
             var exibicao = "" // adicionar o HR depois caso dê problema
             var IN_PROGRESS = [];
             var QA_DEPLOYING = [];
@@ -371,6 +361,8 @@
 
 
     </script>
+
+    <script src="./js/select_cards.js"></script>
 
   </footer>
 </body>

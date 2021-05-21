@@ -48,7 +48,7 @@ app.get('/logout',(req,res) => {
 })
 
 app.get('/projeto/:id', function (req, res) {
-    res.sendFile(__dirname + '/front-end/projeto.html');
+    res.sendFile(__dirname + '/front-end/kanban.html');
 });
 app.get('/grafico/:id', function (req, res) {
     res.sendFile(__dirname + '/front-end/graficoteste.html');
