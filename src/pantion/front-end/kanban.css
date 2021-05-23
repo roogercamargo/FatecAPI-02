@@ -42,7 +42,7 @@
   flex: 1;
   overflow-y: auto;
   height: calc(100vh - 120px);
-  max-height: 800px;
+  max-height: 48vh;
 }
 
 .c-fluxopesquisa-column {
