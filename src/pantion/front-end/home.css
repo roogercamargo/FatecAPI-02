@@ -275,6 +275,7 @@ input {
 }
 .div_box{
     position: relative;
+    text-align: center;
     width: 100%;
         border: 1px none;
         margin: 6px 63px 10px 10px;
