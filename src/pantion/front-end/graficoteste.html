@@ -85,6 +85,15 @@
         </div>
     </label>
     </a>
+
+  <label for=comments class="options">
+    <a href="" id="visualizar_comentarios">
+          <div>
+            <img src="/images/comments.png">
+            <b><i>Comentários</i></b>
+          </div>
+        </label>
+    </a>
   </div>
   <br>
 
@@ -143,11 +152,16 @@ $(document).ready(function () {
       var strLink = "/usuarios/" + scrt_var;
       document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
 
+      var strLinkComentarios = "/comentarios/" + scrt_var;
+      document.getElementById("visualizar_comentarios").setAttribute("href", strLinkComentarios);
+
       var strLinkGrafico = "/grafico/" + scrt_var;
       document.getElementById("visualizar_graficos").setAttribute("href", strLinkGrafico);
 
       var strLinkPainel = "/projeto/" + scrt_var;
       document.getElementById("visualizar_painel").setAttribute("href", strLinkPainel);
+
+
 
       var IN_PROGRESS = 0;
       var QA_DEPLOYING = 0;

@@ -40,7 +40,7 @@
     <div class="subnav">
       <a href="/logout"><button class="logoOff">Sair</button></a>
     </div>
-    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+    <input id="myInp" type="search" name="search" placeholder="Pesquisar...">
   </nav>
 
   <br>
@@ -80,6 +80,14 @@
         </label>
         </a>
 
+         <label for=comments class="options">
+       <a href="" id="visualizar_comentarios">
+          <div>
+            <img src="/images/comments.png">
+            <b><i>Comentários</i></b>
+          </div>
+        </label>
+        
   </div>
   <br>
 
@@ -118,6 +126,8 @@
       var strLinkPainel = "/projeto/" + scrt_var;
       document.getElementById("visualizar_painel").setAttribute("href", strLinkPainel);
 
+      var strLinkComentarios = "/comentarios/" + scrt_var;
+      document.getElementById("visualizar_comentarios").setAttribute("href", strLinkComentarios);
 
       $(document).ready(function () {
         $('#subir').click(function () {

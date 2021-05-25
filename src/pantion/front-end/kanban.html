@@ -48,7 +48,7 @@
     <div class="subnav">
       <a href="/logout"><button class="logoOff">Sair</button></a>
     </div>
-    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+    <input id="myInp" type="search" name="search" placeholder="Pesquisar...">
   </nav>
 
   <br>
@@ -83,6 +83,15 @@
             </div>
         </label>
         </a>
+
+
+      <label for=comments class="options">
+       <a href="" id="visualizar_comentarios">
+          <div>
+            <img src="/images/comments.png">
+            <b><i>Comentários</i></b>
+          </div>
+        </label>
 
   </div>
       <br>
@@ -196,6 +205,9 @@
  var scrt_var = last_segment;
       var strLink = "/usuarios/" + scrt_var;
       document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
+
+      var strLinkComentarios = "/comentarios/" + scrt_var;
+      document.getElementById("visualizar_comentarios").setAttribute("href", strLinkComentarios);
 
       var strLinkGrafico = "/grafico/" + scrt_var;
       document.getElementById("visualizar_graficos").setAttribute("href", strLinkGrafico);

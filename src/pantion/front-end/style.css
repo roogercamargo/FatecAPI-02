@@ -160,10 +160,10 @@ a:-webkit-any-link {
 /* menu_options - Posição*/
 .options {display:inline-block;
     position: relative;
-    width: 25%;
-    height: 60px;
+    width: 20%;
+    height: 50px;
     text-align: center;
-    left: 11%;
+    left: 9%;
     border-radius: 10px;   
   }
   
@@ -225,7 +225,7 @@ img {
   }
 
 /* estilo barra de pesquisa */
-  input[type=text] {
+  input[type=search] {
     position: relative;
     left: 67%;
     width: 160px;
@@ -244,7 +244,7 @@ img {
   }
 
 /* area que o search expande */
-input[type=text]:focus {
+input[type=search]:focus {
   width: 10%;
 
 }
@@ -260,7 +260,7 @@ button, input, select, textarea, optgroup {
 }
 
 /* estilo barra de pesquisa */
-input {
+input [type=search] {
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color: -internal-light-dark(black, white);

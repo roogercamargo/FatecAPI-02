@@ -54,6 +54,10 @@ app.get('/grafico/:id', function (req, res) {
     res.sendFile(__dirname + '/front-end/graficoteste.html');
 });
 
+app.get('/comentarios/:id', function (req, res) {
+    res.sendFile(__dirname + '/front-end/comentarios.html');
+});
+
 app.get('/grafico', function (req, res) {
 
     var pg = require('pg');
