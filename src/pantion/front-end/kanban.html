@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pantion</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/kanban.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+ 
+  
+  <link rel="sortcut icon" href="/images/favicon.png" />
+
+  <script>
+    var full_url = document.URL;
+    var url_array = full_url.split('/');
+    var last_segment = url_array[url_array.length - 1];
+  </script>
+</head>
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <img src="/images/logo_stext.png" width="60" height="60">
+    <span class="color_title">Pantion </span>
+
+
+    <div class="subnav">
+      <a href="/"><button class="subnavbtn">Todos os projetos </button></a>
+    </div>
+
+    <div class="subnav">
+      <button class="subnavbtn">Favoritados</button>
+    </div>
+    <div class="subnav">
+      <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
+    </div>
+    <div class="subnav">
+      <a href="/logout"><button class="logoOff">Sair</button></a>
+    </div>
+    <input id="myInp" type="search" name="search" placeholder="Pesquisar...">
+  </nav>
+
+  <br>
+      <h1 id="nomeProjeto"><p>Nome do Projeto</p></h1>
+            <br>
+
+      <hr style="height:1px;border:none;color:#a6a6a6;background-color:#a6a6a6;" />
+
+      <div id=menu_options>
+
+        <label for=panel class="options">
+          <div>
+            <img src="/images/painel.png">
+            <b><i>Painel</i></b>
+          </div>
+        </label>
+
+      <label for=users class="options">
+          <a href="usuarios.html" id="visualizar_usuarios">
+            <div>
+              <img src="/images/usuarios.png">
+              <b><i>Usuários</i></b>
+            </div>
+        </label>
+        </a>
+
+        <label for=graphics class="options">
+          <a href="graficoteste.html" id="visualizar_graficos">
+            <div>
+              <img src="/images/grafico.png">
+              <b><i>Gráficos</i></b>
+            </div>
+        </label>
+        </a>
+
+
+      <label for=comments class="options">
+       <a href="" id="visualizar_comentarios">
+          <div>
+            <img src="/images/comments.png">
+            <b><i>Comentários</i></b>
+          </div>
+        </label>
+      </a>
+  </div>
+      <br>
+
+<!-- kanban teste  -->
+
+
+<div class="content">
+  <div class="c-fluxopesquisa-board">
+    <div class="c-fluxopesquisa-columns">
+
+          <!-- COLUNA -->
+                <div class="c-fluxopesquisa-column">
+                  <div class="c-fluxopesquisa-column__header" style="background-color: #FFC48D">
+                    <h4 class="c-fluxopesquisa-column__header-title">
+                      <span>IN PROGRESS</span>    
+                    </h4>
+                  </div>
+                  <div class="c-fluxopesquisa-column__cards" id="IN_PROGRESS" style="background-color: #FFDCA7; text-align: center;"></div>
+                </div>
+
+          <!--  COLUNA -->
+                <div class="c-fluxopesquisa-column">
+                  <div class="c-fluxopesquisa-column__header" style="background-color: #8DD6FF">
+                    <h4 class="c-fluxopesquisa-column__header-title">
+                      <span>QA_DEPLOYING</span>
+                    </h4>
+                  </div>
+                  <div class="c-fluxopesquisa-column__cards" id="QA_DEPLOYING" style="background-color: #C9EFFF; text-align: center;"></div>
+                </div>
+
+          <!--  COLUNA -->
+                <div class="c-fluxopesquisa-column">
+                  <div class="c-fluxopesquisa-column__header" style="background-color: #FF7373">
+                    <h4 class="c-fluxopesquisa-column__header-title">
+                      <span>FOR_TEST</span>
+                    </h4>
+                  </div>
+                  <div class="c-fluxopesquisa-column__cards" id="FOR_TEST" style="background-color: #FFB6B6; text-align: center;"></div>
+                </div>
+
+          <!--  COLUNA -->
+                <div class="c-fluxopesquisa-column">
+                  <div class="c-fluxopesquisa-column__header" style="background-color: #FFE588">
+                    <h4 class="c-fluxopesquisa-column__header-title">
+                      <span>QA_TESTING</span>       
+                    </h4>
+                  </div>
+                  <div class="c-fluxopesquisa-column__cards" id="QA_TESTING" style="background-color: #FFF2C6; text-align: center;"></div>
+                </div>
+
+          <!--  COLUNA -->
+                <div class="c-fluxopesquisa-column">
+                  <div class="c-fluxopesquisa-column__header" style="background-color: #739AFF">
+                    <h4 class="c-fluxopesquisa-column__header-title">
+                      <span>RELEASE_TO_PROD</span>  
+                    </h4>
+                  </div>
+                  <div class="c-fluxopesquisa-column__cards"  id="RELEASE_TO_PROD" style="background-color: #B7BEFF; text-align: center;"></div>
+                </div>
+
+          <!--  COLUNA -->
+                <div class="c-fluxopesquisa-column">
+                  <div class="c-fluxopesquisa-column__header" style="background-color: #CA73FF">
+                    <h4 class="c-fluxopesquisa-column__header-title">
+                    <span>PROD_DEPLOYING</span>     
+                    </h4>
+                  </div>
+                  <div class="c-fluxopesquisa-column__cards"  id="PROD_DEPLOYING" style="background-color: #D0ABFF; text-align: center;"></div>
+                </div>
+
+                <!--   CARD -->
+
+          <!--  COLUNA -->
+                <div class="c-fluxopesquisa-column">
+                  <div class="c-fluxopesquisa-column__header" style="background-color: #6FCB60">
+                    <h4 class="c-fluxopesquisa-column__header-title">
+                      <span >DONE</span>
+                    </h4>
+                  </div>
+                  <div class="c-fluxopesquisa-column__cards"  id="DONE" style="background-color: #BEE8AA; text-align: center;"></div>
+                </div>
+          
+     </div>
+   </div>
+ </div>
+<!-- partial -->
+
+      <!-- <div id="voltarTopo">
+        <a href="#" id="subir"></a>
+      </div>
+      <div class="line"></div>
+    </div> -->
+<footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--pode dar conflito-->
+
+
+
+<script>
+ var scrt_var = last_segment;
+      var strLink = "/usuarios/" + scrt_var;
+      document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
+
+      var strLinkComentarios = "/comentarios/" + scrt_var;
+      document.getElementById("visualizar_comentarios").setAttribute("href", strLinkComentarios);
+
+      var strLinkGrafico = "/grafico/" + scrt_var;
+      document.getElementById("visualizar_graficos").setAttribute("href", strLinkGrafico);
+
+      $(document).ready(function () {
+        $('#subir').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 'slow');
+          return false;
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
+        });
+
+    $.ajax({
+      url: "http://localhost:3000/select_cards/:id=" + last_segment,
+      type: "GET",
+      dataType: "json",
+      success: function (data) {
+        console.log(data)
+        var exibicao = "" // adicionar o HR depois caso dê problema
+        var IN_PROGRESS = [];
+        var QA_DEPLOYING = [];
+        var FOR_TEST = [];
+        var QA_TESTING = [];
+        var RELEASE_TO_PROD = [];
+        var PROD_DEPLOYING = [];
+        var DONE = [];
+        document.getElementById("nomeProjeto").innerHTML = data.rows[0].projeto
+        console.log(data)
+        data.rows.forEach(card => {
+          if (card.status == "IN_PROGRESS") {
+            IN_PROGRESS.push(card)
+          }
+          else if (card.status == "QA_DEPLOYING") {
+            QA_DEPLOYING.push(card)
+          }
+          else if (card.status == "FOR_TEST") {
+            FOR_TEST.push(card)
+          }
+          else if (card.status == "QA_TESTING") {
+            QA_TESTING.push(card)
+          }
+          else if (card.status == "RELEASE_TO_PROD") {
+            RELEASE_TO_PROD.push(card)
+          }
+          else if (card.status == "PROD_DEPLOYING") {
+            PROD_DEPLOYING.push(card)
+          }
+          else {
+            DONE.push(card)
+          }
+
+        });
+        IN_PROGRESS.forEach(card => {
+          exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br><b>Terminado: </b>${card.terminado}<br/><hr> <br/>`
+          document.getElementById("IN_PROGRESS").innerHTML = exibicao
+        });
+        exibicao = ''
+        QA_DEPLOYING.forEach(card => {
+          exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br><b>Terminado: </b>${card.terminado}<br/><hr> <br/>`
+          document.getElementById("QA_DEPLOYING").innerHTML = exibicao
+        });
+        exibicao = ''
+        FOR_TEST.forEach(card => {
+          exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br><b>Terminado: </b>${card.terminado}<br/><hr> <br/>`
+          document.getElementById("FOR_TEST").innerHTML = exibicao
+        });
+        exibicao = ''
+        QA_TESTING.forEach(card => {
+          exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br><b>Terminado: </b>${card.terminado}<br/><hr> <br/>`
+          document.getElementById("QA_TESTING").innerHTML = exibicao
+        });
+        exibicao = ''
+        RELEASE_TO_PROD.forEach(card => {
+          exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br><b>Terminado: </b>${card.terminado}<br/><hr> <br/>`
+          document.getElementById("RELEASE_TO_PROD").innerHTML = exibicao
+        });
+        exibicao = ''
+        PROD_DEPLOYING.forEach(card => {
+          exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br><b>Terminado: </b>${card.terminado}<br/><hr> <br/>`
+          document.getElementById("PROD_DEPLOYING").innerHTML = exibicao
+        });
+        exibicao = ''
+        DONE.forEach(card => {
+          exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br><b>Terminado: </b>${card.terminado}<br/><hr> <br/>`
+          document.getElementById("DONE").innerHTML = exibicao
+        });
+        exibicao = ''
+        // data.rows.map(function(card){
+        //   exibicao+=`<b>descricao:</b>${card.descricao}<br/> <b>status:<b> ${card.status} <hr> <br/>`
+        // })
+        // if(card.status=="IN_PROGRESS"){
+        //   document.getElementById("IN_PROGRESS").innerHTML=exibicao
+        // }
+
+      }
+    });
+
+  });</script>
+<script src="./js/select_cards.js"></script>
+
+</body>
+
+</html>

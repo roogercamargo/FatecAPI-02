@@ -5,12 +5,9 @@ body{
 
 }
 p{
-	font-family: 'Manrope', sans-serif;
-	font-size: 1.1em;
-	font-weight: 300;
-	line-height: 1.7em;
-	color: #000000;
-  margin-left: 20px;
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
 }
 a,
 a:hover,
@@ -153,6 +150,7 @@ a:focus{
 
 
 /* menu_options - Posição*/
+/* menu_options - Posição*/
 .options {display:inline-block;
     position: relative;
     width: 20%;
@@ -166,6 +164,7 @@ a:focus{
 i {
     font-family: 'Red Hat Text', sans-serif;
     font-style: normal;
+    font-size: 20px;
 }
 
   /* menu_options - Ao passar mouse*/
@@ -185,9 +184,13 @@ i {
     margin-top: 10px;
     background-color: #C9D8E4;
     display: none;
-    
+   
     align-items: center;
   }
+
+img {
+    vertical-align: bottom!important;
+}  
   
   /* funcionalidade da exibição das telas navigation sem refresh*/
   #navigation input[type ="radio"]{display: none;}
@@ -287,6 +290,7 @@ input {
     height: 50px;
     background-color: #c9c9c9;
     text-decoration: none;
+    z-index:2;
 }
 
 #subir::after {
@@ -299,8 +303,42 @@ input {
 
 #statusCard{
     position: relative;
-    width: 70%;
-    margin-left: 15%;
+    width: 50%;
+    margin-left: 2%;
+    border: solid 2px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#fimCard{
+  position: relative;
+  width: 50%;
+  margin-left: 2%;
+  margin-right: 0.5%;
+  border: solid 2px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#charts{
+  display: flex;
+
+}
+
+.datatable{
+  width: 20.5%;
+  position:relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.aHours{
+  width: 27.5%;
+  position:relative;
+  background-color: #ffffff;
+  margin-left: 0.5%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .logoOff{
@@ -319,4 +357,39 @@ input {
 .logoOff:hover{
   cursor: pointer;
   background-color:#0994cf;
+}
+
+.aoLado{
+display: flex;
+margin-left: 2%;
+}
+
+#horas1{
+  position: relative;
+  margin-left: 2%;
+  width: 47.76%;
+  height: 430px;
+  border: solid 2px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.datatableTotal{
+  width: 47.5%;
+  margin-left: 2%;
+  position:relative;
+  background-color: #ffffff;
+  border: solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.aoLadoTotal{
+ display: flex;
+}
+
+#res{
+  color: #00BFFF;
+}
+
+#hours{
+  color: #32CD32;
 }

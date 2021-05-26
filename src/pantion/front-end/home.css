@@ -4,12 +4,9 @@ body{
 	background: #F6F6F6;
 }
 p{
-	font-family: 'Manrope', sans-serif;
-	font-size: 1.1em;
-	font-weight: 300;
-	line-height: 1.7em;
-	color: #000000;
-  margin-left: 20px;
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
 }
 a,
 a:hover,
@@ -106,26 +103,6 @@ a:focus{
 .subnav:hover .subnav-content {
   display: block;
 }
-
-
-/* nome do projeto */
-
-/*.h1 { 
-   position: absolute; 
-   top: 5px; 
-   left: 130px; 
-   width: 100%; 
-   margin-left: 50px;
-}
-
-.h2 span { 
-   color: #000000; 
-   font-family: 'Red Hat Text', sans-serif;
-   letter-spacing: -2px;  
-}
-
-/* fim nome do projeto */
-
 
 /* status do projeto */
 .img2 { 
@@ -240,12 +217,12 @@ input {
 }
 
 .card{
-    max-width: 22.5%;
+    width: 32%;
     background: #fff;
     padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    margin-left: 1%;
-    margin-right: 1%;
+    border: 1px solid rgba(49, 49, 49, 0.5);
+    margin-left: 0.5%;
+    margin-right: 0.1%;
     margin-top: 1%;
     border-radius: 15px;
 } 
@@ -272,7 +249,7 @@ input {
     background-color: #f6f6f6;
 }
 .titulo_card{
-    font-size: 18px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.54);
     font-weight: normal;
 }
@@ -298,6 +275,7 @@ input {
 }
 .div_box{
     position: relative;
+    text-align: center;
     width: 100%;
         border: 1px none;
         margin: 6px 63px 10px 10px;

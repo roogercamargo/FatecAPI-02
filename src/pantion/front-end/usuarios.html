@@ -14,10 +14,13 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
   <link rel="sortcut icon" href="/images/favicon.png" />
 </head>
+<script>
+  var full_url = document.URL;
+  var url_array = full_url.split('/');
+  var last_segment = url_array[url_array.length - 1];
+</script>
 
 <body>
-
-
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <img src="/images/logo_stext.png" width="60" height="60">
@@ -25,117 +28,79 @@
 
 
     <div class="subnav">
-      <a href="/menu.html"><button class="subnavbtn">Todos os projetos </button></a>
+      <a href="/"><button class="subnavbtn">Todos os projetos </button></a>
     </div>
 
     <div class="subnav">
       <button class="subnavbtn">Favoritados</button>
     </div>
     <div class="subnav">
-    <a href="/logout"><button class= "logoOff">Sair</button></a>
+      <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
     </div>
-    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+    <div class="subnav">
+      <a href="/logout"><button class="logoOff">Sair</button></a>
+    </div>
+    <input id="myInp" type="search" name="search" placeholder="Pesquisar...">
   </nav>
 
-  <br><br>
-
-
-
+  <br>
 
   <h1 id="nomeProjeto">
     <p id="nome_projeto">Nome do Projeto</p>
   </h1>
   <br>
-  <div style="float: left;margin-left: 30px"><i class="fa fa-calendar"
-      style="color:#ff4d4d;font-size: 25px;padding-top: 8px;padding-left: 5px;"></i> 25-04-2020</div>
-  <div style="float: left; margin-left: 50px"><i class="far fa-clock"
-      style="color:chocolate;font-size: 25px;padding-top: 8px;padding-left: 5px;"></i> 2.2 Horas</div>
-  <div style="clear: both"></div>
-
-
-  <br><br><br><br>
-
-  <div class="row">
-    <!--Grid column-->
-    <div class="col-md-6 mb-4">
-      <div class="image">
-        <img class="image" src="/images/andamento.png" width="30" height="30" data-holder-rendered="true">
-        <h2 class="img2"><span>Em andamento<span class='spacer'></span></h2>
-
-
-      </div>
-    </div>
-  </div>
-
-
-
+ 
   <hr style="height:1px;border:none;color:#a6a6a6;background-color:#a6a6a6;" />
 
   <div id=menu_options>
-    <!--   <label for=details class="options">
+        <label for=panel class="options">
+          <a href="" id="visualizar_painel">
           <div>
-            <img src="images/detalhes.png">
-            <b><i>Detalhes</i></b>
+            <img src="/images/painel.png">
+            <b><i>Painel</i></b>
           </div>
-        </label> -->
+        </a>
+        </label>
+    
+        <label for=users class="options">
+          <a href="" id="visualizar_usuarios">
+            <div>
+              <img src="/images/usuarios.png">
+              <b><i>Usuários</i></b>
+            </div>
+        </label>
+        </a>
 
-    <label for=panel class="options">
-      <a href="/Projeto.html">
-      <div>
-        <img src="/images/painel.png">
-          <b><i>Painel</i></b>
-        </div>
-    </label>
-</a>
+        <label for=graphics class="options">
+          <a href="" id="visualizar_graficos">
+            <div>
+              <img src="/images/grafico.png">
+              <b><i>Gráficos</i></b>
+            </div>
+        </label>
+        </a>
 
-    <label for=users class="options">
-      <a href="/usuarios.html">
-      <div>
-        <img src="/images/usuarios.png">        
-        <b><i>Usuários</i></b>
-      </div>
-    </label>
-</a>
-    <!--  <label for=rank class="options">
+         <label for=comments class="options">
+       <a href="" id="visualizar_comentarios">
           <div>
-            <img src="images/comits.png">
-            <b><i>Contribuição</i></b>
+            <img src="/images/comments.png">
+            <b><i>Comentários</i></b>
           </div>
-        </label> -->
-
-    <label for=graphics class="options">
-      <a href="/graficoteste.html">
-        <div>
-          <img src="/images/grafico.png">
-          <b><i>Gráficos</i></b>
-        </div>
-    </label>
-    </a>
-
-    <label for=time class="options">
-      <div>
-        <img src="/images/tempo.png">
-        <b><i>Tempo</i></b>
-      </div>
-    </label>
-
+        </label>
+        </a>
   </div>
   <br>
-
-
 
   <div class="card-users" id="users"></div>
 
   </div>
   </div>
-
-
-  <br>
-  <div id="voltarTopo">
+  
+  <!-- <div id="voltarTopo">
     <a href="#" id="subir"></a>
   </div>
   <div class="line"></div>
-  </div>
+  </div> -->
   <footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -151,29 +116,28 @@
     <!--pode dar conflito-->
 
     <script>
+      var scrt_var = last_segment;
+      var strLink = "/usuarios/" + scrt_var;
+      document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
 
-    var full_url = document.URL; // Get current url
-    var url_array = full_url.split('/') // Split the string into an array with / as separator
-    var last_segment = url_array[url_array.length-1];  // Get the last part of the array (-1)
+      var strLinkGrafico = "/grafico/" + scrt_var;
+      document.getElementById("visualizar_graficos").setAttribute("href", strLinkGrafico);
 
-    $(document).ready(function () {
+      var strLinkPainel = "/projeto/" + scrt_var;
+      document.getElementById("visualizar_painel").setAttribute("href", strLinkPainel);
+
+      var strLinkComentarios = "/comentarios/" + scrt_var;
+      document.getElementById("visualizar_comentarios").setAttribute("href", strLinkComentarios);
+
+      $(document).ready(function () {
         $('#subir').click(function () {
           $('html, body').animate({ scrollTop: 0 }, 'slow');
           return false;
         });
       })
-        $('#sidebarCollapse').on('click', function () {
-          $('#sidebar').toggleClass('active');
-        });
-        
-
-
-
-
-
-
-
-    
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+      });
       $.ajax({
         url: "http://localhost:3000/pegar_usuarios/:id=" + last_segment,
         type: "GET",
@@ -183,12 +147,12 @@
 
           var nomeDoProjeto = document.getElementById('nome_projeto');
           nomeDoProjeto.textContent = data.rows[0].projeto;
-          
+
           data.rows.forEach(usuario => {
 
 
             var userlist = document.getElementById('users');
-            
+
             // card col left
             let divColLeft = document.createElement("div");
             divColLeft.classList.add("card-col-left");
@@ -204,7 +168,7 @@
             let ccRight = document.createElement("div");
             ccRight.classList.add("card-col-right");
             // --------------------------------
-            
+
             // div user name
             let userName = document.createElement("div");
             userName.classList.add("user-name");
@@ -225,7 +189,7 @@
             i_Email.classList.add("fas");
             i_Email.classList.add("fa-envelope-open-text");
             let spanEmail = document.createElement("span");
-            spanEmail.textContent = " "+ usuario.user_email;
+            spanEmail.textContent = " " + usuario.user_email;
             divEmail.appendChild(i_Email);
             divEmail.appendChild(spanEmail);
             // --------------------------
@@ -255,7 +219,7 @@
         }
       });
 
-      
+
 
 
     </script>

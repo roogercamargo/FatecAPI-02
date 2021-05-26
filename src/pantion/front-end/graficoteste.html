@@ -2,21 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pantion</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <link rel="stylesheet" href="/chart.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
-    <link rel="sortcut icon" href="/images/favicon.png" />
-    <title>Gráfico Teste</title>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantion</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="/chart.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
+  <link rel="sortcut icon" href="/images/favicon.png" />
+  <title>Gráfico Teste</title>
+<script>
+      var full_url = document.URL;
+    var url_array = full_url.split('/');
+    var last_segment = url_array[url_array.length - 1];
+</script>
 </head>
 
 <body>
@@ -27,220 +31,335 @@
 
 
     <div class="subnav">
-      <a href="/menu.html"><button class="subnavbtn">Todos os projetos </button></a>
+      <a href="/"><button class="subnavbtn">Todos os projetos </button></a>
     </div>
 
     <div class="subnav">
       <button class="subnavbtn">Favoritados</button>
     </div>
     <div class="subnav">
-    <a href="/logout"><button class= "logoOff">Sair</button></a>
+      <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
+    </div>
+    <div class="subnav">
+      <a href="/logout"><button class="logoOff">Sair</button></a>
     </div>
     <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
   </nav>
-    
-      <br><br>
-    
-    
-    
-    
-      <h1 id="nomeProjeto">
-        <p id="nome_projeto">Nome do Projeto</p>
-      </h1>
-      <br>
-      <div style="float: left;margin-left: 30px"><i class="fa fa-calendar"
-          style="color:#ff4d4d;font-size: 25px;padding-top: 8px;padding-left: 5px;"></i> 25-04-2020</div>
-      <div style="float: left; margin-left: 50px"><i class="far fa-clock"
-          style="color:chocolate;font-size: 25px;padding-top: 8px;padding-left: 5px;"></i> 2.2 Horas</div>
-      <div style="clear: both"></div>
-    
-    
-      <br><br><br><br>
-    
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
-          <div class="image">
-            <img class="image" src="/images/andamento.png" width="30" height="30" data-holder-rendered="true">
-            <h2 class="img2"><span class='spacer'>Em andamento</span></h2>
-    
-    
-          </div>
+
+  <br>
+
+  <h1 id="nomeProjeto">
+    <p id="nome_projeto">Nome do Projeto</p>
+  </h1>
+  <br>
+
+  <hr style="height:1px;border:none;color:#a6a6a6;background-color:#a6a6a6;" />
+
+  <div id=menu_options>>
+
+    <label for=panel class="options">
+      <a href="" id="visualizar_painel">
+        <div>
+          <img src="/images/painel.png">
+          <b><i>Painel</i></b>
         </div>
-      </div>
-    
-      <hr style="height:1px;border:none;color:#a6a6a6;background-color:#a6a6a6;" />
-    
-      <div id=menu_options>
-        <!--   <label for=details class="options">
-              <div>
-                <img src="images/detalhes.png">
-                <b><i>Detalhes</i></b>
-              </div>
-            </label> -->
-    
-        <label for=panel class="options">
-          <a href="/Projeto.html">
+    </label>
+    </a>
+
+    <label for=users class="options">
+      <a href="" id="visualizar_usuarios">
+        <div>
+          <img src="/images/usuarios.png">
+
+          <b><i>Usuários</i></b>
+        </div>
+    </label>
+    </a>
+
+    <label for=graphics class="options">
+      <a href="" id="visualizar_graficos">
+        <div>
+          <img src="/images/grafico.png">
+          <b><i>Gráficos</i></b>
+
+        </div>
+    </label>
+    </a>
+
+  <label for=comments class="options">
+    <a href="" id="visualizar_comentarios">
           <div>
-            <img src="/images/painel.png">
-              <b><i>Painel</i></b>
+            <img src="/images/comments.png">
+            <b><i>Comentários</i></b>
           </div>
         </label>
     </a>
-    
-        <label for=users class="options">
-          <a href="/usuarios.html">
-          <div>
-            <img src="/images/usuarios.png">
-            
-            <b><i>Usuários</i></b>
-          </div>
-        </label>
-    </a>
-        <!--  <label for=rank class="options">
-              <div>
-                <img src="images/comits.png">
-                <b><i>Contribuição</i></b>
-              </div>
-            </label> -->
-    
-        <label for=graphics class="options">
-          <a href="/graficoteste.html">
-            <div>
-              <img src="/images/grafico.png">
-              <b><i>Gráficos</i></b>
-    
-            </div>
-        </label>
-        </a>
-    
-        <label for=time class="options">
-          <div>
-            <img src="/images/tempo.png">
-            <b><i>Tempo</i></b>
-          </div>
-        </label>
-    
-      </div>
-      <br>
-    
-    
-    
-      <div class="card-users" id="users"></div>
-    
-      </div>
-      </div>
-    
-    
-      <br>
-      <div id="voltarTopo">
-        <a href="#" id="subir"></a>
-      </div>
-      <div class="line"></div>
-      </div>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://www.google.com/jsapi"></script>
-    <script>
- google.charts.load('current', { packages: ['corechart'] });
-        google.charts.setOnLoadCallback(puxarDado);
-        var quantidades = [];
+  </div>
+  <br>
 
-        function puxarDado() {
+  <div class="card-users" id="users"></div>
 
-        var IN_PROGRESS = 0;
-        var QA_DEPLOYING = 0;
-        var FOR_TEST = 0;
-        var QA_TESTING = 0;
-        var RELEASE_TO_PROD = 0;
-        var PROD_DEPLOYING = 0;
-        var DONE = 0;
+  </div>
+  </div>
 
-            $.ajax({
-                url: "http://localhost:3000/grafico/",
-                type: "GET",
-                dataType: "json",
-                success: function (data) {
-                    var nomeDoProjeto = document.getElementById('nome_projeto');
-                    nomeDoProjeto.textContent = data.rows[0].projeto;
-                    data.rows.forEach(card => {
-                        if (card.status == "IN_PROGRESS") {
-                            IN_PROGRESS++;
-                        }
-                        else if (card.status == "QA_DEPLOYING") {
-                            QA_DEPLOYING++;
-                        }
-                        else if (card.status == "FOR_TEST") {
-                            FOR_TEST++;
-                        }
-                        else if (card.status == "QA_TESTING") {
-                            QA_TESTING++;
-                        }
-                        else if (card.status == "RELEASE_TO_PROD") {
-                            RELEASE_TO_PROD++;
-                        }
-                        else if (card.status == "PROD_DEPLOYING") {
-                            PROD_DEPLOYING++;
-                        }
-                        else {
-                            DONE++;
-                        }
-                    })
-                    quantidades.push(IN_PROGRESS);
-                    quantidades.push(QA_DEPLOYING);
-                    quantidades.push(FOR_TEST);
-                    quantidades.push(QA_TESTING);
-                    quantidades.push(RELEASE_TO_PROD);
-                    quantidades.push(PROD_DEPLOYING);
-                    quantidades.push(DONE);
 
-            var data = new google.visualization.arrayToDataTable([
-                ['Status', '', {role:'style'}],
-                ['IN PROGRESS', quantidades[0], 'orange'],
-                ['QA DEPLOYING', quantidades[1], '#20ded3'],
-                ['FOR TEST', quantidades[2], 'red'],
-                ['QA TESTING', quantidades[3], '#f79b73'],
-                ['RELEASE TO PROD', quantidades[4], 'blue'],
-                ['PROD DEPLOYING', quantidades[5], 'purple'],
-                ['DONE', quantidades[6], 'green']
-                ]);
-            // data.addColumn('string', 'Status');
-            // data.addColumn('number', 'Quantidade');
-            // data.addRows([
+  <br>
+  <div id="voltarTopo">
+    <a href="#" id="subir"></a>
+  </div>
+  <div class="line"></div>
+  </div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
 
-            // ]);
+  <script>
 
-            var options = {
-                'title': 'QUANTIDADE DE CARDS POR STATUS',
-                chartArea: {backgroundColor: '#ffffff', width: '60%'},
-                backgroundColor: '#f6f6f6',
-                'is3D':true,
-                'height': 400,
-                legend: {position:'none'},
-                hAxis: {
-                     title: 'Quantidade',
-                 },
-                vAxis: {
-                    title: 'Status dos cards'
-                }
-            };
+$(document).ready(function () {
+        $('#subir').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 'slow');
+          return false;
+        });
+      })
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+      });
 
-            var chart = new google.visualization.BarChart(document.getElementById('statusCard'));
-            chart.draw(data, options);
-                    
-                }
-            });
-  
-        
+    // var scrt_var = last_segment;
+    // var strLink = "/usuarios/" + scrt_var;
+    // document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
+
+    google.charts.load('current', { packages: ['corechart'] });
+    // // puxando função status dos cards
+    google.charts.setOnLoadCallback(puxarDado);
+    // //Puxando cards finalizados e não finalizados
+    google.charts.setOnLoadCallback(finalizado);
+    // //Puxando horas acumuladas
+    google.charts.setOnLoadCallback(horasAmount);
+    // var quantidades = [];
+    // var fim = [];
+    // var acumulaHoras = [];
+
+    //Função para puxar status e exibir no gráfico
+    function puxarDado() {
+
+
+      var scrt_var = last_segment;
+      var strLink = "/usuarios/" + scrt_var;
+      document.getElementById("visualizar_usuarios").setAttribute("href", strLink);
+
+      var strLinkComentarios = "/comentarios/" + scrt_var;
+      document.getElementById("visualizar_comentarios").setAttribute("href", strLinkComentarios);
+
+      var strLinkGrafico = "/grafico/" + scrt_var;
+      document.getElementById("visualizar_graficos").setAttribute("href", strLinkGrafico);
+
+      var strLinkPainel = "/projeto/" + scrt_var;
+      document.getElementById("visualizar_painel").setAttribute("href", strLinkPainel);
+
+
+
+      var IN_PROGRESS = 0;
+      var QA_DEPLOYING = 0;
+      var FOR_TEST = 0;
+      var QA_TESTING = 0;
+      var RELEASE_TO_PROD = 0;
+      var PROD_DEPLOYING = 0;
+      var DONE = 0;
+
+      $.ajax({
+        url: "http://localhost:3000/select_chart/" + last_segment, //OBS: Passar por ID
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+          var quantidades = [];
+          var nomeDoProjeto = document.getElementById('nome_projeto');
+          nomeDoProjeto.textContent = data.rows[0].projeto;
+          data.rows.forEach(card => {
+            if (card.status == "IN_PROGRESS") {
+              IN_PROGRESS++;
+            }
+            else if (card.status == "QA_DEPLOYING") {
+              QA_DEPLOYING++;
+            }
+            else if (card.status == "FOR_TEST") {
+              FOR_TEST++;
+            }
+            else if (card.status == "QA_TESTING") {
+              QA_TESTING++;
+            }
+            else if (card.status == "RELEASE_TO_PROD") {
+              RELEASE_TO_PROD++;
+            }
+            else if (card.status == "PROD_DEPLOYING") {
+              PROD_DEPLOYING++;
+            }
+            else {
+              DONE++;
+            }
+          })
+
+          //Pegando lógica e dados da conexão
+          quantidades.push(IN_PROGRESS);
+          quantidades.push(QA_DEPLOYING);
+          quantidades.push(FOR_TEST);
+          quantidades.push(QA_TESTING);
+          quantidades.push(RELEASE_TO_PROD);
+          quantidades.push(PROD_DEPLOYING);
+          quantidades.push(DONE);
+          //Colocando a lógica dentro das tabelas para exibição
+          var data = new google.visualization.arrayToDataTable([
+            ['Status', '', { role: 'style' }, {role:'annotation'}],
+            ['IN PROGRESS', quantidades[0], '#013a63',quantidades[0]],
+            ['QA DEPLOYING', quantidades[1], '#01497c',quantidades[1]],
+            ['FOR TEST', quantidades[2], '#014f86',quantidades[2]],
+            ['QA TESTING', quantidades[3], '#2a6f97',quantidades[3]],
+            ['RELEASE TO PROD', quantidades[4], '#2c7da0', quantidades[4]],
+            ['PROD DEPLOYING', quantidades[5], '#468faf',quantidades[5]],
+            ['DONE', quantidades[6], '#61a5c2', quantidades[6]]
+          ]);
+          //Front do gráfico
+          var options = {
+            'title': 'QUANTIDADE DE ATIVIDADES POR STATUS',
+            chartArea: { backgroundColor: '#F6F6F6', width: '65%' },
+            backgroundColor: '#f6f6f6',
+            'is3D': true,
+            'height': 400,
+            legend: { position: 'none' },
+            hAxis: {
+              title: 'Quantidade',
+            },
+            vAxis: {
+              title: 'Status das atividades'
+            }
+          };
+          //Exibição do gráfico
+          var chart = new google.visualization.BarChart(document.getElementById('statusCard'));
+          chart.draw(data, options);
+
+        }
+      });
+
+
+    }
+
+    //Função para exibir cards finalizados e não finalizados
+    function finalizado() {
+
+      var final = 0;
+      var finalizar = 0;
+
+      $.ajax({
+        url: "http://localhost:3000/select_chart/" + last_segment,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+          var fim = [];
+          var nomeDoProjeto = document.getElementById('nome_projeto');
+          nomeDoProjeto.textContent = data.rows[0].projeto;
+          data.rows.forEach(card => {
+            if (card.terminado == true) {
+              final++;
+            }
+            else {
+              finalizar++;
+            }
+          })
+          fim.push(final);
+          fim.push(finalizar);
+
+          var data = new google.visualization.arrayToDataTable([
+            ['Status', '', { role: 'style' }],
+            ['Finalizados', fim[0], 'black'],
+            ['Não finalizados', fim[1], '#20ded3'],
+          ]);
+          //OBS: Verificar title 
+          var options = {
+            'title': 'RELAÇÃO DE CARDS FINALIZADOS E NÃO FINALIZADOS',
+            chartArea: { backgroundColor: '#ffffff', width: '70%' },
+            backgroundColor: '#f6f6f6',
+            'is3D': true,
+            'height': 400,
+            legend: { position: 'right' }
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('fimCard'));
+          chart.draw(data, options);
+
         }
 
-    </script>
-    <!-- identifica onde o gráfico vai ser exibido -->
+
+      });
+
+
+    }
+    //Função para horas acumuladas
+    //OBS: Será exibido em tabela
+    //Dificuldade para acumular às horas, realizar às somas totais
+    function horasAmount() {
+          var numb = 0;
+          var no =0;
+          var soma;
+
+      $.ajax({
+          url: "http://localhost:3000/select_chart/" + last_segment,
+          type: "GET",
+          dataType: "json",
+          success: function (data) {
+              var acumulaHoras = [];
+              var horasTotais = 0;
+              var nomeDoProjeto = document.getElementById('nome_projeto');
+              nomeDoProjeto.textContent = data.rows[0].projeto;
+              data.rows.forEach(card => {
+                horasTotais = horasTotais + card.horas;
+                if (card.horas == null){
+                  no++;
+                }
+                else{
+                  numb++;}
+              })
+              acumulaHoras.push(numb);
+              acumulaHoras.push(no);
+              soma = acumulaHoras[0] + acumulaHoras[1];
+              var res = document.getElementById('res');
+              res.innerHTML += `${soma}`
+              var hours = document.getElementById('hours');
+              hours.innerHTML += (horasTotais).toFixed(2);
+              
+          }
+      });
+
+  }
+
+  </script>
+  <!-- identifica onde o gráfico vai ser exibido -->
+  <class class="aoLado">
+  <div class ="datatable">
+    <br><div style="font-size: 20px; text-align: center;">Total de atividades do projeto</div><hr>
+      <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
+        <div id ="res"></div><h1> </h1>
+      </h5>
+</div>
+<div class ="aHours">
+  <br><div style="font-size: 20px; text-align: center;">Total de horas das atividades concluídas</div><hr>
+    <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
+      <div id ="hours"></div><h1></h1>
+      <span style="font-size: 15px;"></span>
+    </h5>
+</div>
+</class>
+<br>
+  <class id="charts">
     <div id="statusCard"></div><br><br>
+    <div id="fimCard"></div><br><br>
+  </class>
+  <br><br><br>
+  </div>
 </body>
-    <script></script>
+<script></script>
+
 </html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="/chart.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
+    <link rel="sortcut icon" href="/images/favicon.png" />
+    <title>Gráfico Teste</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <img src="/images/logo_stext.png" width="60" height="60">
+    <span class="color_title">Pantion </span>
+
+
+    <div class="subnav">
+      <a href="/menu.html"><button class="subnavbtn">Todos os projetos </button></a>
+    </div>
+
+    <div class="subnav">
+      <button class="subnavbtn">Favoritados</button>
+    </div>
+    <div class="subnav">
+        <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
+      </div>
+    <div class="subnav">
+    <a href="/logout"><button class= "logoOff">Sair</button></a>
+    </div>
+    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+  </nav>
+    
+      <br><br><br>
+      <div id="voltarTopo">
+        <a href="#" id="subir"></a>
+      </div>
+      <div class="line"></div>
+      </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+
+    <script>
+        google.charts.load('current', { packages: ['corechart']});
+        // puxando função status dos cards
+        google.charts.setOnLoadCallback(puxarDado);
+        //Puxando cards finalizados e não finalizados
+        google.charts.setOnLoadCallback(finalizado);
+        //Puxando horas acumuladas
+        google.charts.setOnLoadCallback(horasAmount);
+        //Puxando horas acumuladas por projeto
+        google.charts.setOnLoadCallback(horas_projeto);
+        var quantidades = [];
+        var fim = [];
+        var acumulaHoras = [];
+        var hoursProject = [];
+
+        //Função para puxar status e exibir no gráfico
+        function puxarDado() {
+
+        var IN_PROGRESS = 0;
+        var QA_DEPLOYING = 0;
+        var FOR_TEST = 0;
+        var QA_TESTING = 0;
+        var RELEASE_TO_PROD = 0;
+        var PROD_DEPLOYING = 0;
+        var DONE = 0;
+
+            $.ajax({
+                url: "http://localhost:3000/grafico/", //OBS: Passar por ID
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    data.rows.forEach(card => {
+                        if (card.status == "IN_PROGRESS") {
+                            IN_PROGRESS++;
+                        }
+                        else if (card.status == "QA_DEPLOYING") {
+                            QA_DEPLOYING++;
+                        }
+                        else if (card.status == "FOR_TEST") {
+                            FOR_TEST++;
+                        }
+                        else if (card.status == "QA_TESTING") {
+                            QA_TESTING++;
+                        }
+                        else if (card.status == "RELEASE_TO_PROD") {
+                            RELEASE_TO_PROD++;
+                        }
+                        else if (card.status == "PROD_DEPLOYING") {
+                            PROD_DEPLOYING++;
+                        }
+                        else {
+                            DONE++;
+                        }
+                    })
+
+                    //Pegando lógica e dados da conexão
+                    quantidades.push(IN_PROGRESS);
+                    quantidades.push(QA_DEPLOYING);
+                    quantidades.push(FOR_TEST);
+                    quantidades.push(QA_TESTING);
+                    quantidades.push(RELEASE_TO_PROD);
+                    quantidades.push(PROD_DEPLOYING);
+                    quantidades.push(DONE);
+                //Colocando a lógica dentro das tabelas para exibição
+            var data = new google.visualization.arrayToDataTable([
+            ['Status', '', { role: 'style' }, {role:'annotation'}],
+            ['IN PROGRESS', quantidades[0], '#013a63',quantidades[0]],
+            ['QA DEPLOYING', quantidades[1], '#01497c',quantidades[1]],
+            ['FOR TEST', quantidades[2], '#014f86',quantidades[2]],
+            ['QA TESTING', quantidades[3], '#2a6f97',quantidades[3]],
+            ['RELEASE TO PROD', quantidades[4], '#2c7da0', quantidades[4]],
+            ['PROD DEPLOYING', quantidades[5], '#468faf',quantidades[5]],
+            ['DONE', quantidades[6], '#61a5c2', quantidades[6]]
+                ]);
+            //Front do gráfico
+            var options = {
+                'title': 'QUANTIDADE DE CARDS POR STATUS',
+                chartArea: { backgroundColor: '#F6F6F6', width: '60%' },
+            backgroundColor: '#f6f6f6',
+            'is3D': true,
+            'height': 400,
+            legend: { position: 'none' },
+            hAxis: {
+              title: 'Quantidade',
+            },
+            vAxis: {
+              title: 'Status das atividades'
+            }
+          };
+            //Exibição do gráfico
+            var chart = new google.visualization.BarChart(document.getElementById('statusCard'));
+            chart.draw(data, options);
+                    
+                }
+            });
+        }
+
+        //Função para exibir cards finalizados e não finalizados
+        function finalizado() {
+
+        var final= 0;
+        var finalizar = 0;
+
+    $.ajax({
+        url: "http://localhost:3000/grafico/",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            data.rows.forEach(card => {
+                if (card.terminado == true) {
+                    final++;
+                }
+                else {
+                    finalizar++;
+                }
+            })
+            fim.push(final);
+            fim.push(finalizar);
+
+    var data = new google.visualization.arrayToDataTable([
+        ['Status', '', {role:'style'}],
+        ['Finalizado', fim[0], 'orange'],
+        ['Não finalizado', fim[1], '#20ded3'],
+        ]);
+//OBS: Verificar title 
+    var options = {
+        'title': 'RELAÇÃO DE CARDS FINALIZADOS E NÃO FINALIZADOS',
+        chartArea: { backgroundColor: '#ffffff', width: '70%' },
+            backgroundColor: '#f6f6f6',
+            'is3D': true,
+            'height': 400,
+            legend: { position: 'right' }
+          };
+
+    var chart = new google.visualization.PieChart(document.getElementById('fimCard'));
+    chart.draw(data, options);
+            
+        }
+    });
+
+
+}
+//Função para horas acumuladas
+//OBS: Será exibido em tabela
+//Dificuldade para acumular às horas, realizar às somas totais
+function horasAmount() {
+    var numb = 0;
+    var no =0;
+    var soma;
+
+    $.ajax({
+        url: "http://localhost:3000/grafico/",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var acumulaHoras = [];
+            var horasTotais = 0;
+            data.rows.forEach(card => {
+                horasTotais = horasTotais + card.horas;
+                if (card.horas == null){
+                    no++;
+                }
+                else{
+                    numb++;
+                }
+            })
+            acumulaHoras.push(numb);
+            acumulaHoras.push(no);
+            soma = acumulaHoras[0] + acumulaHoras[1];
+            
+            var res = document.querySelector('div#res');
+            res.innerHTML += `${soma}`;
+            var hours = document.getElementById('hours');
+            hours.innerHTML += (horasTotais).toFixed(2);
+            
+        }
+    });
+}
+
+function horas_projeto() {
+
+var batista = 0;
+var costa = 0;
+var pereira = 0;
+var souza = 0;
+var santos = 0;
+var albuquerque = 0;
+var costaLTDA = 0;
+var xavier = 0;
+var melo = 0;
+var carvalho = 0;
+    $.ajax({
+        url: "http://localhost:3000/grafico/", //OBS: Passar por ID
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            data.rows.forEach(card => {
+                if (card.projeto == "[Batista, Moreira and Pereira LTDA] - Monitored multi-state installation") {
+                    batista = batista + card.horas;
+                }
+                else if (card.projeto == "[Costa Comércio Comércio] - Sharable non-volatile internet solution") {
+                    costa = costa + card.horas;
+                }
+                else if (card.projeto == "[Pereira - Barros Comércio] - Mandatory fault-tolerant Graphical User Interface") {
+                    pereira = pereira + card.horas;
+                }
+                else if (card.projeto == "[Souza Comércio e Associados] - Innovative background implementation") {
+                    souza = souza + card.horas;
+                }
+                else if (card.projeto == "[Santos - Batista Comércio] - Stand-alone well-modulated policy") {
+                    santos = santos + card.horas;
+                }
+                else if (card.projeto == "[Albuquerque, Albuquerque and Carvalho Comércio] - Mandatory human-resource open architecture") {
+                    albuquerque = albuquerque + card.horas;
+                }
+                else if (card.projeto == "[Costa LTDA S.A.] - Total asynchronous secured line") {
+                    costaLTDA = costaLTDA + card.horas;
+                }
+                else if (card.projeto == "[Xavier EIRELI S.A.] - Vision-oriented holistic architecture") {
+                    xavier = xavier + card.horas;
+                }
+                else if (card.projeto == "[Melo, Melo and Santos e Associados] - Organized impactful instruction set") {
+                    melo = melo + card.horas;
+                }
+                else {
+                    carvalho = carvalho + card.horas;
+                }
+            })
+            //Pegando lógica e dados da conexão
+           hoursProject.push(costa);
+           hoursProject.push(pereira);
+           hoursProject.push(souza);
+           hoursProject.push(santos);
+           hoursProject.push(albuquerque);
+           hoursProject.push(costaLTDA);
+           hoursProject.push(xavier);
+           hoursProject.push(melo);
+           hoursProject.push(carvalho);
+           hoursProject.push(batista);
+        //Colocando a lógica dentro das tabelas para exibição
+    var data = new google.visualization.arrayToDataTable([
+    ['projeto', '', { role: 'style' }, {role:'annotation'}],
+    ['Costa Comércio Comércio', hoursProject[0], '#0c2d48',hoursProject[0]],
+    ['Pereira - Barros Comércio', hoursProject[1], '#2e8bc0',hoursProject[1]],
+    ['Souza Comércio e Associados', hoursProject[2], '#145da0',hoursProject[2]],
+    ['Santos - Batista Comércio', hoursProject[3], '#050a30',hoursProject[3]],
+    ['Albuquerque, Albuquerque and Carvalho Comércio', hoursProject[4], '#000c66', hoursProject[4]],
+    ['Costa LTDA S.A.', hoursProject[5], '#0000ff',hoursProject[5]],
+    ['Xavier EIRELI S.A.', hoursProject[6], '#189ab4', hoursProject[6]],
+    ['Melo, Melo and Santos e Associados', hoursProject[7], '#75e6da', hoursProject[7]],
+    ['Carvalho, Costa and Costa e Associados', hoursProject[8], '#d4d1d4', hoursProject[8]],
+    ['Batista, Moreira and Pereira LTDA', hoursProject[9], '#7ec8e3', hoursProject[9]],
+     ]);
+    //Front do gráfico
+    var options = {
+        'title': 'QUANTIDADE DE HORAS UTILIZADAS NOS PROJETOS',
+        chartArea: { backgroundColor: '#F6F6F6', width: '70%' },
+    backgroundColor: '#f6f6f6',
+    'is3D': true,
+    'height': 400,
+    legend: { position: 'none' },
+    hAxis: {
+      title: 'Projetos',
+    },
+  };
+    //Exibição do gráfico
+    var chart = new google.visualization.AreaChart(document.getElementById('horas1'));
+    chart.draw(data, options);
+            
+        }
+    });
+}
+    </script>
+    <!-- identifica onde o gráfico vai ser exibido -->
+    <class class="aoLadoTotal">
+        <div id="horas1"></div>
+        <div class ="datatableTotal">
+          <div style="font-size: 20px; text-align: center;">Total de atividades do projeto</div><hr>
+            <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
+              <div id ="res"></div><h1> </h1><br><br><br><br>
+              <div style="font-size: 20px; text-align: center;">Total de horas das atividades concluídas</div><hr>
+          <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
+            <div id ="hours"></div><h1></h1>
+            <span style="font-size: 15px;"></span>
+            </h5>
+      </div>
+      </class>
+<br>
+
+<class id = "charts">
+    <div id="statusCard"></div><br><br>
+    <div id="fimCard"></div><br><br>
+</class><br><br><br>
+</body>
+</html>

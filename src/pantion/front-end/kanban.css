@@ -1,0 +1,100 @@
+.content {
+  padding: 1.5rem;
+  min-height: 100%;
+  font-family: 'Manrope', sans-serif;
+}
+
+/*==========================================================*/
+.c-fluxopesquisa-card {
+  position: relative;
+  padding: 0.8rem;
+  margin: 0.5rem;
+  background-color: #F6F6F6;
+  border: solid 1px #E5E5E5;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 315px;
+}
+
+.c-fluxopesquisa-card__content {
+  position: relative;
+  flex: 1;
+}
+
+/*==========================================================*/
+
+.c-fluxopesquisa-board {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c-fluxopesquisa-columns {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow-y: auto;
+  height: calc(100vh - 120px);
+  max-height: 600px;
+}
+
+.c-fluxopesquisa-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  min-width: 245px;
+  max-width: 315px;
+  height: 100%;
+  white-space: normal;
+  border: solid 1px #E5E5E5;
+  background-color: #FAFAFA;
+  margin-right: 1.8rem;
+  border-radius: 0.3rem;
+}
+
+.c-fluxopesquisa-column__header {
+  padding: 1rem 1.5rem;
+  border-bottom: solid 1px #E5E5E5;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.c-fluxopesquisa-column__header-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+ 
+}
+
+.c-fluxopesquisa-column__cards {
+  overflow: auto;
+  height: 100%;
+}
+
+.logoOff{
+  background-color: #004C6D ;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  left: 92%;
+  top: 32%;
+  color: white;
+  border: #ffffff;
+  width: 80px;
+  height: 27px;
+}
+
+.logoOff:hover{
+  cursor: pointer;
+  background-color:#0994cf;
+}
