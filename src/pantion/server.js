@@ -3,6 +3,7 @@ const express = require('express');
 const session = require('express-session')
 const app = new express();
 const path = require('path');
+const nodemailer = require('nodemailer');
 
 // conteudo do login
 
@@ -20,7 +21,7 @@ app.use(express.static('front-end'))// pega todos os arquivos de css e imagens d
 app.get('/', function (req, res) {
     if (req.session.email) {
         res.render('menu')
-    }else{
+    } else {
         res.render('login')
     }
 });
@@ -29,7 +30,7 @@ app.post('/', (req, res) => {
     if (req.body.email == email && req.body.senha == senha) {
         req.session.email = email;
         res.render('menu')
-    }else{
+    } else {
         res.render('login')
     }
 })
@@ -38,9 +39,9 @@ app.get('/total', (req, res) => {
     res.render("dashboards");
 })
 
-app.get('/logout',(req,res) => {
+app.get('/logout', (req, res) => {
     req.session.destroy((err) => {
-        if(err) {
+        if (err) {
             return console.log(err);
         }
         res.redirect('/');
@@ -139,11 +140,11 @@ app.get('/select_chart/:id', function (req, res) {
 
 });
 
-app.get('/usuarios/:id', function(req, res) {
+app.get('/usuarios/:id', function (req, res) {
     res.sendFile(__dirname + '/front-end/usuarios.html');
 });
 
-app.get('/pegar_usuarios/:id', function(req, res){
+app.get('/pegar_usuarios/:id', function (req, res) {
 
     res.set({ 'content-type': 'application/json; charset=utf-8' });
     var id = req.params.id;
@@ -177,6 +178,26 @@ app.get('/pegar_usuarios/:id', function(req, res){
 
 });
 
+const user = " "
+const pass = ""
+app.get('/send', (req, res) => {
+    const transp = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 587,
+        auth: { user, pass }
+
+    })
+    transp.sendMail({
+        from: user,
+        to: " ",
+        subject: "Teste",
+        text: "olá!!"
+    }).then(info => {
+        res.send(info)
+    }).catch(error => {
+        res.send(error)
+    })
+})
 
 
 
