@@ -4,6 +4,7 @@ const session = require('express-session')
 const app = new express();
 const path = require('path');
 const nodemailer = require('nodemailer');
+const users = require("./conect_cad_bd");
 
 // conteudo do login
 
@@ -231,6 +232,25 @@ app.get('/select_cards/:id', function (req, res) {
             console.log(err.stack)
         }
     }
+})
+
+app.get('/cadastro', function(req, res){
+    res.render('cadastro')
+})
+
+app.post('/add-user', function(req, res){
+    users.create({
+        email: req.body.email,
+        name: req.body.name,
+        lastname: req.body.lastname,
+        senha: req.body.password
+    }).then(function(){
+        res.send("Usuário cadastrado com sucesso!");
+    }).catch(function(erro){
+        res.send("Erro: Usuário não foi cadastrado com sucesso..." + erro)
+    })
+    // res.send("Email: " + req.body.email + "<br>Nome: " + req.body.name + "<br>" + "<br>Sobrenome: " + req.body.lastname + "<br>"+ "<br>Senha: " + req.body.password + "<br>"
+    //  + "<br>Confirmação da senha: " + req.body.passconfirmation + "<br>");
 })
 
 // const open = (process.platform == 'darwin'? 'open': 
