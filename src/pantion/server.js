@@ -4,7 +4,7 @@ const session = require('express-session')
 const app = new express();
 const path = require('path');
 const nodemailer = require('nodemailer');
-const users = require("./conect_cad_bd");
+// const users = require("./conect_cad_bd");
 
 // conteudo do login
 
@@ -179,9 +179,10 @@ app.get('/pegar_usuarios/:id', function (req, res) {
 
 });
 
-const user = " "
+const user = ""
 const pass = ""
-app.get('/send', (req, res) => {
+app.post('/send', (req, res) => {
+    console.log(req);
     const transp = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 587,
@@ -190,14 +191,24 @@ app.get('/send', (req, res) => {
     })
     transp.sendMail({
         from: user,
-        to: " ",
-        subject: "Teste",
-        text: "olá!!"
+        to: req.body.email,
+        subject: req.body.titulo,
+        text: "Atividade: " + req.body.atividade + 
+        "\nResponsável: " + req.body.responsavel + 
+        "\nAtividade: " + req.body.atividade + 
+        "\nStatus: " + req.body.status + 
+        "\nDescrição: " + req.body.descricao + "."
     }).then(info => {
-        res.send(info)
+        res.redirect("/comentarios/" + req.body.idProjeto);
     }).catch(error => {
-        res.send(error)
+        console.log(error)
     })
+
+})
+
+
+app.get('/pagecad', (req, res) => {
+    res.render('cadastro');
 })
 
 
