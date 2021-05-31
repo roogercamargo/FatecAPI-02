@@ -12,7 +12,6 @@
 - [Valor da entrega](#qual-o-valor)
 - [Demonstração das telas](#demonstração-das-telas)
 - [Backlog e User Stories](#backlog-e-user-stories)
-- [Modelo Conceitual e Lógico - Diagrama de Entidade e Relacionamento](#modelo-conceitual---diagrama-de-entidade-e-relacionamento)
 - [Wireframes do projeto](#wireframes-do-projeto)
 - [Gráfico de Burndown](#burndown-da-sprint)
 
@@ -32,16 +31,15 @@
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<p align="justify">Nesta entrega o cliente terá uma visão panorâmica geral sobre a plataforma sendo exibido gráficos de acordo os dados concebidos, como você pode ver nos <a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-03#wireframes-do-projeto">Wireframes</a>; Quantidade de cards por status, horas trabalhadas de Janeiro a Dezembro... </p>
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/cards/card3.png" width="700"></h2>
+<p align="justify">Haverá nesta entrega uma melhoria da plataforma e sistemas de comentários privados para cada integrante de um projeto. </p>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/cards/card4.png" width="700"></h2>
 
 
 <h2>🧾Qual o valor?</h2>
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<p align="justify">A qualidade de um projeto se da de acordo com a proporção em que ele é visualizado de forma justa e coerente. A unificação dos dados de todo o projeto permite que essa ação ocorra, auxiliando o gerenciamento do plano de entrega e reavaliando os caminhos percorridos. A dinâmica melhora e se aproxima do ideal quando se tem a criação estatísticas que contribui com a gestão das propostas, para isso é necessário o desenvolvimento de gráficos que permitem a demonstração desses pensamentos. 
-Os gráficos utilizados permitem a criação de cenários futuros que facilita as alterações que podem vir ocorrer durante o processo de desenvolvimento e aplicação de cada projeto. 
+<p align="justify">Assim como todo sistema é mutável e Dashboards necessitam ser o mais evidente possível, implemetamos uma funcionalidade de comentarios privados, importante para melhoria do projeto comentado ou do integrante mencionado. 
 </p>
 
 <h2>📺Demonstração das telas</h2>
@@ -50,31 +48,18 @@ Os gráficos utilizados permitem a criação de cenários futuros que facilita a
 
 A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adicionados na plataforma. Cada conteúdo está detalhado em ["O que entregamos?"](#o-que-entregamos) e ["Qual é o valor?"](#qual-o-valor).
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/gifs/Projeto-integrador-Sprint03-entrega-de-valor.gif"></h1>
- <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://www.youtube.com/watch?v=OORJ6nG86Dc">YouTube!</a></p>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png"></h1>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href=".">YouTube!</a></p>
  
  
 <h2>📍Backlog e User stories</h2>
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/UserStorie3.jpg"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png"></h2>
 
 
 <h6><a href="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/BacklogTotal.jpg"><img src="https://img.shields.io/badge/Visualizar Backlog completo-informational?style=flat-square" width="20%"></a></h6>
-
-
-<h2>📌Modelo Conceitual - Diagrama de Entidade e Relacionamento</h2>
-
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
-
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Diagrama%20de%20Entidade%20e%20Relacionamento/der-fatecapi-02.png" width="700"</h1>
- 
-<h2>📌Modelo Lógico - Diagrama de Entidade e Relacionamento</h2>
-
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
-
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Diagrama%20de%20Entidade%20e%20Relacionamento/logico-der-fatecapi-02.png" width="700"></h1>
 
     
 <h2>💻Wireframes do projeto</h2>
@@ -84,19 +69,8 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
  <h3><i><b>Terceira entrega - Sprint 03</i></b></h3>
 
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Login.png" width="400" />
- <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Inicial.png" width="400"/>
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png" width="400" />
 </p>
-<p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Painel.png" width="400" />
- <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Usuários.png" width="400" />
-</p> 
-<p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Final%20Gráficos.png" width="400" />
- <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Wireframes/Informações%20complementares.png" width="400" />
-</p> 
-
-
 
 [![forthebadge Vizualizar-no-Figma](https://img.shields.io/badge/-Vizualizar%20no%20Figma-informational?style=flat-square)](https://www.figma.com/file/eqdd2oIv05IgtSdJmC3ESs/Pantion-API?node-id=0%3A1)
 
@@ -106,6 +80,6 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-03/doc/Burndown/Burndown%20Sprint3.PNG" width="700"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png" width="700"></h2>
 
-<p align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-02"><img src="https://img.shields.io/badge/Visualizar entrega 2-informational?style=for-the-badge" width="18%"></a> <a href="https://github.com/roogercamargo/FatecAPI-02/tree/main"><img src="https://img.shields.io/badge/Retornar%20a%20main-informational?style=for-the-badge" width="14.4%"></a></p>
+<p align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-03"><img src="https://img.shields.io/badge/Visualizar entrega 3-informational?style=for-the-badge" width="18%"></a> <a href="https://github.com/roogercamargo/FatecAPI-02/tree/main"><img src="https://img.shields.io/badge/Retornar%20a%20main-informational?style=for-the-badge" width="14.4%"></a></p>
