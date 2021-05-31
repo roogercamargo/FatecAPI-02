@@ -66,7 +66,7 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
   
  [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
   
- <h3><i><b>Terceira entrega - Sprint 03</i></b></h3>
+ <h3><i><b>Quarta entrega - Sprint 04</i></b></h3>
 
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png" width="400" />
