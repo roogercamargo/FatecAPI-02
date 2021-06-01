@@ -4,6 +4,7 @@ const session = require('express-session')
 const app = new express();
 const path = require('path');
 const nodemailer = require('nodemailer');
+const bcrypt = require('bcrypt');
 // const users = require("./conect_cad_bd");
 
 // conteudo do login
@@ -193,11 +194,11 @@ app.post('/send', (req, res) => {
         from: user,
         to: req.body.email,
         subject: req.body.titulo,
-        text: "Atividade: " + req.body.atividade + 
-        "\nResponsável: " + req.body.responsavel + 
-        "\nAtividade: " + req.body.atividade + 
-        "\nStatus: " + req.body.status + 
-        "\nDescrição: " + req.body.descricao + "."
+        text: "Atividade: " + req.body.atividade +
+            "\nResponsável: " + req.body.responsavel +
+            "\nAtividade: " + req.body.atividade +
+            "\nStatus: " + req.body.status +
+            "\nDescrição: " + req.body.descricao + "."
     }).then(info => {
         res.redirect("/comentarios/" + req.body.idProjeto);
     }).catch(error => {
@@ -245,24 +246,97 @@ app.get('/select_cards/:id', function (req, res) {
     }
 })
 
-app.get('/cadastro', function(req, res){
+app.get('/cadastro', function (req, res) {
     res.render('cadastro')
 })
 
-app.post('/add-user', function(req, res){
-    users.create({
+app.post('/add-user', function (req, res) {
+
+
+    var pg = require('pg');
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
+
+    var client = new pg.Client(conString);
+    client.connect();
+    const text = `CREATE TABLE IF NOT EXISTS users (
+        email varchar(100) primary key not null,
+        nome varchar(100) not null,
+        sobrenome varchar(100) not null,
+        senha varchar(200) not null 
+     );`;
+    newUser = {
         email: req.body.email,
-        name: req.body.name,
-        lastname: req.body.lastname,
-        senha: req.body.password
-    }).then(function(){
-        res.send("Usuário cadastrado com sucesso!");
-    }).catch(function(erro){
-        res.send("Erro: Usuário não foi cadastrado com sucesso..." + erro)
+        nome: req.body.name,
+        sobrenome: req.body.lastname,
+        senha: req.body.password,
+        confirmsenha: req.body.passconfirmation
+    }
+    createTable(text).then(function (response) {
+        console.log("Tabela criada com sucesso!");
     })
+
+    async function createTable(text) {
+        try {
+            const res = await client.query(text)
+            return res;
+        }
+        catch (err) {
+            console.log(err.stack)
+        }
+    }
+
+    if (newUser.senha == newUser.confirmsenha) {
+        console.log("As senhas estão igauis. Cadastrando usuário......");
+
+        bcrypt.hash(newUser.senha, 10, (errBcrypt, hash) => {
+            if (errBcrypt) {
+                console.log(errBcrypt);
+            }
+            else {
+                const cmdCriarUsers = 'insert into users (email, nome, sobrenome, senha) values ($1, $2, $3, $4)';
+                const dados = [newUser.email, newUser.nome, newUser.sobrenome, hash];
+
+                insertUser(cmdCriarUsers, dados).then(function (response) {
+                    res.redirect('/');
+                })
+
+                async function insertUser(text, values) {
+                    try {
+                        const res = await client.query(text, values)
+                        console.log("Usuário cadastrado!");
+                        return res;
+                    }
+                    catch (err) {
+                        console.log(err.stack)
+                    }
+                }
+            }
+        });
+    }
+    else {
+        res.redirect('/pagecad');
+    }
+
+})
+
+
+
+
+
+
+    // users.create({
+    //     email: req.body.email,
+    //     name: req.body.name,
+    //     lastname: req.body.lastname,
+    //     senha: req.body.password,
+    //     passconfirmation: req.body.passconfirmation
+    // }).then(function(){
+    //     res.send("Usuário cadastrado com sucesso!");
+    // }).catch(function(erro){
+    //     res.send("Erro: Usuário não foi cadastrado com sucesso..." + erro)
+    // })
     // res.send("Email: " + req.body.email + "<br>Nome: " + req.body.name + "<br>" + "<br>Sobrenome: " + req.body.lastname + "<br>"+ "<br>Senha: " + req.body.password + "<br>"
     //  + "<br>Confirmação da senha: " + req.body.passconfirmation + "<br>");
-})
 
 // const open = (process.platform == 'darwin'? 'open': 
 // process.platform == 'win32'? 'start': 'xdg-open');
