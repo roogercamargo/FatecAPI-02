@@ -9,9 +9,6 @@ const bcrypt = require('bcrypt');
 
 // conteudo do login
 
-var email = "admin";
-var senha = "admin";
-
 app.use(session({ secret: '123' })); //segredo da session
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -29,13 +26,42 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', (req, res) => {
-    if (req.body.email == email && req.body.senha == senha) {
-        req.session.email = email;
-        res.render('menu')
-    } else {
-        res.render('login')
+
+    var pg = require('pg');
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
+
+    var client = new pg.Client(conString);
+    client.connect();
+
+    const text = "select * from users where email = $1";
+    const values = [req.body.email]
+    select(text, values).then(function (response) {
+
+        let email = response.rows[0].email;
+        let senha = response.rows[0].senha;
+
+        const match = bcrypt.compare(req.body.senha, senha).then((permitido) => {
+
+            if (permitido) {
+                req.session.email = email;
+                res.render('menu')
+            } else {
+                res.render('login')
+            }
+
+        });
+    })
+
+    async function select(text, values) {
+        try {
+            const res = await client.query(text, values)
+            return res
+        }
+        catch (err) {
+            console.log(err.stack)
+        }
     }
-})
+});
 
 app.get('/total', (req, res) => {
     res.render("dashboards");
@@ -286,7 +312,7 @@ app.post('/add-user', function (req, res) {
     }
 
     if (newUser.senha == newUser.confirmsenha) {
-        console.log("As senhas estão igauis. Cadastrando usuário......");
+        console.log("As senhas estão iguais. Cadastrando usuário......");
 
         bcrypt.hash(newUser.senha, 10, (errBcrypt, hash) => {
             if (errBcrypt) {
