@@ -243,7 +243,8 @@ app.get('/pagecad', (req, res) => {
 
 
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000) ;
+// app.listen(3000);
 //script em node para subir um server web com express~
 
 app.get('/select_cards/:id', function (req, res) {
