@@ -68,12 +68,15 @@ app.get('/total', (req, res) => {
 })
 
 app.get('/logout', (req, res) => {
-    req.session.destroy((err) => {
-        if (err) {
-            return console.log(err);
-        }
-        res.redirect('/');
-    });
+    // req.session.destroy((err) => {
+    //     if (err) {
+    //         return console.log(err);
+    //     }
+    //     res.redirect('/');
+    // });
+    res.clearCookie("express:sess");
+    res.clearCookie("express:sess.sig");
+    res.redirect('/');
 })
 
 app.get('/projeto/:id', function (req, res) {
