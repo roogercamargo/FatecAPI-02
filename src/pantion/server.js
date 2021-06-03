@@ -30,8 +30,21 @@ app.post('/', (req, res) => {
     var pg = require('pg');
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(conString);
-    client.connect();
+
+    var client = new pg.Client(
+        {
+            connectionString: conString,
+        });
+        client.connect(function (err){
+            if(err)
+                console.log(err);
+            else
+                console.log("Conectado ao banco!");
+        });
+
+
+    // var client = new pg.Client(conString);
+    // client.connect();
 
     const text = "select * from users where email = $1";
     const values = [req.body.email]
@@ -95,8 +108,19 @@ app.get('/grafico', function (req, res) {
     var pg = require('pg');
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(conString);
-    client.connect();
+    var client = new pg.Client(
+        {
+            connectionString: conString,
+        });
+        client.connect(function (err){
+            if(err)
+                console.log(err);
+            else
+                console.log("Conectado ao banco!");
+        });
+    
+    // var client = new pg.Client(conString);
+    // client.connect();
     const text = "select * from cards";
     const values = []
     select(text, values).then(function (response) {
@@ -121,8 +145,19 @@ app.get('/select_projects', function (req, res) {
     var pg = require('pg');
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(conString);
-    client.connect();
+    var client = new pg.Client(
+        {
+            connectionString: conString,
+        });
+        client.connect(function (err){
+            if(err)
+                console.log(err);
+            else
+                console.log("Conectado ao banco!");
+        });
+
+    // var client = new pg.Client(conString);
+    // client.connect();
     const text = "select distinct projeto from cards;";
     select(text).then(function (response) {
         res.send(response);
@@ -151,8 +186,20 @@ app.get('/select_chart/:id', function (req, res) {
     var pg = require('pg');
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(conString);
-    client.connect();
+    // var client = new pg.Client(conString);
+    // client.connect();
+
+    var client = new pg.Client(
+        {
+            connectionString: conString,
+        });
+        client.connect(function (err){
+            if(err)
+                console.log(err);
+            else
+                console.log("Conectado ao banco!");
+        });
+
     const text = "select * from cards where projeto = $1";
     const values = [id]
     select(text, values).then(function (response) {
@@ -187,8 +234,20 @@ app.get('/pegar_usuarios/:id', function (req, res) {
     var pg = require('pg');
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(conString);
-    client.connect();
+    // var client = new pg.Client(conString);
+    // client.connect();
+
+    var client = new pg.Client(
+        {
+            connectionString: conString,
+        });
+        client.connect(function (err){
+            if(err)
+                console.log(err);
+            else
+                console.log("Conectado ao banco!");
+        });
+
     const text = "select distinct user_email, user_primeiro_nome, user_ultimo_nome, user_avatar, projeto from cards where projeto = $1;";
     const values = [id];
     select(text, values).then(function (response) {
@@ -257,8 +316,20 @@ app.get('/select_cards/:id', function (req, res) {
     var pg = require('pg');
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(conString);
-    client.connect();
+    // var client = new pg.Client(conString);
+    // client.connect();
+
+    var client = new pg.Client(
+        {
+            connectionString: conString,
+        });
+        client.connect(function (err){
+            if(err)
+                console.log(err);
+            else
+                console.log("Conectado ao banco!");
+        });
+
     const text = "select * from cards where projeto = $1";
     const values = [id]
     select(text, values).then(function (response) {
@@ -285,8 +356,19 @@ app.post('/add-user', function (req, res) {
     var pg = require('pg');
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(conString);
-    client.connect();
+    var client = new pg.Client(
+        {
+            connectionString: conString,
+        });
+        client.connect(function (err){
+            if(err)
+                console.log(err);
+            else
+                console.log("Conectado ao banco!");
+        });
+
+    // var client = new pg.Client(conString);
+    // client.connect();
     const text = `CREATE TABLE IF NOT EXISTS users (
         email varchar(100) primary key not null,
         nome varchar(100) not null,
