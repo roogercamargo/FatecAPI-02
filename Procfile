@@ -1,1 +1,1 @@
-web: cd /src/pantion/node server.js
+web: node src/pantion/server.js
