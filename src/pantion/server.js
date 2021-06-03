@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'front-end')); //views é parametro de configuração
-app.use(express.static('front-end'))// pega todos os arquivos de css e imagens da pasta front-end
+app.use(express.static(__dirname + '/front-end'))// pega todos os arquivos de css e imagens da pasta front-end
 
 app.get('/', function (req, res) {
     if (req.session.email) {
