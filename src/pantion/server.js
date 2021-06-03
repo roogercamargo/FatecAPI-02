@@ -28,8 +28,7 @@ app.get('/', function (req, res) {
 app.post('/', (req, res) => {
 
     var pg = require('pg');
-    var conString = "postgres://dcbzvwgmitjobv:4dd0f2a92e8e23aee10bc00811d8a26316b437e4c8d7055e2caea29430048da0@ec2-3-226-134-153.compute-1.amazonaws.com:5432/d8af4fsf9rv6b0";
-    // postgres:admin@localhost:5432/integration";
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
 
     var client = new pg.Client(conString);
     client.connect();
@@ -94,7 +93,7 @@ app.get('/comentarios/:id', function (req, res) {
 app.get('/grafico', function (req, res) {
 
     var pg = require('pg');
-    var conString = "postgres://dcbzvwgmitjobv:4dd0f2a92e8e23aee10bc00811d8a26316b437e4c8d7055e2caea29430048da0@ec2-3-226-134-153.compute-1.amazonaws.com:5432/d8af4fsf9rv6b0";
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
 
     var client = new pg.Client(conString);
     client.connect();
@@ -120,7 +119,7 @@ app.get('/grafico', function (req, res) {
 app.get('/select_projects', function (req, res) {
 
     var pg = require('pg');
-    var conString = "postgres://dcbzvwgmitjobv:4dd0f2a92e8e23aee10bc00811d8a26316b437e4c8d7055e2caea29430048da0@ec2-3-226-134-153.compute-1.amazonaws.com:5432/d8af4fsf9rv6b0";
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
 
     var client = new pg.Client(conString);
     client.connect();
@@ -150,7 +149,7 @@ app.get('/select_chart/:id', function (req, res) {
     id = id.replace(":id=", "");
 
     var pg = require('pg');
-    var conString = "postgres://dcbzvwgmitjobv:4dd0f2a92e8e23aee10bc00811d8a26316b437e4c8d7055e2caea29430048da0@ec2-3-226-134-153.compute-1.amazonaws.com:5432/d8af4fsf9rv6b0";
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
 
     var client = new pg.Client(conString);
     client.connect();
@@ -186,7 +185,7 @@ app.get('/pegar_usuarios/:id', function (req, res) {
     console.log(id);
 
     var pg = require('pg');
-    var conString = "postgres://dcbzvwgmitjobv:4dd0f2a92e8e23aee10bc00811d8a26316b437e4c8d7055e2caea29430048da0@ec2-3-226-134-153.compute-1.amazonaws.com:5432/d8af4fsf9rv6b0";
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
 
     var client = new pg.Client(conString);
     client.connect();
@@ -256,7 +255,7 @@ app.get('/select_cards/:id', function (req, res) {
     id = id.replace(":id=", "");
 
     var pg = require('pg');
-    var conString = "postgres://dcbzvwgmitjobv:4dd0f2a92e8e23aee10bc00811d8a26316b437e4c8d7055e2caea29430048da0@ec2-3-226-134-153.compute-1.amazonaws.com:5432/d8af4fsf9rv6b0";
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
 
     var client = new pg.Client(conString);
     client.connect();
@@ -283,9 +282,8 @@ app.get('/cadastro', function (req, res) {
 
 app.post('/add-user', function (req, res) {
 
-
     var pg = require('pg');
-    var conString = "postgres://dcbzvwgmitjobv:4dd0f2a92e8e23aee10bc00811d8a26316b437e4c8d7055e2caea29430048da0@ec2-3-226-134-153.compute-1.amazonaws.com:5432/d8af4fsf9rv6b0";
+    var conString = "postgres://postgres:admin@localhost:5432/integration";
 
     var client = new pg.Client(conString);
     client.connect();
