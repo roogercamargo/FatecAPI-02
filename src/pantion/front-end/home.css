@@ -167,12 +167,12 @@ button, input, select, textarea, optgroup {
 }
 
 .card{
-    width: 32%;
+    width: 30%;
     background: #fff;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid rgba(49, 49, 49, 0.5);
-    margin-left: 0.5%;
-    margin-right: 0.1%;
+    margin-left: 1.5%;
+    margin-right: 1%;
     margin-top: 1%;
     border-radius: 20px;
 } 
