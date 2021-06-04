@@ -28,12 +28,14 @@ app.get('/', function (req, res) {
 app.post('/', (req, res) => {
 
     var pg = require('pg');
-    var conString = ((process.env.DATABASE_URL + process.env.PGSSLMODE) || "postgres://postgres:admin@localhost:5432/integration");
+    pg.defaults.ssl = true;
+    var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
 
     var client = new pg.Client(
         {
             connectionString: conString,
+            ssl: process.env.DATABASE_URL ? true : false
         });
         client.connect(function (err){
             if(err)
@@ -106,11 +108,13 @@ app.get('/comentarios/:id', function (req, res) {
 app.get('/grafico', function (req, res) {
 
     var pg = require('pg');
-    var conString = ((process.env.DATABASE_URL + process.env.PGSSLMODE) || "postgres://postgres:admin@localhost:5432/integration");
+    pg.defaults.ssl = true;
+    var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
     var client = new pg.Client(
         {
             connectionString: conString,
+            ssl: process.env.DATABASE_URL ? true : false
         });
         client.connect(function (err){
             if(err)
@@ -143,11 +147,13 @@ app.get('/grafico', function (req, res) {
 app.get('/select_projects', function (req, res) {
 
     var pg = require('pg');
-    var conString = ((process.env.DATABASE_URL + process.env.PGSSLMODE) || "postgres://postgres:admin@localhost:5432/integration");
+    pg.defaults.ssl = true;
+    var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
     var client = new pg.Client(
         {
             connectionString: conString,
+            ssl: process.env.DATABASE_URL ? true : false
         });
         client.connect(function (err){
             if(err)
@@ -184,7 +190,8 @@ app.get('/select_chart/:id', function (req, res) {
     id = id.replace(":id=", "");
 
     var pg = require('pg');
-    var conString = ((process.env.DATABASE_URL + process.env.PGSSLMODE) || "postgres://postgres:admin@localhost:5432/integration");
+    pg.defaults.ssl = true;
+    var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
     // var client = new pg.Client(conString);
     // client.connect();
@@ -192,6 +199,7 @@ app.get('/select_chart/:id', function (req, res) {
     var client = new pg.Client(
         {
             connectionString: conString,
+            ssl: process.env.DATABASE_URL ? true : false
         });
         client.connect(function (err){
             if(err)
@@ -232,7 +240,8 @@ app.get('/pegar_usuarios/:id', function (req, res) {
     console.log(id);
 
     var pg = require('pg');
-    var conString = ((process.env.DATABASE_URL + process.env.PGSSLMODE) || "postgres://postgres:admin@localhost:5432/integration");
+    pg.defaults.ssl = true;
+    var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
     // var client = new pg.Client(conString);
     // client.connect();
@@ -240,6 +249,7 @@ app.get('/pegar_usuarios/:id', function (req, res) {
     var client = new pg.Client(
         {
             connectionString: conString,
+            ssl: process.env.DATABASE_URL ? true : false
         });
         client.connect(function (err){
             if(err)
@@ -314,7 +324,8 @@ app.get('/select_cards/:id', function (req, res) {
     id = id.replace(":id=", "");
 
     var pg = require('pg');
-    var conString = ((process.env.DATABASE_URL + process.env.PGSSLMODE) || "postgres://postgres:admin@localhost:5432/integration");
+    pg.defaults.ssl = true;
+    var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
     // var client = new pg.Client(conString);
     // client.connect();
@@ -322,6 +333,7 @@ app.get('/select_cards/:id', function (req, res) {
     var client = new pg.Client(
         {
             connectionString: conString,
+            ssl: process.env.DATABASE_URL ? true : false
         });
         client.connect(function (err){
             if(err)
@@ -354,11 +366,14 @@ app.get('/cadastro', function (req, res) {
 app.post('/add-user', function (req, res) {
 
     var pg = require('pg');
-    var conString = ((process.env.DATABASE_URL + process.env.PGSSLMODE) || "postgres://postgres:admin@localhost:5432/integration");
+    pg.defaults.ssl = true;
+    var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
+
 
     var client = new pg.Client(
         {
             connectionString: conString,
+            ssl: process.env.DATABASE_URL ? true : false
         });
         client.connect(function (err){
             if(err)
