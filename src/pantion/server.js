@@ -5,9 +5,9 @@ const app = new express();
 const path = require('path');
 const nodemailer = require('nodemailer');
 const bcrypt = require('bcrypt');
-// const users = require("./conect_cad_bd");
+var cors = require('cors');
 
-// conteudo do login
+app.use(cors())
 
 app.use(session({ secret: '123' })); //segredo da session
 app.use(bodyParser.urlencoded({ extended: true }));
