@@ -32,17 +32,33 @@ app.post('/', (req, res) => {
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
 
-    var client = new pg.Client(
-        {
-            connectionString: conString,
-            ssl: process.env.DATABASE_URL ? true : false
-        });
-        client.connect(function (err){
-            if(err)
-                console.log(err);
-            else
-                console.log("Conectado ao banco!");
-        });
+    if (process.env.DATABASE_URL) {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: { rejectUnauthorized: false }
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
+    else {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: false
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
+
 
 
     // var client = new pg.Client(conString);
@@ -111,17 +127,32 @@ app.get('/grafico', function (req, res) {
     pg.defaults.ssl = true;
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(
-        {
-            connectionString: conString,
-            ssl: process.env.DATABASE_URL ? true : false
-        });
-        client.connect(function (err){
-            if(err)
-                console.log(err);
-            else
-                console.log("Conectado ao banco!");
-        });
+    if (process.env.DATABASE_URL) {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: { rejectUnauthorized: false }
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
+    else {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: false
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
     
     // var client = new pg.Client(conString);
     // client.connect();
@@ -150,17 +181,32 @@ app.get('/select_projects', function (req, res) {
     pg.defaults.ssl = true;
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
-    var client = new pg.Client(
-        {
-            connectionString: conString,
-            ssl: process.env.DATABASE_URL ? true : false
-        });
-        client.connect(function (err){
-            if(err)
-                console.log(err);
-            else
-                console.log("Conectado ao banco!");
-        });
+    if (process.env.DATABASE_URL) {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: { rejectUnauthorized: false }
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
+    else {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: false
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
 
     // var client = new pg.Client(conString);
     // client.connect();
@@ -196,17 +242,32 @@ app.get('/select_chart/:id', function (req, res) {
     // var client = new pg.Client(conString);
     // client.connect();
 
-    var client = new pg.Client(
-        {
-            connectionString: conString,
-            ssl: process.env.DATABASE_URL ? true : false
-        });
-        client.connect(function (err){
-            if(err)
-                console.log(err);
-            else
-                console.log("Conectado ao banco!");
-        });
+    if (process.env.DATABASE_URL) {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: { rejectUnauthorized: false }
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
+    else {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: false
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
 
     const text = "select * from cards where projeto = $1";
     const values = [id]
@@ -246,17 +307,32 @@ app.get('/pegar_usuarios/:id', function (req, res) {
     // var client = new pg.Client(conString);
     // client.connect();
 
-    var client = new pg.Client(
-        {
-            connectionString: conString,
-            ssl: process.env.DATABASE_URL ? true : false
-        });
-        client.connect(function (err){
-            if(err)
-                console.log(err);
-            else
-                console.log("Conectado ao banco!");
-        });
+    if (process.env.DATABASE_URL) {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: { rejectUnauthorized: false }
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
+    else {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: false
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
 
     const text = "select distinct user_email, user_primeiro_nome, user_ultimo_nome, user_avatar, projeto from cards where projeto = $1;";
     const values = [id];
@@ -330,17 +406,32 @@ app.get('/select_cards/:id', function (req, res) {
     // var client = new pg.Client(conString);
     // client.connect();
 
-    var client = new pg.Client(
-        {
-            connectionString: conString,
-            ssl: process.env.DATABASE_URL ? true : false
-        });
-        client.connect(function (err){
-            if(err)
-                console.log(err);
-            else
-                console.log("Conectado ao banco!");
-        });
+    if (process.env.DATABASE_URL) {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: { rejectUnauthorized: false }
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
+    else {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: false
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
 
     const text = "select * from cards where projeto = $1";
     const values = [id]
@@ -370,17 +461,32 @@ app.post('/add-user', function (req, res) {
     var conString = (process.env.DATABASE_URL || "postgres://postgres:admin@localhost:5432/integration");
 
 
-    var client = new pg.Client(
-        {
-            connectionString: conString,
-            ssl: process.env.DATABASE_URL ? true : false
-        });
-        client.connect(function (err){
-            if(err)
-                console.log(err);
-            else
-                console.log("Conectado ao banco!");
-        });
+    if (process.env.DATABASE_URL) {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: { rejectUnauthorized: false }
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
+    else {
+        var client = new pg.Client(
+            {
+                connectionString: conString,
+                ssl: false
+            });
+            client.connect(function (err){
+                if(err)
+                    console.log(err);
+                else
+                    console.log("Conectado ao banco!");
+            });
+    }
 
     // var client = new pg.Client(conString);
     // client.connect();
