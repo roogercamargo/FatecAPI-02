@@ -9,6 +9,13 @@ var cors = require('cors');
 
 app.use(cors())
 
+app.use(function (req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', '*');
+    res.setHeader('Access-Control-Allow-Headers', '*');
+    next();
+});
+
 app.use(session({ secret: '123' })); //segredo da session
 app.use(bodyParser.urlencoded({ extended: true }));
 
