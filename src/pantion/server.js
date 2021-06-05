@@ -182,7 +182,8 @@ app.get('/grafico', function (req, res) {
 
 });
 
-app.get('/select_projects', function (req, res) {
+app.options('/select_projects', cors());
+app.get('/select_projects', cors(), function (req, res) {
 
     var pg = require('pg');
     pg.defaults.ssl = true;
