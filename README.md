@@ -132,27 +132,28 @@ Tecnologias | Usamos para
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/BacklogTotal.jpg"></h1>
        
 <h2>💻Wireframes do projeto</h2>
-
- <h3><i><b>Primeira entrega - Sprint 01</i></b></h3>
-
+<div align="center">
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/todos%20projetos.jpg" width="400" />
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/detalhes%20do%20projeto.jpg" width="400" /> 
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Login.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Cadastro.png" width="400" />
 </p>
-<p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/usuarios.jpg" width="400" />
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Entrega%201/Visão%20geral.jpg" width="400" /> 
-</p>
-       
- <h3><i><b>Segunda entrega - Sprint 02</i></b></h3>
 
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/todos%20projetos.jpg" width="400" />
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/detalhes%20do%20projeto.jpg" width="400" /> 
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Inicial.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Painel.png" width="400" />
 </p>
-<p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/usuarios.png" width="400" />
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Wireframes/Visão%20geral.jpg" width="400" /> 
-</p>       
 
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Usuários.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Gráficos.png" width="400" />
+</p>
+
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Informações%20complementares.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Comentários.png" width="400" />
+</p>
+
+[![forthebadge Vizualizar-no-Figma](https://img.shields.io/badge/-Vizualizar%20no%20Figma-informational?style=flat-square)](https://www.figma.com/file/eqdd2oIv05IgtSdJmC3ESs/Pantion-API?node-id=0%3A1)
+ </div>
+ 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
