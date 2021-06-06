@@ -48,15 +48,15 @@
 
 A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adicionados na plataforma. Cada conteúdo está detalhado em ["O que entregamos?"](#o-que-entregamos) e ["Qual é o valor?"](#qual-o-valor).
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png"></h1>
- <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href=".">YouTube!</a></p>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/gifs/Projeto-integrador-Sprint04-entr.gif"></h1>
+ <p>Caso deseje ver o vídeo com mais qualidade, assista-o no <a href="https://youtu.be/UdmSo1sERvM">YouTube!</a></p>
  
  
 <h2>📍Backlog e User stories</h2>
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Backlog%20e%20User%20storie/UserStorie4.jpg"></h2>
 
 
 <h6><a href="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/BacklogTotal.jpg"><img src="https://img.shields.io/badge/Visualizar Backlog completo-informational?style=flat-square" width="20%"></a></h6>
@@ -69,8 +69,25 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
  <h3><i><b>Quarta entrega - Sprint 04</i></b></h3>
 
 <p float="left">
-  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Login.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Cadastro.png" width="400" />
 </p>
+
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Inicial.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Painel.png" width="400" />
+</p>
+
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Usuários.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Gráficos.png" width="400" />
+</p>
+
+<p float="left">
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Informações%20complementares.png" width="400" />
+  <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Comentários.png" width="400" />
+</p>
+
 
 [![forthebadge Vizualizar-no-Figma](https://img.shields.io/badge/-Vizualizar%20no%20Figma-informational?style=flat-square)](https://www.figma.com/file/eqdd2oIv05IgtSdJmC3ESs/Pantion-API?node-id=0%3A1)
 
