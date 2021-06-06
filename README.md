@@ -99,7 +99,7 @@ Tecnologias | Usamos para
                             <td>Sprint 4</td>
                             <td><p align = "justify">Sistema de comentários e melhorias na plataforma</p></td>
                             <td>17/05/2021 a 05/06/2021</td>
-                            <td><p>Em andamento</p></td>
+                            <td><p><a href=" https://github.com/roogercamargo/FatecAPI-02/tree/entrega-04"><img src="https://img.shields.io/badge/Visualizar-informational?style=for-the-badge"></a></p></td>
                      </tr>
               </tbody>
        </table>
