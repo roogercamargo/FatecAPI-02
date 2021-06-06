@@ -97,6 +97,6 @@ A seguir, criamos um vídeo explicativo demonstrando os conteúdos que foram adi
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/em%20desenvolvimento.png" width="700"></h2>
+<h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Burndown/Burndown%20Sprint4.PNG" width="700"></h2>
 
 <p align="center"><a href="https://github.com/roogercamargo/FatecAPI-02/tree/entrega-03"><img src="https://img.shields.io/badge/Visualizar entrega 3-informational?style=for-the-badge" width="18%"></a> <a href="https://github.com/roogercamargo/FatecAPI-02/tree/main"><img src="https://img.shields.io/badge/Retornar%20a%20main-informational?style=for-the-badge" width="14.4%"></a></p>
