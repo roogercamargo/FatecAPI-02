@@ -31,7 +31,7 @@
 
 [<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
 
-<p align="justify">Para essa última sprint foram feitas melhorias e implantações de algumas funcionalidades. Adicionamos uma função complementar de comentários, capaz de enviar comentários diretamente para o responsável pelo programa em desenvolvimento, estabelecendo uma comunicação direta com a direção da empresa, além de melhorias da visualização da plataforma, fornecendo uma melhor experiência pra o usuário.</p>
+<p align="justify">Para essa última sprint foram feitas melhorias e implantações de algumas funcionalidades. Adicionamos uma função complementar de comentários, capaz de enviar comentários diretamente para o responsável pelo programa em desenvolvimento, estabelecendo uma comunicação direta com a direção da empresa, além de melhorias da visualização da plataforma, fornecendo uma melhor experiência para o usuário.</p>
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/cards/card4.png" width="700"></h2>
 
 
