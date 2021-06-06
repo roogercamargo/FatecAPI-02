@@ -60,8 +60,6 @@ Tecnologias | Usamos para
 
  - [Pedro Ferreira](https://www.linkedin.com/in/pedro-ferreira-6a8417190/ "Linkedin") <i>(Development Team)</i>
  
- - [Kevin Felipe](https://www.linkedin.com/in/kevin-pereira-3a7aa31b7/ "Linkedin") <i>(Development Team)</i>
-
  - [Gustavo Oliveira](https://www.linkedin.com/in/gustavo-oliveira-353647207/ "Linkedin") <i>(Development Team)</i>
 
 
