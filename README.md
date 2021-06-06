@@ -132,6 +132,9 @@ Tecnologias | Usamos para
 <h1 align="center"><img src="https://github.com/roogercamargo/FatecAPI-02/blob/main/doc/Backlog%20e%20User%20storie/BacklogTotal.jpg"></h1>
        
 <h2>💻Wireframes do projeto</h2>
+
+[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
+
 <div align="center">
 <p float="left">
   <img src="https://github.com/roogercamargo/FatecAPI-02/blob/entrega-04/doc/Wireframes/Final%20Login.png" width="400" />
@@ -155,5 +158,3 @@ Tecnologias | Usamos para
 
 [![forthebadge Vizualizar-no-Figma](https://img.shields.io/badge/-Vizualizar%20no%20Figma-informational?style=flat-square)](https://www.figma.com/file/eqdd2oIv05IgtSdJmC3ESs/Pantion-API?node-id=0%3A1)
  </div>
- 
-[<img src="https://svgshare.com/i/WF7.svg" width = "40%">](#menu-de-navegação)
