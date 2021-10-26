@@ -44,16 +44,14 @@
       <a href="/"><button class="subnavbtn">Todos os projetos </button></a>
     </div>
 
-    <div class="subnav">
-      <button class="subnavbtn">Favoritados</button>
-    </div>
+    
     <div class="subnav">
       <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
     </div>
     <div class="subnav">
       <a href="/logout"><button class="logoOff">Sair</button></a>
     </div>
-    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+   
   </nav>
 
   <br><br>
@@ -310,7 +308,7 @@
 
             });
             IN_PROGRESS.forEach(card => {
-              exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br><b>Terminado: </b>${card.terminado}<br/><hr> <br/>`
+              exibicao += `<b>Responsável: </b>${card.user_primeiro_nome} ${card.user_ultimo_nome}<br><b>Email: </b>${card.user_email}<br/><b>Descrição: </b>${card.descricao}<br/><b>Status: </b>${card.status}<br>${"OI"}<br/><hr> <br/>`
               document.getElementById("IN_PROGRESS").innerHTML = exibicao
             });
             exibicao = ''

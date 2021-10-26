@@ -28,7 +28,7 @@ body{
     margin-right: auto;
     background-color: #fff;
     border-radius: 10px;
-    padding: 25px;
+    padding: 20px;
 }
 #main-container{
     text-align: left;
@@ -58,7 +58,7 @@ label{
 }
 input{ 
     border-bottom: 2px solid #323232;
-    padding: 10px;
+    padding: 3px;
     font-size: .9rem;
     margin-bottom: 40px;
 }

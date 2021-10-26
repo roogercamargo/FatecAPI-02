@@ -1,0 +1,1 @@
+web: node src/pantion/server.js

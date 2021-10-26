@@ -3,7 +3,7 @@
 
 <head>
   <title>Pantion</title>
-  
+
   <link rel="stylesheet" href="/comments.css">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- card colaboradores do projeto -->
@@ -46,30 +46,28 @@
       <a href="/"><button class="subnavbtn">Todos os projetos </button></a>
     </div>
 
-    <div class="subnav">
-      <button class="subnavbtn">Favoritados</button>
-    </div>
+  
     <div class="subnav">
       <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
     </div>
     <div class="subnav">
       <a href="/logout"><button class="logoOff">Sair</button></a>
     </div>
-    <input class="myInp" id="myInp" type="search" name="search" placeholder="Pesquisar...">
+   
   </nav>
 
-  
 
 
 
 
-  <h1 id="nomeProjeto">
-    <p>Nome do Projeto</p>
+
+  <h1>
+    <p id="nomeProjeto">Nome do Projeto</p>
   </h1>
   <br>
 
 
-  
+
 
 
   <hr style="height:1px;border:none;color:#a6a6a6;background-color:#a6a6a6;" />
@@ -77,11 +75,11 @@
   <div id=menu_options>
 
     <label for=panel class="options">
-    	 <a href="" id="visualizar_painel">
-      <div>
-        <img src="/images/painel.png" style="vertical-align: bottom;">
-        <b><i>Painel</i></b>
-      </div>
+      <a href="" id="visualizar_painel">
+        <div>
+          <img src="/images/painel.png" style="vertical-align: bottom;">
+          <b><i>Painel</i></b>
+        </div>
     </label>
     </a>
 
@@ -103,49 +101,53 @@
     </label>
     </a>
 
-     <label for=comments class="options">
-     	 <a href="" id="visualizar_comentarios">
-          <div>
-            <img src="/images/comments.png">
-            <b><i>Comentários</i></b>
-          </div>
-        </label>
-</a>
+    <label for=comments class="options">
+      <a href="" id="visualizar_comentarios">
+        <div>
+          <img src="/images/comments.png">
+          <b><i>Comentários</i></b>
+        </div>
+    </label>
+    </a>
   </div>
   <br>
- 
 
-<div class="container">
- <center> <form>
-    <label for="email">E-mail</label><br>
-    <input type="text" id="email" name="email" placeholder="example@example.gsw.com.br">
-    <br>
-    <label for="titulo">Título</label><br>
-    <input type="text" id="titulo" name="titulo" placeholder="Título do projeto">
-    <br>
-    <label for="responsavel">Responsável</label><br>
-    <input type="text" id="responsavel" name="responsavel" placeholder="Nome do Responsável">
-    <br>
-    <label for="atividade">Atividade</label><br>
-    <input type="text" id="atividade" name="atvidade" placeholder="Atividade...">
-    <br>
-    <label for="status">Status Atividade</label><br>
-    <select id="status" name="status">
-      <option value="progress">IN_PROGRESS</option>
-      <option value="deploying">QA_DEPLOYING</option>
-      <option value="teste">FOR_TEST</option>
-      <option value="testing">QA_TESTING</option>
-      <option value="prod">RELEASE_TO_PROD</option>
-      <option value="pdeplo">PROD_DEPLOYING</option>
-      <option value="done">DONE</option>
-    </select>
-    <br><br>
-    <label for="subject">Descrição</label><br>
-    <textarea id="subject" name="descrição" style="height:200px"></textarea>
-     <br><br>
-    <center><input type="submit" value="Enviar"><center>
-  </form></center>
-</div>
+
+  <div class="container">
+    <center>
+      <form method="post" action="/send">
+        <input type="hidden" name="idProjeto" id="idProjeto">
+        <label for="email">E-mail</label><br>
+        <input type="text" id="email" name="email" placeholder="examplo@examplo.com.br">
+        <br>
+        <label for="titulo">Título</label><br>
+        <input type="text" id="titulo" name="titulo" placeholder="Título do projeto">
+        <br>
+        <label for="responsavel">Responsável</label><br>
+        <input type="text" id="responsavel" name="responsavel" placeholder="Nome do Responsável">
+        <br>
+        <label for="atividade">Atividade</label><br>
+        <input type="text" id="atividade" name="atividade" placeholder="Atividade...">
+        <br>
+        <label for="status">Status Atividade</label><br>
+        <select id="status" name="status">
+          <option value="IN_PROGRESS">IN_PROGRESS</option>
+          <option value="QA_DEPLOYING">QA_DEPLOYING</option>
+          <option value="FOR_TEST">FOR_TEST</option>
+          <option value="QA_TESTING">QA_TESTING</option>
+          <option value="RELEASE_TO_PROD">RELEASE_TO_PROD</option>
+          <option value="PROD_DEPLOYING">PROD_DEPLOYING</option>
+          <option value="DONE">DONE</option>
+        </select>
+        <br><br>
+        <label for="subject">Descrição</label><br>
+        <textarea id="subject" name="descricao" style="height:200px"></textarea>
+        <br><br>
+        <center><input type="submit" value="Enviar">
+          <center>
+      </form>
+    </center>
+  </div>
 
 
 
@@ -170,7 +172,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!--pode dar conflito-->
 
-    
+
 
     <script>
 
@@ -184,14 +186,34 @@
       var strLinkPainel = "/projeto/" + scrt_var;
       document.getElementById("visualizar_painel").setAttribute("href", strLinkPainel);
 
-      var nomeDoProjeto = document.getElementById('nome_projeto');
-	  document.getElementById("nomeProjeto").innerHTML = data.rows[0].projeto
+      // var nomeDoProjeto = document.getElementById('nome_projeto');
+      // document.getElementById("nomeProjeto").innerHTML = data.rows[0].projeto
 
     </script>
 
-    
+
 
   </footer>
+
+  <script>
+    let inputIdProjeto = document.getElementById('idProjeto');
+    console.log(last_segment);
+    inputIdProjeto.value = last_segment;
+
+    $.ajax({
+        url: "http://localhost:3000/select_cards/:id=" + last_segment,
+        type: "GET",
+        contentType: "charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+
+          console.log(data)
+          var nomeDoProjeto = document.getElementById('nomeProjeto');
+          nomeDoProjeto.innerText = data.rows[0].projeto;
+
+        }
+      });
+  </script>
 </body>
 
 </html>

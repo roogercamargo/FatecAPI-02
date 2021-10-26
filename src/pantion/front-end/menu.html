@@ -25,16 +25,13 @@
       <a href="/"><button class="subnavbtn">Todos os projetos </button></a>
     </div>
 
-    <div class="subnav">
-      <button class="subnavbtn">Favoritados</button>
-    </div>
+    
     <div class="subnav">
       <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
     </div>
     <div class="subnav">
     <a href="/logout"><button class= "logoOff">Sair</button></a>
     </div>
-    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
   </nav>
 
   <br><br>
@@ -97,6 +94,7 @@
               // cardDoProjeto.classList.add("col-lg-3");            // o card do projeto tem 4 classes
               cardDoProjeto.classList.add("shadow");
               cardDoProjeto.classList.add("card");
+              cardDoProjeto.style = "background-color: ##F6F6F6 "
 
               //nome do projeto
               let divBoxNomeProjeto = document.createElement("div");
@@ -105,6 +103,7 @@
               spanNomeProjeto.classList.add("titulo_card");
               spanNomeProjeto.textContent = project.projeto //colcando o nome do projeto na tag span
               divBoxNomeProjeto.appendChild(spanNomeProjeto)//colocando a tag span com texto dentro da div do nome
+              divBoxNomeProjeto.style = "background-color: ##F6F6F6 "
 
               //div das horas totais de cada projeto
               let divBoxTotalHoras = document.createElement("div");
@@ -113,21 +112,21 @@
               i1.classList.add("far-clock");
               i1.style = "color: chocolate;padding-left: 7px;font-size: 22px;padding-top: 4px;"
 
-              let span1 = document.createElement("span");
-              span1.textContent = " Indefinido.";
+              // let span1 = document.createElement("span");
+              // span1.textContent = " Indefinido.";
 
-              let i2 = document.createElement("i");
-              i2.classList.add("fas");
-              i2.classList.add("fa-check-circle");
-              i2.style = "color:#80AF79;padding-left: 7px;font-size: 22px;padding-top: 4px;";
+              // let i2 = document.createElement("i");
+              // i2.classList.add("fas");
+              // i2.classList.add("fa-check-circle");
+              // i2.style = "color:#80AF79;padding-left: 7px;font-size: 22px;padding-top: 4px;";
 
-              let span2 = document.createElement("span");
-              span2.textContent = " Indefinido";
+              // let span2 = document.createElement("span");
+              // span2.textContent = " Indefinido";
 
-              divBoxTotalHoras.appendChild(i1);
-              divBoxTotalHoras.appendChild(span1);
-              divBoxTotalHoras.appendChild(i2);
-              divBoxTotalHoras.appendChild(span2);
+              // divBoxTotalHoras.appendChild(i1);
+              // divBoxTotalHoras.appendChild(span1);
+              // divBoxTotalHoras.appendChild(i2);
+              // divBoxTotalHoras.appendChild(span2);
 
 
               let divEspaco = document.createElement("br");

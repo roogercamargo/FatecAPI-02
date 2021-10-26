@@ -30,16 +30,14 @@
       <a href="/menu.html"><button class="subnavbtn">Todos os projetos </button></a>
     </div>
 
-    <div class="subnav">
-      <button class="subnavbtn">Favoritados</button>
-    </div>
+    
     <div class="subnav">
         <a href='/total'><button class="subnavbtn">Informações complementares</button></a>
       </div>
     <div class="subnav">
     <a href="/logout"><button class= "logoOff">Sair</button></a>
     </div>
-    <input id="myInp" type="text" name="search" placeholder="Pesquisar...">
+   
   </nav>
     
       <br><br><br>
@@ -122,13 +120,13 @@
                 //Colocando a lógica dentro das tabelas para exibição
             var data = new google.visualization.arrayToDataTable([
             ['Status', '', { role: 'style' }, {role:'annotation'}],
-            ['IN PROGRESS', quantidades[0], '#013a63',quantidades[0]],
-            ['QA DEPLOYING', quantidades[1], '#01497c',quantidades[1]],
-            ['FOR TEST', quantidades[2], '#014f86',quantidades[2]],
-            ['QA TESTING', quantidades[3], '#2a6f97',quantidades[3]],
-            ['RELEASE TO PROD', quantidades[4], '#2c7da0', quantidades[4]],
-            ['PROD DEPLOYING', quantidades[5], '#468faf',quantidades[5]],
-            ['DONE', quantidades[6], '#61a5c2', quantidades[6]]
+            ['IN PROGRESS', quantidades[0], '#FFC48D',quantidades[0]],
+            ['QA DEPLOYING', quantidades[1], '#8DD6FF',quantidades[1]],
+            ['FOR TEST', quantidades[2], '#FF7373',quantidades[2]],
+            ['QA TESTING', quantidades[3], '#FFE588',quantidades[3]],
+            ['RELEASE TO PROD', quantidades[4], '#739AFF', quantidades[4]],
+            ['PROD DEPLOYING', quantidades[5], '#CA73FF',quantidades[5]],
+            ['DONE', quantidades[6], '#6FCB60', quantidades[6]]
                 ]);
             //Front do gráfico
             var options = {
@@ -187,7 +185,10 @@
             backgroundColor: '#f6f6f6',
             'is3D': true,
             'height': 400,
+            colors: ['#739AFF','#ff1a1a'],
+        
             legend: { position: 'right' }
+             
           };
 
     var chart = new google.visualization.PieChart(document.getElementById('fimCard'));
@@ -333,7 +334,7 @@ var carvalho = 0;
     <class class="aoLadoTotal">
         <div id="horas1"></div>
         <div class ="datatableTotal">
-          <div style="font-size: 20px; text-align: center;">Total de atividades do projeto</div><hr>
+          <br><div style="font-size: 20px; text-align: center;">Total de atividades do projeto</div><hr>
             <h5 class='card-title' style="text-align: center; font-size: 40px; margin: 0px;">
               <div id ="res"></div><h1> </h1><br><br><br><br>
               <div style="font-size: 20px; text-align: center;">Total de horas das atividades concluídas</div><hr>
